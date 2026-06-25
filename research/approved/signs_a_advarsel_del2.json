@@ -1,0 +1,644 @@
+[
+  {
+    "id": "a31",
+    "officialCode": "A 31",
+    "name": "Glat vej",
+    "elementType": "trafficSign",
+    "categoryId": "warning",
+    "categoryName": "Advarselstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen advarer om, at kørebanen kan være unormalt glat.",
+    "shortMeaning": "Advarsel om unormalt glat kørebane.",
+    "detailedMeaning": "Tavlen angiver, at kørebanen kan være unormalt glat. Årsagen skal angives på undertavle, for eksempel »Glat i vådt føre«. Undertavlen UA 31 bruges ved isglat vej.",
+    "driverAction": "Sænk hastigheden, undgå pludselige styre- og bremsebevægelser, og hold ekstra afstand.",
+    "exceptions": [
+      "Årsagen til den glatte vej angives på undertavle.",
+      "UA 31 bruges ved isglat vej."
+    ],
+    "commonMistakes": [
+      "At bremse eller styre brat.",
+      "At holde samme afstand som på tør vej."
+    ],
+    "relatedElements": [],
+    "imageFile": "assets/images/signs/a31.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 13, A 31",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "a33",
+    "officialCode": "A 33",
+    "name": "Løse sten",
+    "elementType": "trafficSign",
+    "categoryId": "warning",
+    "categoryName": "Advarselstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen advarer om særlig risiko for stenslag.",
+    "shortMeaning": "Advarsel om særlig fare for stenslag.",
+    "detailedMeaning": "Tavlen angiver særlig fare for stenslag fra løse sten på kørebanen.",
+    "driverAction": "Sænk hastigheden og hold ekstra afstand til andre køretøjer.",
+    "exceptions": [],
+    "commonMistakes": [
+      "At køre for tæt på forankørende.",
+      "At øge hastigheden på en strækning med løse sten."
+    ],
+    "relatedElements": [],
+    "imageFile": "assets/images/signs/a33.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 13, A 33",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "a34",
+    "officialCode": "A 34",
+    "name": "Stenskred",
+    "elementType": "trafficSign",
+    "categoryId": "warning",
+    "categoryName": "Advarselstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen advarer om stenskred og nedfaldne sten.",
+    "shortMeaning": "Advarsel om stenskred og nedfaldne sten.",
+    "detailedMeaning": "Tavlen angiver særlig fare for stenskred og for sten, der allerede kan ligge på kørebanen.",
+    "driverAction": "Sænk hastigheden, hold øje med kørebanen og vær klar til at undvige eller standse sikkert.",
+    "exceptions": [],
+    "commonMistakes": [
+      "At se efter faldende sten, men overse sten på kørebanen.",
+      "At køre for hurtigt gennem området."
+    ],
+    "relatedElements": [],
+    "imageFile": "assets/images/signs/a34.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 13, A 34",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "a35",
+    "officialCode": "A 35",
+    "name": "Farlig rabat",
+    "elementType": "trafficSign",
+    "categoryId": "warning",
+    "categoryName": "Advarselstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen advarer om en vejkant eller rabat, som kan være farlig at køre ud i.",
+    "shortMeaning": "Advarsel om farlig rabat.",
+    "detailedMeaning": "Tavlen angiver en farlig rabat. Årsagen kan angives på undertavle, for eksempel »Blød rabat« eller »Høj kant«. Tavlen kan spejlvendes efter behov.",
+    "driverAction": "Hold en sikker placering på kørebanen og undgå at køre ud i rabatten.",
+    "exceptions": [
+      "Årsagen kan angives på undertavle.",
+      "Tavlen kan spejlvendes efter behov."
+    ],
+    "commonMistakes": [
+      "At køre for tæt på rabatten.",
+      "At forsøge en hurtig tilbagekørsel på vejen efter at være kommet ud i en blød rabat."
+    ],
+    "relatedElements": [],
+    "imageFile": "assets/images/signs/a35.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 13, A 35",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "a36",
+    "officialCode": "A 36",
+    "name": "Bump",
+    "elementType": "trafficSign",
+    "categoryId": "warning",
+    "categoryName": "Advarselstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen advarer om et hastighedsdæmpende bump.",
+    "shortMeaning": "Advarsel om hastighedsdæmpende bump.",
+    "detailedMeaning": "Tavlen angiver et hastighedsdæmpende bump på vejen.",
+    "driverAction": "Sænk hastigheden i god tid og passér bumpet kontrolleret.",
+    "exceptions": [
+      "Hvis advarslen kun gælder cykelsti eller fortov, angives dette på undertavle."
+    ],
+    "commonMistakes": [
+      "At bremse hårdt lige foran bumpet.",
+      "At passere bumpet med for høj hastighed."
+    ],
+    "relatedElements": [],
+    "imageFile": "assets/images/signs/a36.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 13, A 36",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "a37",
+    "officialCode": "A 37",
+    "name": "Ujævn vej",
+    "elementType": "trafficSign",
+    "categoryId": "warning",
+    "categoryName": "Advarselstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen advarer om farlige ujævnheder i kørebanen.",
+    "shortMeaning": "Advarsel om farlige ujævnheder på vejen.",
+    "detailedMeaning": "Tavlen angiver farlige ujævnheder på vejen.",
+    "driverAction": "Sænk hastigheden og hold et sikkert greb om rattet.",
+    "exceptions": [
+      "Hvis advarslen kun gælder cykelsti eller fortov, angives dette på undertavle."
+    ],
+    "commonMistakes": [
+      "At holde for høj hastighed.",
+      "At foretage pludselige styrebevægelser for at undgå ujævnheder."
+    ],
+    "relatedElements": [],
+    "imageFile": "assets/images/signs/a37.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 13, A 37",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "a38",
+    "officialCode": "A 38",
+    "name": "Lunke",
+    "elementType": "trafficSign",
+    "categoryId": "warning",
+    "categoryName": "Advarselstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen advarer om en lunke, hvor der ved kraftig regn kan samle sig vand.",
+    "shortMeaning": "Advarsel om lunke med mulig vandansamling.",
+    "detailedMeaning": "Tavlen angiver en lunke i vejen, hvor der ved kraftig nedbør kan være vand på kørebanen.",
+    "driverAction": "Sænk hastigheden og undgå pludselige bevægelser, især hvis der står vand på vejen.",
+    "exceptions": [
+      "Hvis advarslen kun gælder cykelsti eller fortov, angives dette på undertavle."
+    ],
+    "commonMistakes": [
+      "At køre hurtigt gennem stående vand.",
+      "At bremse eller styre brat i vandansamlingen."
+    ],
+    "relatedElements": [],
+    "imageFile": "assets/images/signs/a38.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 13, A 38",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "a39",
+    "officialCode": "A 39",
+    "name": "Vejarbejde",
+    "elementType": "trafficSign",
+    "categoryId": "warning",
+    "categoryName": "Advarselstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen advarer om vejarbejde og ændrede forhold på vejen.",
+    "shortMeaning": "Advarsel om vejarbejde.",
+    "detailedMeaning": "Tavlen angiver, at der er vejarbejde eller ændrede forhold på vejen.",
+    "driverAction": "Sænk hastigheden, følg midlertidig afmærkning og vær opmærksom på personale, materiel og ændrede vognbaner.",
+    "exceptions": [
+      "Hvis advarslen kun gælder cykelsti eller fortov, angives dette på undertavle."
+    ],
+    "commonMistakes": [
+      "At følge gammel permanent afmærkning i stedet for midlertidig afmærkning.",
+      "At holde for høj hastighed gennem arbejdsområdet."
+    ],
+    "relatedElements": [],
+    "imageFile": "assets/images/signs/a39.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 13, A 39",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "a41_1",
+    "officialCode": "A 41,1",
+    "name": "Højresving",
+    "elementType": "trafficSign",
+    "categoryId": "warning",
+    "categoryName": "Advarselstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen advarer om et farligt vejsving til højre.",
+    "shortMeaning": "Advarsel om farligt højresving.",
+    "detailedMeaning": "Tavlen angiver et farligt vejsving til højre. Undertavlen UA 41 kan angive den hastighed, som svinget normalt kan gennemkøres med.",
+    "driverAction": "Sænk hastigheden før svinget og hold en stabil placering i egen bane.",
+    "exceptions": [
+      "UA 41 kan angive en passende gennemkørselshastighed under normale forhold."
+    ],
+    "commonMistakes": [
+      "At bremse hårdt midt i svinget.",
+      "At skære svinget og komme tæt på modkørende bane."
+    ],
+    "relatedElements": [
+      {
+        "id": "a41_2",
+        "relationType": "oppositeMeaning",
+        "explanation": "A 41,2 advarer om farligt venstresving.",
+        "sourceReferences": []
+      }
+    ],
+    "imageFile": "assets/images/signs/a41_1.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 13, A 41,1",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "a41_2",
+    "officialCode": "A 41,2",
+    "name": "Venstresving",
+    "elementType": "trafficSign",
+    "categoryId": "warning",
+    "categoryName": "Advarselstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen advarer om et farligt vejsving til venstre.",
+    "shortMeaning": "Advarsel om farligt venstresving.",
+    "detailedMeaning": "Tavlen angiver et farligt vejsving til venstre. Undertavlen UA 41 kan angive den hastighed, som svinget normalt kan gennemkøres med.",
+    "driverAction": "Sænk hastigheden før svinget og hold en stabil placering i egen bane.",
+    "exceptions": [
+      "UA 41 kan angive en passende gennemkørselshastighed under normale forhold."
+    ],
+    "commonMistakes": [
+      "At bremse hårdt midt i svinget.",
+      "At skære svinget og komme tæt på modkørende bane."
+    ],
+    "relatedElements": [
+      {
+        "id": "a41_1",
+        "relationType": "oppositeMeaning",
+        "explanation": "A 41,1 advarer om farligt højresving.",
+        "sourceReferences": []
+      }
+    ],
+    "imageFile": "assets/images/signs/a41_2.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 13, A 41,2",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "a42_1",
+    "officialCode": "A 42,1",
+    "name": "Flere sving, det første til højre",
+    "elementType": "trafficSign",
+    "categoryId": "warning",
+    "categoryName": "Advarselstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen advarer om flere farlige sving, hvor det første går til højre.",
+    "shortMeaning": "Flere farlige sving, det første til højre.",
+    "detailedMeaning": "Tavlen angiver flere farlige vejsving, hvor det første går til højre. Ved mere end to sving kan strækningens længde eller antallet af sving angives på undertavle.",
+    "driverAction": "Sænk hastigheden før det første sving og vær forberedt på flere sving i træk.",
+    "exceptions": [
+      "Ved mere end to sving kan længde eller antal angives på undertavle."
+    ],
+    "commonMistakes": [
+      "At accelerere for tidligt efter det første sving.",
+      "At overse undertavlens angivelse af længde eller antal sving."
+    ],
+    "relatedElements": [
+      {
+        "id": "a42_2",
+        "relationType": "oppositeMeaning",
+        "explanation": "A 42,2 viser flere sving med det første til venstre.",
+        "sourceReferences": []
+      }
+    ],
+    "imageFile": "assets/images/signs/a42_1.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 13, A 42,1",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "a42_2",
+    "officialCode": "A 42,2",
+    "name": "Flere sving, det første til venstre",
+    "elementType": "trafficSign",
+    "categoryId": "warning",
+    "categoryName": "Advarselstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen advarer om flere farlige sving, hvor det første går til venstre.",
+    "shortMeaning": "Flere farlige sving, det første til venstre.",
+    "detailedMeaning": "Tavlen angiver flere farlige vejsving, hvor det første går til venstre. Ved mere end to sving kan strækningens længde eller antallet af sving angives på undertavle.",
+    "driverAction": "Sænk hastigheden før det første sving og vær forberedt på flere sving i træk.",
+    "exceptions": [
+      "Ved mere end to sving kan længde eller antal angives på undertavle."
+    ],
+    "commonMistakes": [
+      "At accelerere for tidligt efter det første sving.",
+      "At overse undertavlens angivelse af længde eller antal sving."
+    ],
+    "relatedElements": [
+      {
+        "id": "a42_1",
+        "relationType": "oppositeMeaning",
+        "explanation": "A 42,1 viser flere sving med det første til højre.",
+        "sourceReferences": []
+      }
+    ],
+    "imageFile": "assets/images/signs/a42_2.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 13, A 42,2",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "a43_1",
+    "officialCode": "A 43,1",
+    "name": "Indsnævret vej",
+    "elementType": "trafficSign",
+    "categoryId": "warning",
+    "categoryName": "Advarselstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen advarer om, at vejen indsnævres fra begge sider.",
+    "shortMeaning": "Vejen indsnævres fra begge sider.",
+    "detailedMeaning": "Tavlen angiver, at vejen bliver smallere. Undertavlen UA 43,1 kan angive en 2 minus 1-vej, og UA 43 kan angive den frie bredde.",
+    "driverAction": "Sænk hastigheden, hold en sikker placering og vær opmærksom på modkørende.",
+    "exceptions": [
+      "Hvis advarslen kun gælder cykelsti, angives dette på undertavle.",
+      "UA 43 kan angive fri bredde."
+    ],
+    "commonMistakes": [
+      "At fortsætte med uændret hastighed.",
+      "At overse modkørende på den smallere strækning."
+    ],
+    "relatedElements": [
+      {
+        "id": "a43_2",
+        "relationType": "sameCategory",
+        "explanation": "A 43,2 viser indsnævring i venstre side.",
+        "sourceReferences": []
+      },
+      {
+        "id": "a43_3",
+        "relationType": "sameCategory",
+        "explanation": "A 43,3 viser indsnævring i højre side.",
+        "sourceReferences": []
+      }
+    ],
+    "imageFile": "assets/images/signs/a43_1.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 13, A 43,1",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "a43_2",
+    "officialCode": "A 43,2",
+    "name": "Indsnævret vej i venstre side",
+    "elementType": "trafficSign",
+    "categoryId": "warning",
+    "categoryName": "Advarselstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen advarer om indsnævring i vejens venstre side.",
+    "shortMeaning": "Vejen indsnævres i venstre side.",
+    "detailedMeaning": "Tavlen angiver, at vejen bliver smallere i venstre side.",
+    "driverAction": "Tilpas hastigheden og placeringen i egen bane, og vær opmærksom på modkørende og den smallere vej.",
+    "exceptions": [
+      "Hvis advarslen kun gælder cykelsti, angives dette på undertavle.",
+      "UA 43 kan angive fri bredde."
+    ],
+    "commonMistakes": [
+      "At reagere for sent på indsnævringen.",
+      "At overse modkørende trafik."
+    ],
+    "relatedElements": [
+      {
+        "id": "a43_1",
+        "relationType": "sameCategory",
+        "explanation": "A 43,1 viser indsnævring fra begge sider.",
+        "sourceReferences": []
+      }
+    ],
+    "imageFile": "assets/images/signs/a43_2.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 13, A 43,2",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "a43_3",
+    "officialCode": "A 43,3",
+    "name": "Indsnævret vej i højre side",
+    "elementType": "trafficSign",
+    "categoryId": "warning",
+    "categoryName": "Advarselstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen advarer om indsnævring i vejens højre side.",
+    "shortMeaning": "Vejen indsnævres i højre side.",
+    "detailedMeaning": "Tavlen angiver, at vejen bliver smallere i højre side.",
+    "driverAction": "Tilpas hastigheden og placeringen i egen bane, og vær opmærksom på modkørende og den smallere vej.",
+    "exceptions": [
+      "Hvis advarslen kun gælder cykelsti, angives dette på undertavle.",
+      "UA 43 kan angive fri bredde."
+    ],
+    "commonMistakes": [
+      "At reagere for sent på indsnævringen.",
+      "At trække for langt mod midten uden at orientere sig."
+    ],
+    "relatedElements": [
+      {
+        "id": "a43_1",
+        "relationType": "sameCategory",
+        "explanation": "A 43,1 viser indsnævring fra begge sider.",
+        "sourceReferences": []
+      }
+    ],
+    "imageFile": "assets/images/signs/a43_3.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 13, A 43,3",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "a44",
+    "officialCode": "A 44",
+    "name": "Tunnel",
+    "elementType": "trafficSign",
+    "categoryId": "warning",
+    "categoryName": "Advarselstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen advarer om en tunnel forude.",
+    "shortMeaning": "Advarsel om tunnel.",
+    "detailedMeaning": "Tavlen angiver en tunnel forude. Tunnelens navn kan anføres på undertavle.",
+    "driverAction": "Tilpas hastigheden, hold afstand og sørg for, at køretøjets lys er korrekt indstillet.",
+    "exceptions": [
+      "Tunnelens navn kan stå på undertavle."
+    ],
+    "commonMistakes": [
+      "At køre for tæt på forankørende.",
+      "At reagere for sent på ændrede lysforhold."
+    ],
+    "relatedElements": [],
+    "imageFile": "assets/images/signs/a44.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 13, A 44",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "a46_1",
+    "officialCode": "A 46,1",
+    "name": "Stejl nedkørsel",
+    "elementType": "trafficSign",
+    "categoryId": "warning",
+    "categoryName": "Advarselstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen advarer om en stejl nedkørsel.",
+    "shortMeaning": "Advarsel om stejl nedkørsel.",
+    "detailedMeaning": "Tavlen angiver en stejl nedkørsel. Tallet på tavlen angiver den maksimale hældning.",
+    "driverAction": "Vælg et passende lavt gear før nedkørslen, hold afstand og undgå langvarig hård bremsning.",
+    "exceptions": [],
+    "commonMistakes": [
+      "At vælge for højt gear.",
+      "At bremse konstant og risikere varme bremser."
+    ],
+    "relatedElements": [
+      {
+        "id": "a46_2",
+        "relationType": "oppositeMeaning",
+        "explanation": "A 46,2 advarer om stejl stigning.",
+        "sourceReferences": []
+      }
+    ],
+    "imageFile": "assets/images/signs/a46_1.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 13, A 46,1",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "a46_2",
+    "officialCode": "A 46,2",
+    "name": "Stejl stigning",
+    "elementType": "trafficSign",
+    "categoryId": "warning",
+    "categoryName": "Advarselstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen advarer om en stejl stigning.",
+    "shortMeaning": "Advarsel om stejl stigning.",
+    "detailedMeaning": "Tavlen angiver en stejl stigning. Tallet på tavlen angiver den maksimale hældning.",
+    "driverAction": "Vælg et passende gear i god tid og hold tilstrækkelig afstand til forankørende.",
+    "exceptions": [],
+    "commonMistakes": [
+      "At skifte gear for sent.",
+      "At køre for tæt på langsommere køretøjer."
+    ],
+    "relatedElements": [
+      {
+        "id": "a46_1",
+        "relationType": "oppositeMeaning",
+        "explanation": "A 46,1 advarer om stejl nedkørsel.",
+        "sourceReferences": []
+      }
+    ],
+    "imageFile": "assets/images/signs/a46_2.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 13, A 46,2",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  }
+]

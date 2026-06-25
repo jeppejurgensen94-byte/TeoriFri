@@ -1,0 +1,362 @@
+[
+  {
+    "id": "a11",
+    "officialCode": "A 11",
+    "name": "Farligt vejkryds, hvor den krydsende trafik har ubetinget vigepligt",
+    "elementType": "trafficSign",
+    "categoryId": "warning",
+    "categoryName": "Advarselstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen advarer om et vejkryds, hvor den krydsende trafik har ubetinget vigepligt.",
+    "shortMeaning": "Advarsel om et farligt vejkryds, hvor den krydsende trafik har ubetinget vigepligt.",
+    "detailedMeaning": "Tavlen angiver et farligt vejkryds, hvor den krydsende trafik har ubetinget vigepligt. Hvis der kun er vejtilslutning i én side, kan dette fremgå af symbolet.",
+    "driverAction": "Nedsæt hastigheden og orientér dig grundigt. Regn ikke med, at andre altid overholder deres vigepligt.",
+    "exceptions": [],
+    "commonMistakes": [
+      "At tro, at tavlen giver en ubetinget ret til at fortsætte uden at orientere sig.",
+      "At overse, at symbolet kan vise vejtilslutning fra kun én side."
+    ],
+    "relatedElements": [],
+    "imageFile": "assets/images/signs/a11.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 13, A 11",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "a16",
+    "officialCode": "A 16",
+    "name": "Rundkørsel",
+    "elementType": "trafficSign",
+    "categoryId": "warning",
+    "categoryName": "Advarselstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen advarer om en rundkørsel forude.",
+    "shortMeaning": "Advarsel om rundkørsel.",
+    "detailedMeaning": "Tavlen angiver, at der er en rundkørsel forude.",
+    "driverAction": "Nedsæt hastigheden, orientér dig og følg de vigepligtstavler og andre anvisninger, der er opsat ved indkørslen.",
+    "exceptions": [],
+    "commonMistakes": [
+      "At tro, at A 16 i sig selv fastlægger vigepligten.",
+      "At køre for hurtigt frem mod rundkørslen."
+    ],
+    "relatedElements": [
+      {
+        "id": "b11",
+        "relationType": "educationalRelation",
+        "explanation": "B 11 bruges ofte ved indkørslen til en rundkørsel og fastlægger vigepligten.",
+        "sourceReferences": []
+      }
+    ],
+    "imageFile": "assets/images/signs/a16.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 13, A 16",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "a17",
+    "officialCode": "A 17",
+    "name": "Fodgængerfelt",
+    "elementType": "trafficSign",
+    "categoryId": "warning",
+    "categoryName": "Advarselstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen advarer om et fodgængerfelt eller, sammen med undertavlen Gågade, en krydsende gågade.",
+    "shortMeaning": "Advarsel om fodgængerfelt.",
+    "detailedMeaning": "Tavlen angiver et fodgængerfelt forude. Sammen med en undertavle med teksten »Gågade« angiver den en krydsende gågade.",
+    "driverAction": "Nedsæt hastigheden, se efter fodgængere og vær klar til at standse.",
+    "exceptions": [
+      "Sammen med undertavlen »Gågade« angiver tavlen en krydsende gågade."
+    ],
+    "commonMistakes": [
+      "At fokusere på tavlen og overse fodgængere tæt ved feltet.",
+      "At køre for hurtigt frem mod fodgængerfeltet."
+    ],
+    "relatedElements": [],
+    "imageFile": "assets/images/signs/a17.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 13, A 17",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "a18",
+    "officialCode": "A 18",
+    "name": "Modkørende færdsel",
+    "elementType": "trafficSign",
+    "categoryId": "warning",
+    "categoryName": "Advarselstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen advarer om modkørende færdsel forude.",
+    "shortMeaning": "Advarsel om modkørende færdsel.",
+    "detailedMeaning": "Tavlen angiver, at der er modkørende færdsel forude. Den kan også opsættes ved begyndelsen af en strækning med modkørende færdsel.",
+    "driverAction": "Hold til højre, tilpas hastigheden og vær opmærksom på modkørende trafik.",
+    "exceptions": [],
+    "commonMistakes": [
+      "At fortsætte som om vejen stadig er ensrettet.",
+      "At placere sig for langt mod venstre."
+    ],
+    "relatedElements": [],
+    "imageFile": "assets/images/signs/a18.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 13, A 18",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "a19",
+    "officialCode": "A 19",
+    "name": "Lyssignal",
+    "elementType": "trafficSign",
+    "categoryId": "warning",
+    "categoryName": "Advarselstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen advarer om et lyssignal forude.",
+    "shortMeaning": "Advarsel om lyssignal.",
+    "detailedMeaning": "Tavlen angiver, at der er et lyssignal forude.",
+    "driverAction": "Vær opmærksom på signalet og tilpas hastigheden, så du kan standse sikkert.",
+    "exceptions": [],
+    "commonMistakes": [
+      "At opdage signalet for sent.",
+      "At køre for hurtigt frem mod et muligt rødt signal."
+    ],
+    "relatedElements": [],
+    "imageFile": "assets/images/signs/a19.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 13, A 19",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "a20",
+    "officialCode": "A 20",
+    "name": "Kø",
+    "elementType": "trafficSign",
+    "categoryId": "warning",
+    "categoryName": "Advarselstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen advarer om særlig risiko for kødannelse.",
+    "shortMeaning": "Særlig risiko for kødannelse.",
+    "detailedMeaning": "Tavlen angiver særlig risiko for kødannelse.",
+    "driverAction": "Hold god afstand, sænk hastigheden og vær klar til at bremse.",
+    "exceptions": [],
+    "commonMistakes": [
+      "At holde for kort afstand.",
+      "At overse en hurtigt opstået kø."
+    ],
+    "relatedElements": [],
+    "imageFile": "assets/images/signs/a20.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 13, A 20",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "a21",
+    "officialCode": "A 21",
+    "name": "Cyklister",
+    "elementType": "trafficSign",
+    "categoryId": "warning",
+    "categoryName": "Advarselstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen advarer om særlig fare, hvor cyklister og førere af lille knallert kører ud på eller krydser kørebanen.",
+    "shortMeaning": "Advarsel om cyklister og førere af lille knallert.",
+    "detailedMeaning": "Tavlen angiver særlig fare, hvor cyklister og førere af lille knallert kører ud på kørebanen eller krydser den.",
+    "driverAction": "Sænk hastigheden, orientér dig til begge sider og vær klar til at standse.",
+    "exceptions": [],
+    "commonMistakes": [
+      "At se efter biler, men overse cyklister og lille knallert.",
+      "At undervurdere deres hastighed."
+    ],
+    "relatedElements": [],
+    "imageFile": "assets/images/signs/a21.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 13, A 21",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "a22",
+    "officialCode": "A 22",
+    "name": "Børn",
+    "elementType": "trafficSign",
+    "categoryId": "warning",
+    "categoryName": "Advarselstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen advarer om særlig fare, hvor børn færdes på eller ved vejen.",
+    "shortMeaning": "Advarsel om børn på eller ved vejen.",
+    "detailedMeaning": "Tavlen angiver særlig fare, hvor børn færdes på eller ved vejen. Den kan også bruges, hvor en skolepatrulje arbejder.",
+    "driverAction": "Sænk hastigheden væsentligt og vær klar til at standse, fordi børn kan handle uforudsigeligt.",
+    "exceptions": [
+      "Ved skolepatrulje suppleres tavlen med undertavlen »Skole«.",
+      "På steder uden signalanlæg eller fodgængerfelt opsættes to skiftevis blinkende gule lys over tavlen."
+    ],
+    "commonMistakes": [
+      "At holde samme hastighed som normalt.",
+      "At fokusere kun på det nærmeste barn og overse andre."
+    ],
+    "relatedElements": [],
+    "imageFile": "assets/images/signs/a22.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 13, A 22",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "a23",
+    "officialCode": "A 23",
+    "name": "Ridende",
+    "elementType": "trafficSign",
+    "categoryId": "warning",
+    "categoryName": "Advarselstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen advarer om ridende trafikanter.",
+    "shortMeaning": "Advarsel om ridende.",
+    "detailedMeaning": "Tavlen angiver fare for ridende trafikanter på eller ved vejen.",
+    "driverAction": "Sænk hastigheden, hold god afstand og undgå pludselig støj eller kørsel tæt forbi hesten.",
+    "exceptions": [],
+    "commonMistakes": [
+      "At passere for tæt eller for hurtigt.",
+      "At bruge hornet tæt ved hesten."
+    ],
+    "relatedElements": [],
+    "imageFile": "assets/images/signs/a23.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 13, A 23",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "a26",
+    "officialCode": "A 26",
+    "name": "Dyrevildt",
+    "elementType": "trafficSign",
+    "categoryId": "warning",
+    "categoryName": "Advarselstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen advarer om risiko for dyrevildt på eller ved vejen.",
+    "shortMeaning": "Advarsel om dyrevildt.",
+    "detailedMeaning": "Tavlen angiver fare for dyrevildt. Symbolet kan vise andre dyr end det normalt viste dyr.",
+    "driverAction": "Sænk hastigheden og hold øje med vejkanter og omgivelser, især i mørke og ved daggry eller skumring.",
+    "exceptions": [
+      "Symbolet på tavlen kan vise andre dyr."
+    ],
+    "commonMistakes": [
+      "At fokusere kun på kørebanen og ikke på vejkanterne.",
+      "At tro, at faren kun gælder det dyr, der er vist."
+    ],
+    "relatedElements": [
+      {
+        "id": "a27",
+        "relationType": "sameCategory",
+        "explanation": "A 27 advarer om kreaturer, mens A 26 advarer om dyrevildt.",
+        "sourceReferences": []
+      }
+    ],
+    "imageFile": "assets/images/signs/a26.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 13, A 26",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "a27",
+    "officialCode": "A 27",
+    "name": "Kreaturer",
+    "elementType": "trafficSign",
+    "categoryId": "warning",
+    "categoryName": "Advarselstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen advarer om risiko for kreaturer på eller ved vejen.",
+    "shortMeaning": "Advarsel om kreaturer.",
+    "detailedMeaning": "Tavlen angiver fare for kreaturer. Symbolet kan vise andre dyr.",
+    "driverAction": "Sænk hastigheden og vær klar til at standse, hvis dyr befinder sig på eller nær vejen.",
+    "exceptions": [
+      "Symbolet på tavlen kan vise andre dyr."
+    ],
+    "commonMistakes": [
+      "At passere dyr for hurtigt.",
+      "At tro, at faren kun gælder det dyr, der er vist."
+    ],
+    "relatedElements": [
+      {
+        "id": "a26",
+        "relationType": "sameCategory",
+        "explanation": "A 26 advarer om dyrevildt, mens A 27 advarer om kreaturer.",
+        "sourceReferences": []
+      }
+    ],
+    "imageFile": "assets/images/signs/a27.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 13, A 27",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  }
+]

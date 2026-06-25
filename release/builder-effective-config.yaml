@@ -1,0 +1,26 @@
+directories:
+  output: release
+  buildResources: build
+appId: dk.jeppe.teorifri
+productName: TeoriFri
+asar: true
+files:
+  - filter:
+      - main.js
+      - index.html
+      - package.json
+win:
+  target:
+    - target: nsis
+      arch:
+        - x64
+    - target: portable
+      arch:
+        - x64
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: TeoriFri
+electronVersion: 41.9.0

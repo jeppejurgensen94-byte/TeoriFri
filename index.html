@@ -1,0 +1,1431 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TeoriFri</title>
+<style>
+:root{--app-bg:#fcf9fd;--surface:#ffffff;--surface-soft:#f8f0fa;--pink:#e8b6dc;--purple:#ad7acb;--purple-dark:#8355a3;--purple-light:#c9a0e0;--text-primary:#181522;--text-secondary:#716a78;--text-tertiary:#a098a8;--border:#ece5ee;--success:#69b58a;--success-bg:#e8f5ed;--warning:#f0a050;--warning-bg:#fef3e2;--danger:#e07070;--danger-bg:#fde8e8;--info:#6ba3d6;--info-bg:#e3f0fa;--sidebar-width:230px;--right-panel-width:280px;--radius:16px;--radius-sm:12px;--radius-xs:8px;--shadow:0 2px 12px rgba(130,80,160,0.06);--shadow-lg:0 4px 24px rgba(130,80,160,0.10);--shadow-hover:0 8px 32px rgba(130,80,160,0.14);--transition:0.25s cubic-bezier(.4,0,.2,1);}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{font-size:14px;overflow:hidden;height:100%;}
+body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--app-bg);color:var(--text-primary);height:100vh;display:flex;overflow:hidden;transition:background var(--transition),color var(--transition);}
+body.dark-theme{--app-bg:#1a1525;--surface:#262035;--surface-soft:#302845;--text-primary:#f0ecf5;--text-secondary:#a89fb5;--text-tertiary:#7a7088;--border:#4a3f58;--shadow:0 2px 12px rgba(0,0,0,0.3);--shadow-lg:0 4px 24px rgba(0,0,0,0.4);--shadow-hover:0 8px 32px rgba(0,0,0,0.5);--success-bg:#1a3525;--warning-bg:#2a2015;--danger-bg:#2a1518;--info-bg:#152030;}
+body.large-text{font-size:16px;}
+body.reduced-motion *,body.reduced-motion *::before,body.reduced-motion *::after{animation-duration:0.01ms!important;transition-duration:0.01ms!important;}
+button{font-family:inherit;cursor:pointer;border:none;background:none;font-size:inherit;color:inherit;}
+input,select{font-family:inherit;font-size:inherit;}
+a{text-decoration:none;color:inherit;}
+::-webkit-scrollbar{width:6px;}::-webkit-scrollbar-track{background:transparent;}::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px;}
+
+.app-layout{display:flex;width:100%;height:100%;}
+
+.sidebar{width:var(--sidebar-width);min-width:var(--sidebar-width);height:100%;background:var(--surface);border-right:1px solid var(--border);display:flex;flex-direction:column;z-index:100;overflow-y:auto;overflow-x:hidden;flex-shrink:0;transition:all var(--transition);}
+.sidebar.collapsed{width:0;min-width:0;border:none;overflow:hidden;transform:translateX(-100%);}
+.sidebar-logo{display:flex;align-items:center;gap:10px;padding:20px 18px 16px;border-bottom:1px solid var(--border);flex-shrink:0;}
+.sidebar-logo svg{width:34px;height:34px;flex-shrink:0;}
+.sidebar-logo span{font-size:1.22em;font-weight:700;}
+.sidebar-nav{flex:1;padding:10px 8px;}
+.nav-section-label{font-size:0.68em;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-tertiary);padding:14px 14px 6px;}
+.nav-item{display:flex;align-items:center;gap:10px;padding:9px 12px;border-radius:var(--radius-sm);color:var(--text-secondary);font-size:0.92em;font-weight:500;cursor:pointer;transition:all var(--transition);margin-bottom:1px;position:relative;}
+.nav-item:hover{background:var(--surface-soft);color:var(--text-primary);}
+.nav-item.active{background:linear-gradient(135deg,#f3e4f8,#fce4f6);color:var(--purple-dark);font-weight:600;}
+.nav-item.active::before{content:'';position:absolute;left:0;top:50%;transform:translateY(-50%);width:3px;height:60%;background:var(--purple);border-radius:2px;}
+.nav-item svg{width:20px;height:20px;flex-shrink:0;opacity:0.7;}
+.nav-item.active svg{opacity:1;color:var(--purple);}
+.sidebar-footer{padding:12px 8px;border-top:1px solid var(--border);flex-shrink:0;}
+.sidebar-card{background:var(--surface-soft);border-radius:var(--radius);padding:14px;margin-bottom:10px;}
+.sidebar-card h4{font-size:0.8em;font-weight:600;margin-bottom:5px;}
+.sidebar-card p{font-size:0.76em;color:var(--text-secondary);line-height:1.45;margin-bottom:8px;}
+.btn-small{display:inline-flex;align-items:center;gap:5px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-xs);padding:5px 11px;font-size:0.76em;font-weight:600;color:var(--purple-dark);transition:all var(--transition);}
+.btn-small:hover{background:var(--purple);color:#fff;border-color:var(--purple);}
+.progress-section{padding:14px 16px;}
+.progress-label{font-size:0.78em;font-weight:600;margin-bottom:5px;}
+.progress-bar{height:8px;background:var(--border);border-radius:4px;overflow:hidden;margin-bottom:6px;}
+.progress-fill{height:100%;background:linear-gradient(90deg,var(--pink),var(--purple));border-radius:4px;transition:width 0.6s ease;}
+.progress-link{font-size:0.74em;color:var(--purple);font-weight:600;cursor:pointer;display:inline-flex;align-items:center;gap:3px;}
+
+.main-area{flex:1;display:flex;flex-direction:column;overflow:hidden;min-width:0;}
+.top-bar{display:flex;align-items:center;justify-content:space-between;padding:16px 32px;background:var(--surface);border-bottom:1px solid var(--border);min-height:62px;gap:12px;flex-shrink:0;}
+.top-bar-left{display:flex;align-items:center;gap:12px;}
+.hamburger-btn{display:none;width:38px;height:38px;align-items:center;justify-content:center;border-radius:var(--radius-xs);background:var(--surface-soft);transition:all var(--transition);}
+.hamburger-btn:hover{background:var(--border);}
+.hamburger-btn svg{width:20px;height:20px;}
+.page-title{font-size:1.55em;font-weight:700;}
+.top-bar-right{display:flex;align-items:center;gap:10px;}
+.top-badge{background:var(--success);color:#fff;font-size:0.7em;font-weight:700;padding:4px 11px;border-radius:20px;}
+.vehicle-select{position:relative;display:flex;align-items:center;gap:6px;background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--radius-sm);padding:7px 14px;font-size:0.84em;font-weight:600;cursor:pointer;transition:all var(--transition);}
+.vehicle-select:hover{border-color:var(--purple);}
+.vehicle-select svg{width:20px;height:20px;}
+.vehicle-dropdown{display:none;position:absolute;top:calc(100% + 6px);right:0;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm);box-shadow:var(--shadow-lg);overflow:hidden;z-index:50;min-width:200px;}
+.vehicle-dropdown.show{display:block;}
+.vehicle-option{padding:10px 14px;font-size:0.86em;cursor:pointer;transition:all var(--transition);display:flex;align-items:center;gap:8px;}
+.vehicle-option:hover{background:var(--surface-soft);}
+.vehicle-option.active{color:var(--purple-dark);font-weight:600;}
+.vehicle-option.disabled{opacity:0.4;cursor:not-allowed;}
+.badge-soon{font-size:0.7em;background:var(--border);padding:2px 8px;border-radius:10px;color:var(--text-tertiary);}
+.toggle-panel-btn{display:flex;align-items:center;gap:6px;background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--radius-sm);padding:7px 13px;font-size:0.8em;font-weight:600;color:var(--text-secondary);transition:all var(--transition);}
+.toggle-panel-btn:hover{background:var(--border);color:var(--text-primary);}
+.toggle-panel-btn svg{width:17px;height:17px;}
+
+.content-wrapper{flex:1;display:flex;overflow:hidden;}
+.content-area{flex:1;overflow-y:auto;padding:28px 32px;}
+
+.right-panel{width:var(--right-panel-width);min-width:var(--right-panel-width);height:100%;background:var(--surface);border-left:1px solid var(--border);overflow-y:auto;flex-shrink:0;transition:all var(--transition);padding:18px 14px;display:flex;flex-direction:column;gap:14px;}
+.right-panel.hidden{width:0;min-width:0;opacity:0;padding:0;overflow:hidden;border:none;}
+.right-card{background:var(--surface-soft);border-radius:var(--radius);padding:16px;}
+.right-card h4{font-size:0.86em;font-weight:700;margin-bottom:5px;}
+.right-card p{font-size:0.77em;color:var(--text-secondary);line-height:1.45;margin-bottom:8px;}
+.btn-tip{display:inline-flex;align-items:center;gap:4px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-xs);padding:5px 12px;font-size:0.76em;font-weight:600;color:var(--purple-dark);transition:all var(--transition);}
+.btn-tip:hover{background:var(--purple);color:#fff;border-color:var(--purple);}
+.btn-tip svg{width:13px;height:13px;}
+.streak-days{display:flex;gap:5px;margin-top:6px;}
+.streak-day{width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:0.68em;font-weight:700;}
+.streak-day.filled{background:var(--purple);color:#fff;}
+.streak-day.empty{background:var(--border);color:var(--text-tertiary);}
+.streak-info{font-size:0.82em;font-weight:700;margin-top:6px;}
+.streak-sub{font-size:0.7em;color:var(--text-secondary);margin-top:2px;}
+.goal-label{font-size:0.8em;font-weight:600;margin-bottom:5px;}
+.goal-bar{height:10px;background:var(--border);border-radius:5px;overflow:hidden;}
+.goal-bar-fill{height:100%;background:linear-gradient(90deg,var(--success),#88d4a0);border-radius:5px;transition:width 0.6s ease;}
+.offline-badge{display:inline-flex;align-items:center;gap:5px;font-size:0.8em;font-weight:600;color:var(--success);background:rgba(105,181,138,0.12);padding:5px 12px;border-radius:var(--radius-xs);}
+.offline-badge svg{width:15px;height:15px;}
+
+.page-view{display:none;}
+.page-view.active{display:block !important;}
+
+.welcome-card{display:flex;align-items:center;gap:16px;background:var(--surface);border-radius:var(--radius);padding:20px 24px;margin-bottom:20px;box-shadow:var(--shadow);border:1px solid var(--border);}
+.welcome-avatar{width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,var(--pink),var(--purple));display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.welcome-text h3{font-size:1.02em;font-weight:600;margin-bottom:3px;}
+.welcome-text p{font-size:0.86em;color:var(--text-secondary);}
+.section-card{background:var(--surface);border-radius:var(--radius);padding:20px 22px;margin-bottom:18px;box-shadow:var(--shadow);border:1px solid var(--border);transition:all var(--transition);}
+.section-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;flex-wrap:wrap;gap:8px;}
+.section-header-left{display:flex;align-items:center;gap:11px;}
+.section-number{width:34px;height:34px;border-radius:50%;background:var(--surface-soft);border:2px solid var(--pink);display:flex;align-items:center;justify-content:center;font-size:0.88em;font-weight:700;color:var(--purple-dark);flex-shrink:0;}
+.section-icon{width:26px;height:26px;flex-shrink:0;color:var(--purple);}
+.section-header h3{font-size:1.02em;font-weight:700;}
+.section-header p{font-size:0.8em;color:var(--text-secondary);margin-top:1px;}
+.btn-link{display:inline-flex;align-items:center;gap:4px;font-size:0.8em;font-weight:600;color:var(--purple);padding:5px 12px;border-radius:var(--radius-xs);background:var(--surface-soft);border:1px solid var(--border);transition:all var(--transition);cursor:pointer;}
+.btn-link:hover{background:var(--purple);color:#fff;border-color:var(--purple);}
+.btn-link svg{width:13px;height:13px;}
+.lesson-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:12px;margin-top:10px;}
+.lesson-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm);overflow:hidden;transition:all var(--transition);cursor:pointer;position:relative;display:flex;flex-direction:column;}
+.lesson-card:hover{border-color:var(--pink);box-shadow:var(--shadow-hover);transform:translateY(-2px);}
+.lesson-card-top{display:flex;min-height:100px;}
+.lesson-card-img{width:130px;min-height:100px;background:var(--surface-soft);flex-shrink:0;display:flex;align-items:center;justify-content:center;overflow:hidden;}
+.lesson-card-body{flex:1;padding:12px 14px;display:flex;flex-direction:column;justify-content:space-between;}
+.lesson-card-body h4{font-size:0.9em;font-weight:600;margin-bottom:6px;}
+.lesson-card-status{display:inline-flex;align-items:center;gap:5px;font-size:0.73em;color:var(--text-secondary);background:var(--surface-soft);padding:3px 9px;border-radius:10px;font-weight:500;width:fit-content;}
+.lesson-card-status .dot{width:7px;height:7px;border-radius:50%;background:var(--border);}
+.lesson-card-status.started .dot{background:var(--purple);}
+.lesson-card-status.started{color:var(--purple-dark);}
+.lesson-card-status.completed .dot{background:var(--success);}
+.lesson-card-status.completed{color:var(--success);}
+.action-btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;width:100%;padding:11px 18px;border-radius:var(--radius-sm);font-size:0.9em;font-weight:600;transition:all var(--transition);margin-top:12px;}
+.action-btn.primary{background:linear-gradient(135deg,var(--purple),var(--purple-dark));color:#fff;}
+.action-btn.primary:hover{opacity:0.92;transform:translateY(-1px);box-shadow:var(--shadow-lg);}
+.action-btn.secondary{background:var(--surface-soft);border:1px solid var(--border);color:var(--purple-dark);}
+.action-btn.secondary:hover{background:var(--border);}
+
+.category-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:10px;margin-top:12px;}
+.category-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm);padding:16px;cursor:pointer;transition:all var(--transition);display:flex;flex-direction:column;gap:8px;}
+.category-card:hover{border-color:var(--pink);box-shadow:var(--shadow-hover);transform:translateY(-2px);}
+.category-card-icon{width:44px;height:44px;border-radius:var(--radius-xs);display:flex;align-items:center;justify-content:center;font-size:1.5em;background:var(--surface-soft);}
+.category-card h4{font-size:0.9em;font-weight:600;}
+.category-card p{font-size:0.75em;color:var(--text-secondary);line-height:1.35;}
+.category-card-footer{display:flex;align-items:center;justify-content:space-between;margin-top:auto;}
+.cat-status{font-size:0.72em;color:var(--text-secondary);display:flex;align-items:center;gap:4px;}
+.cat-status .dot{width:6px;height:6px;border-radius:50%;background:var(--border);}
+.cat-status.started .dot{background:var(--purple);}
+.cat-status.completed .dot{background:var(--success);}
+.cat-progress{font-size:0.72em;color:var(--text-tertiary);font-weight:600;}
+.category-card .open-btn{margin-top:4px;display:inline-flex;align-items:center;gap:4px;font-size:0.76em;font-weight:600;color:var(--purple);background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--radius-xs);padding:4px 10px;transition:all var(--transition);}
+.category-card:hover .open-btn{background:var(--purple);color:#fff;border-color:var(--purple);}
+
+.search-bar{display:flex;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm);padding:9px 14px;margin-bottom:14px;transition:border-color var(--transition);}
+.search-bar:focus-within{border-color:var(--purple);}
+.search-bar svg{width:18px;height:18px;color:var(--text-secondary);flex-shrink:0;}
+.search-bar input{flex:1;border:none;outline:none;background:transparent;font-size:0.86em;color:var(--text-primary);}
+.search-bar input::placeholder{color:var(--text-tertiary);}
+
+/* LESSON VIEWER */
+.lv-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px;flex-wrap:wrap;gap:10px;}
+.lv-header-left{display:flex;align-items:center;gap:12px;}
+.back-btn{display:inline-flex;align-items:center;gap:6px;font-size:0.84em;font-weight:600;color:var(--purple);padding:7px 14px;border-radius:var(--radius-xs);background:var(--surface-soft);border:1px solid var(--border);transition:all var(--transition);}
+.back-btn:hover{background:var(--purple);color:#fff;border-color:var(--purple);}
+.back-btn svg{width:15px;height:15px;}
+.lv-title{font-size:1.25em;font-weight:700;}
+.lv-meta{display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
+.lv-badge{font-size:0.74em;padding:3px 10px;border-radius:10px;font-weight:600;}
+.lv-badge.category{background:var(--surface-soft);color:var(--purple-dark);border:1px solid var(--border);}
+.lv-badge.status{background:var(--warning-bg);color:var(--warning);}
+.lv-badge.status.completed{background:var(--success-bg);color:var(--success);}
+.lv-progress-text{font-size:0.8em;color:var(--text-secondary);font-weight:600;}
+.lv-actions{display:flex;gap:8px;}
+.lv-action-btn{width:36px;height:36px;border-radius:var(--radius-xs);display:flex;align-items:center;justify-content:center;background:var(--surface-soft);border:1px solid var(--border);transition:all var(--transition);cursor:pointer;}
+.lv-action-btn:hover{background:var(--border);}
+.lv-action-btn.active{background:var(--purple);color:#fff;border-color:var(--purple);}
+.lv-action-btn svg{width:18px;height:18px;}
+
+.media-card{background:var(--surface);border-radius:var(--radius);overflow:hidden;margin-bottom:20px;border:1px solid var(--border);box-shadow:var(--shadow);}
+.media-container{position:relative;width:100%;min-height:200px;display:flex;align-items:center;justify-content:center;overflow:hidden;background:linear-gradient(135deg,#f0e6f6,#e6f0f6);}
+.media-container svg{max-width:100%;max-height:280px;}
+.media-caption{padding:12px 16px;font-size:0.82em;color:var(--text-secondary);background:var(--surface-soft);border-top:1px solid var(--border);}
+
+.lesson-steps{display:flex;flex-direction:column;gap:14px;margin-bottom:20px;}
+.step-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm);padding:18px 20px;transition:all var(--transition);}
+.step-card.active-step{border-color:var(--purple);box-shadow:0 0 0 3px rgba(173,122,203,0.12);background:var(--surface-soft);}
+.step-header{display:flex;align-items:center;gap:10px;margin-bottom:10px;}
+.step-number{width:28px;height:28px;border-radius:50%;background:var(--surface-soft);border:2px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:0.78em;font-weight:700;color:var(--text-secondary);flex-shrink:0;}
+.step-card.active-step .step-number{background:var(--purple);color:#fff;border-color:var(--purple);}
+.step-card.completed-step .step-number{background:var(--success);color:#fff;border-color:var(--success);}
+.step-card h4{font-size:0.95em;font-weight:600;}
+.step-card p{font-size:0.85em;color:var(--text-secondary);line-height:1.55;}
+
+.rule-card{background:var(--info-bg);border:1px solid var(--info);border-radius:var(--radius-sm);padding:16px 20px;margin-bottom:16px;display:flex;align-items:flex-start;gap:12px;}
+.rule-card .rule-icon{width:32px;height:32px;border-radius:50%;background:var(--info);color:#fff;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1.1em;}
+.rule-card h4{font-size:0.88em;font-weight:700;margin-bottom:4px;}
+.rule-card p{font-size:0.84em;line-height:1.5;}
+body.dark-theme .rule-card h4{color:var(--text-primary);}
+body.dark-theme .rule-card p{color:var(--text-secondary);}
+
+.example-card{background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--radius-sm);padding:16px 20px;margin-bottom:16px;}
+.example-card h4{font-size:0.88em;font-weight:700;margin-bottom:6px;display:flex;align-items:center;gap:6px;}
+.example-card p{font-size:0.84em;color:var(--text-secondary);line-height:1.5;}
+
+.mini-question{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm);padding:20px;margin-bottom:16px;}
+.mini-question h4{font-size:0.92em;font-weight:700;margin-bottom:6px;}
+.mini-question .mq-text{font-size:0.9em;color:var(--text-secondary);margin-bottom:14px;line-height:1.4;}
+.mq-options{display:flex;flex-direction:column;gap:8px;margin-bottom:12px;}
+.mq-option{display:flex;align-items:center;gap:10px;padding:11px 14px;border-radius:var(--radius-xs);border:2px solid var(--border);cursor:pointer;transition:all var(--transition);font-size:0.86em;}
+.mq-option:hover{border-color:var(--purple);background:var(--surface-soft);}
+.mq-option.selected{border-color:var(--purple);background:rgba(173,122,203,0.1);}
+.mq-option.correct{border-color:var(--success);background:var(--success-bg);}
+.mq-option.wrong{border-color:var(--danger);background:var(--danger-bg);}
+.mq-option .radio{width:20px;height:20px;border-radius:50%;border:2px solid var(--border);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all var(--transition);}
+.mq-option.selected .radio{border-color:var(--purple);background:var(--purple);}
+.mq-option.correct .radio{border-color:var(--success);background:var(--success);}
+.mq-option.wrong .radio{border-color:var(--danger);background:var(--danger);}
+.mq-option .radio svg{width:12px;height:12px;color:#fff;opacity:0;}
+.mq-option.selected .radio svg,.mq-option.correct .radio svg{opacity:1;}
+.mq-feedback{padding:10px 14px;border-radius:var(--radius-xs);font-size:0.84em;line-height:1.45;margin-top:8px;display:none;}
+.mq-feedback.show{display:block;}
+.mq-feedback.correct{background:var(--success-bg);border:1px solid var(--success);color:#1a5a30;}
+body.dark-theme .mq-feedback.correct{color:var(--success);}
+.mq-feedback.wrong{background:var(--danger-bg);border:1px solid var(--danger);color:#8a2020;}
+body.dark-theme .mq-feedback.wrong{color:var(--danger);}
+
+.lesson-nav{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:20px;padding-top:16px;border-top:1px solid var(--border);flex-wrap:wrap;}
+.lesson-nav .btn-prev,.lesson-nav .btn-next{display:inline-flex;align-items:center;gap:6px;padding:9px 18px;border-radius:var(--radius-sm);font-size:0.86em;font-weight:600;transition:all var(--transition);}
+.lesson-nav .btn-prev{background:var(--surface-soft);border:1px solid var(--border);color:var(--text-secondary);}
+.lesson-nav .btn-prev:hover{background:var(--border);}
+.lesson-nav .btn-prev:disabled{opacity:0.3;cursor:not-allowed;}
+.lesson-nav .btn-next{background:var(--purple);color:#fff;}
+.lesson-nav .btn-next:hover{background:var(--purple-dark);}
+.btn-complete{background:var(--success);color:#fff;padding:9px 20px;border-radius:var(--radius-sm);font-size:0.86em;font-weight:600;transition:all var(--transition);display:inline-flex;align-items:center;gap:6px;}
+.btn-complete:hover{opacity:0.9;}
+
+/* TRAINING */
+.training-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;}
+.training-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm);padding:20px;cursor:pointer;transition:all var(--transition);}
+.training-card:hover{border-color:var(--pink);box-shadow:var(--shadow-hover);transform:translateY(-2px);}
+.training-card-icon{width:44px;height:44px;border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;margin-bottom:12px;font-size:1.4em;}
+.training-card h4{font-size:0.92em;font-weight:600;margin-bottom:4px;}
+.training-card p{font-size:0.78em;color:var(--text-secondary);line-height:1.4;}
+
+.quiz-area{max-width:700px;}
+.quiz-question-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:24px;margin-bottom:16px;}
+.quiz-progress{display:flex;align-items:center;gap:10px;margin-bottom:16px;}
+.quiz-progress-bar{flex:1;height:6px;background:var(--border);border-radius:3px;overflow:hidden;}
+.quiz-progress-fill{height:100%;background:linear-gradient(90deg,var(--purple),var(--pink));border-radius:3px;}
+.quiz-progress-text{font-size:0.8em;font-weight:600;color:var(--text-secondary);white-space:nowrap;}
+.quiz-question-text{font-size:1.05em;font-weight:600;margin-bottom:16px;line-height:1.45;}
+.quiz-options{display:flex;flex-direction:column;gap:8px;margin-bottom:14px;}
+.quiz-option{display:flex;align-items:center;gap:10px;padding:12px 16px;border-radius:var(--radius-sm);border:2px solid var(--border);cursor:pointer;transition:all var(--transition);font-size:0.9em;}
+.quiz-option:hover{border-color:var(--purple);background:var(--surface-soft);}
+.quiz-option.correct{border-color:var(--success);background:var(--success-bg);}
+.quiz-option.wrong{border-color:var(--danger);background:var(--danger-bg);}
+.quiz-option .radio{width:22px;height:22px;border-radius:50%;border:2px solid var(--border);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.quiz-option.correct .radio{border-color:var(--success);background:var(--success);}
+.quiz-option.wrong .radio{border-color:var(--danger);background:var(--danger);}
+.quiz-feedback{padding:12px 16px;border-radius:var(--radius-sm);font-size:0.86em;line-height:1.5;margin-top:10px;}
+.quiz-feedback.correct{background:var(--success-bg);border:1px solid var(--success);}
+.quiz-feedback.wrong{background:var(--danger-bg);border:1px solid var(--danger);}
+
+.signs-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px;}
+.sign-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px;cursor:pointer;transition:all var(--transition);text-align:center;}
+.sign-card:hover{border-color:var(--pink);box-shadow:var(--shadow-hover);transform:translateY(-2px);}
+.sign-card-img{width:80px;height:80px;margin:0 auto 10px;display:flex;align-items:center;justify-content:center;background:var(--surface-soft);border-radius:var(--radius-xs);font-size:2.2em;}
+.sign-card h4{font-size:0.82em;font-weight:600;margin-bottom:3px;}
+.sign-card p{font-size:0.72em;color:var(--text-secondary);}
+
+.stats-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px;margin-bottom:20px;}
+.stat-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm);padding:18px;text-align:center;}
+.stat-value{font-size:1.8em;font-weight:700;color:var(--purple);margin-bottom:4px;}
+.stat-label{font-size:0.78em;color:var(--text-secondary);font-weight:500;}
+.topics-list{display:flex;flex-direction:column;gap:8px;}
+.topic-item{display:flex;align-items:center;gap:10px;padding:10px 14px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-xs);}
+.topic-name{flex:1;font-size:0.86em;font-weight:600;}
+.topic-bar{width:80px;height:6px;background:var(--border);border-radius:3px;overflow:hidden;}
+.topic-bar-fill{height:100%;border-radius:3px;}
+.topic-pct{font-size:0.78em;font-weight:600;min-width:35px;text-align:right;}
+
+.settings-section{margin-bottom:24px;}
+.settings-section h3{font-size:1em;font-weight:700;margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--border);}
+.settings-grid{display:flex;flex-direction:column;gap:10px;}
+.settings-item{display:flex;align-items:center;justify-content:space-between;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px 18px;gap:14px;}
+.settings-item-left h4{font-size:0.9em;font-weight:600;margin-bottom:2px;}
+.settings-item-left p{font-size:0.76em;color:var(--text-secondary);}
+.toggle-switch{width:42px;height:22px;border-radius:11px;background:var(--border);cursor:pointer;position:relative;transition:background var(--transition);flex-shrink:0;}
+.toggle-switch.on{background:var(--purple);}
+.toggle-switch::after{content:'';position:absolute;width:18px;height:18px;border-radius:50%;background:#fff;top:2px;left:2px;transition:transform var(--transition);box-shadow:0 1px 3px rgba(0,0,0,0.15);}
+.toggle-switch.on::after{transform:translateX(20px);}
+.text-size-options{display:flex;gap:8px;}
+.text-size-btn{padding:6px 14px;border-radius:var(--radius-xs);font-size:0.82em;font-weight:600;background:var(--surface-soft);border:1px solid var(--border);color:var(--text-secondary);transition:all var(--transition);}
+.text-size-btn.active{background:var(--purple);color:#fff;border-color:var(--purple);}
+.goal-options{display:flex;gap:6px;flex-wrap:wrap;}
+.goal-btn{padding:5px 12px;border-radius:var(--radius-xs);font-size:0.78em;font-weight:600;background:var(--surface-soft);border:1px solid var(--border);color:var(--text-secondary);transition:all var(--transition);}
+.goal-btn.active{background:var(--purple);color:#fff;border-color:var(--purple);}
+.btn-danger{background:var(--danger);color:#fff;padding:8px 16px;border-radius:var(--radius-xs);font-size:0.82em;font-weight:600;}
+.btn-secondary{background:var(--surface-soft);border:1px solid var(--border);padding:8px 16px;border-radius:var(--radius-xs);font-size:0.82em;font-weight:600;color:var(--text-primary);}
+
+.mistakes-list{display:flex;flex-direction:column;gap:8px;}
+.mistake-item{display:flex;align-items:flex-start;gap:12px;padding:14px 16px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm);}
+.mistake-icon{width:36px;height:36px;border-radius:50%;background:var(--danger-bg);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.mistake-icon svg{width:18px;height:18px;color:var(--danger);}
+.mistake-content{flex:1;}
+.mistake-content h4{font-size:0.88em;font-weight:600;margin-bottom:3px;}
+.mistake-meta{display:flex;gap:8px;margin-top:4px;}
+.mistake-meta span{font-size:0.72em;padding:2px 8px;border-radius:8px;font-weight:600;}
+.mistake-meta .topic-tag{background:var(--surface-soft);color:var(--text-secondary);}
+.mistake-meta .date-tag{background:var(--warning-bg);color:var(--warning);}
+.mistake-meta .count-tag{background:var(--danger-bg);color:var(--danger);}
+.btn-retry{padding:5px 12px;border-radius:var(--radius-xs);font-size:0.76em;font-weight:600;background:var(--purple);color:#fff;}
+
+.empty-state{text-align:center;padding:50px 20px;}
+.empty-state svg{width:56px;height:56px;color:var(--purple);opacity:0.3;margin-bottom:14px;}
+.empty-state h3{font-size:1em;font-weight:600;margin-bottom:6px;}
+.empty-state p{font-size:0.86em;color:var(--text-secondary);}
+.placeholder-page{text-align:center;padding:60px 20px;}
+.placeholder-page svg{width:56px;height:56px;color:var(--purple);opacity:0.3;margin-bottom:14px;}
+.placeholder-page h3{font-size:1em;font-weight:600;margin-bottom:6px;}
+.placeholder-page p{font-size:0.86em;color:var(--text-secondary);}
+
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:translateY(0);}}
+.fade-in{animation:fadeIn 0.3s ease;}
+
+@media(max-width:1100px){
+  .right-panel{position:fixed;right:0;top:0;height:100%;z-index:200;box-shadow:-4px 0 24px rgba(0,0,0,0.1);}
+  .right-panel.hidden{display:none;}
+}
+@media(max-width:850px){
+  .sidebar{position:fixed;left:0;top:0;height:100%;z-index:200;box-shadow:4px 0 24px rgba(0,0,0,0.1);}
+  .sidebar.collapsed{transform:translateX(-100%);}
+  .hamburger-btn{display:flex;}
+  .content-area{padding:20px 16px;}
+  .top-bar{padding:12px 16px;}
+  .lesson-grid,.category-grid{grid-template-columns:1fr;}
+  .stats-grid{grid-template-columns:repeat(2,1fr);}
+  .signs-grid{grid-template-columns:repeat(auto-fill,minmax(140px,1fr));}
+}
+@media(max-width:550px){
+  .welcome-card{flex-direction:column;text-align:center;}
+  .section-header{flex-direction:column;align-items:flex-start;}
+  .lesson-card-top{flex-direction:column;}
+  .lesson-card-img{width:100%;min-height:90px;}
+  .category-grid,.training-grid{grid-template-columns:1fr;}
+  .stats-grid{grid-template-columns:1fr 1fr;}
+  .top-badge{display:none;}
+  .lv-header{flex-direction:column;align-items:flex-start;}
+  .lv-actions{align-self:flex-start;}
+}
+</style>
+</head>
+<body>
+<div class="app-layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-logo">
+      <svg viewBox="0 0 100 100" fill="none">
+        <path d="M50 30C40 10 15 15 15 40C15 60 35 75 50 85C65 75 85 60 85 40C85 15 60 10 50 30Z" fill="url(#bg1)" opacity="0.9"/>
+        <path d="M50 35C42 20 22 25 22 42C22 55 38 68 50 78C62 68 78 55 78 42C78 25 58 20 50 35Z" fill="url(#bg2)" opacity="0.7"/>
+        <circle cx="50" cy="45" r="5" fill="#ad7acb"/>
+        <path d="M47 45Q42 35 38 30" stroke="#ad7acb" stroke-width="3" stroke-linecap="round" fill="none"/>
+        <path d="M53 45Q58 35 62 30" stroke="#ad7acb" stroke-width="3" stroke-linecap="round" fill="none"/>
+        <defs><linearGradient id="bg1" x1="15" y1="15" x2="85" y2="85"><stop offset="0%" stop-color="#e8b6dc"/><stop offset="100%" stop-color="#ad7acb"/></linearGradient><linearGradient id="bg2" x1="22" y1="25" x2="78" y2="78"><stop offset="0%" stop-color="#f0c8e8"/><stop offset="100%" stop-color="#c496db"/></linearGradient></defs>
+      </svg>
+      <span>TeoriFri</span>
+    </div>
+    <nav class="sidebar-nav">
+      <div class="nav-section-label">Hovedmenu</div>
+      <div class="nav-item active" data-page="forside" onclick="navigateTo('forside')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>Forside
+      </div>
+      <div class="nav-item" data-page="laer" onclick="navigateTo('laer')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>Lær
+      </div>
+      <div class="nav-item" data-page="traen" onclick="navigateTo('traen')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Træn
+      </div>
+      <div class="nav-item" data-page="teoriprover" onclick="navigateTo('teoriprover')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="9" y1="3" x2="9" y2="21"/></svg>Teoriprøver
+      </div>
+      <div class="nav-item" data-page="mine-fejl" onclick="navigateTo('mine-fejl')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>Mine fejl
+      </div>
+      <div class="nav-item" data-page="faerdselstavler" onclick="navigateTo('faerdselstavler')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 22 22 22"/></svg>Færdselstavler
+      </div>
+      <div class="nav-item" data-page="statistik" onclick="navigateTo('statistik')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>Statistik
+      </div>
+      <div class="nav-section-label" style="margin-top:8px;">System</div>
+      <div class="nav-item" data-page="indstillinger" onclick="navigateTo('indstillinger')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-2.83 1.82v.09a2 2 0 0 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>Indstillinger
+      </div>
+    </nav>
+    <div class="sidebar-footer">
+      <div class="sidebar-card">
+        <h4>💜 Hold energien oppe</h4>
+        <p>Små pauser giver bedre fokus og bedre resultater.</p>
+        <button class="btn-small" onclick="alert('☕ Tag en lille pause!')">☕ Tag en pause</button>
+      </div>
+      <div class="progress-section">
+        <div class="progress-label"><span id="progressPercent">0</span>% gennemført</div>
+        <div class="progress-bar"><div class="progress-fill" id="progressFill" style="width:0%"></div></div>
+        <div class="progress-link" onclick="navigateTo('statistik')">Se statistik →</div>
+      </div>
+    </div>
+  </aside>
+
+  <div class="main-area">
+    <div class="top-bar">
+      <div class="top-bar-left">
+        <button class="hamburger-btn" onclick="document.getElementById('sidebar').classList.toggle('collapsed')">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+        <h1 class="page-title" id="pageTitle">Forside</h1>
+      </div>
+      <div class="top-bar-right">
+        <span class="top-badge">100% offline</span>
+        <div class="vehicle-select" onclick="event.stopPropagation();document.getElementById('vehicleDropdown').classList.toggle('show');">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13" rx="1"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          <span id="vehicleLabel">Bil (kategori B)</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;"><polyline points="6 9 12 15 18 9"/></svg>
+          <div class="vehicle-dropdown" id="vehicleDropdown">
+            <div class="vehicle-option active" onclick="event.stopPropagation();selectVehicle('bil');">🚗 Bil (B)</div>
+            <div class="vehicle-option disabled" onclick="event.stopPropagation();">🏍️ Motorcykel (A) <span class="badge-soon">Kommer snart</span></div>
+            <div class="vehicle-option disabled" onclick="event.stopPropagation();"> Knallert <span class="badge-soon">Kommer snart</span></div>
+          </div>
+        </div>
+        <button class="toggle-panel-btn" onclick="toggleRightPanel()">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="15" y1="3" x2="15" y2="21"/></svg>
+          Støttepanel
+        </button>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="content-area" id="contentArea">
+        <div class="page-view" id="page-forside"></div>
+        <div class="page-view" id="page-laer"></div>
+        <div class="page-view" id="page-traen"></div>
+        <div class="page-view" id="page-teoriprover"></div>
+        <div class="page-view" id="page-mine-fejl"></div>
+        <div class="page-view" id="page-faerdselstavler"></div>
+        <div class="page-view" id="page-statistik"></div>
+        <div class="page-view" id="page-indstillinger"></div>
+      </div>
+      <div class="right-panel" id="rightPanel"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ===== STATE =====
+var S = {
+  page: 'forside',
+  laerSearch: '',
+  signCategory: 'all',
+  signSearch: '',
+  quiz: null,
+  quizIdx: 0,
+  quizScore: 0,
+  quizAnswered: false,
+  vehicle: 'bil',
+  settings: {dark:false,textSize:'normal',reduced:false,panelVisible:true,dailyGoal:10,autoContinue:false,showExplanations:true,shuffleQuestions:false,rememberLesson:true,readAloud:false,readAloudSpeed:1,autoReadLessons:false,autoReadQuestions:false},
+  progress: {},
+  mistakes: [],
+  streak: 0,
+  dailyMin: 0,
+  dailyDate: null,
+  lastTest: null,
+  // Lesson viewer state
+  lessonId: null,
+  lessonStep: 0
+};
+
+// ===== CATEGORIES =====
+var CATS = [
+  {id:'grundregler',name:'Grundregler',desc:'Grundlæggende færdselsregler og opførsel',icon:'📋',color:'#e8b6dc'},
+  {id:'hastighed',name:'Hastighed og afstand',desc:'Hastighedsgrænser, sikker afstand og bremselængder',icon:'🚗',color:'#ad7acb'},
+  {id:'vigepligt',name:'Vigepligt',desc:'Vigepligtsregler ved kryds og rundkørsler',icon:'🛑',color:'#f0a050'},
+  {id:'kryds',name:'Kryds og rundkørsler',desc:'Sådan kører du sikkert gennem kryds',icon:'🔀',color:'#69b58a'},
+  {id:'placering',name:'Placering på vejen',desc:'Vejbaneplacering og overhaling',icon:'🛣️',color:'#6ba3d6'},
+  {id:'parkering',name:'Parkering og standsning',desc:'Regler for parkering og parkeringsforbud',icon:'🅿️',color:'#e07070'},
+  {id:'tavler',name:'Færdselstavler',desc:'Oversigt over alle færdselstavler',icon:'🪧',color:'#f0a050'},
+  {id:'bilteknik',name:'Bilteknik',desc:'Bilens udstyr og teknisk vedligeholdelse',icon:'🔧',color:'#716a78'}
+];
+
+// ===== LESSONS =====
+var LESSONS = [
+  {
+    id:'hastighed-1',title:'Generelle hastighedsgrænser',catId:'hastighed',
+    desc:'Lær om de generelle hastighedsgrænser i Danmark.',
+    steps:[
+      {title:'Introduktion',text:'Hastighedsgrænser fortæller den højeste tilladte hastighed. Du skal altid køre langsommere, hvis forholdene kræver det.'},
+      {title:'Hovedregel',text:'I tættere bebygget område er den almindelige hastighedsgrænse 50 km/t, medmindre skilte viser noget andet.\n\nUden for byer: 80 km/t\nMotorveje: 130 km/t'},
+      {title:'Eksempel',text:'Selvom grænsen er 50 km/t, kan regn, mørke, trafik og dårligt udsyn gøre det nødvendigt at køre langsommere.'},
+      {title:'Vigtigt at huske',text:'Hastighedsgrænsen er et maksimum — ikke en hastighed, du altid skal holde.'},
+      {title:'Mini-spørgsmål',text:''}
+    ],
+    rule:'I tættere bebygget område er den almindelige hastighedsgrænse 50 km/t, medmindre skilte viser noget andet.',
+    example:{title:'Eksempel: Regnvejr i byen',text:'Selvom grænsen er 50 km/t, kan regn, mørke, trafik og dårligt udsyn gøre det nødvendigt at køre langsommere.'},
+    question:{text:'Hvad er den almindelige hastighedsgrænse i tættere bebygget område, når intet andet er skiltet?',options:['40 km/t','50 km/t','60 km/t'],correct:1,explanations:['Forkert. 40 km/t findes kun som skiltet hastighed.','Rigtigt! Den almindelige hastighedsgrænse er 50 km/t.','Forkert. 60 km/t er ikke en standardgrænse.']}
+  },
+  {
+    id:'hastighed-2',title:'Sikker afstand',catId:'hastighed',
+    desc:'Lær at holde sikker afstand til forankørende.',
+    steps:[
+      {title:'Introduktion',text:'Sikker afstand giver dig tid til at reagere, hvis bilen foran bremser.'},
+      {title:'Hovedregel',text:'Hold mindst 2 sekunders afstand til bilen foran dig på tør vej.'},
+      {title:'Eksempel',text:'I regnvejr skal du fordoble afstanden til mindst 4 sekunder.'},
+      {title:'Vigtigt at huske',text:'Jo hurtigere du kører, jo længere er din bremselængde.'},
+      {title:'Mini-spørgsmål',text:''}
+    ],
+    rule:'Hold mindst 2 sekunders afstand på tør vej. Fordobl afstanden i regnvejr.',
+    example:{title:'Eksempel: 2-sekunders reglen',text:'Find et fast punkt på vejen. Når bilen foran passerer det, skal der gå mindst 2 sekunder, før du passerer det samme punkt.'},
+    question:{text:'Hvor mange sekunder skal du mindst holde som afstand på tør vej?',options:['1 sekund','2 sekunder','3 sekunder'],correct:1,explanations:['Forkert. 1 sekund er for lidt.','Rigtigt! 2 sekunder er minimum.','Forkert. 3 sekunder er mere end minimum.']}
+  },
+  {
+    id:'hastighed-3',title:'Bremselængder',catId:'hastighed',
+    desc:'Forstå reaktionstid og bremselængde.',
+    steps:[
+      {title:'Introduktion',text:'Din samlede standselængde består af reaktionslængde og bremselængde.'},
+      {title:'Hovedregel',text:'Ved 50 km/t: ca. 27m. Ved 80 km/t: ca. 55m. Ved 130 km/t: ca. 123m.'},
+      {title:'Eksempel',text:'Dobbelt hastighed betyder fire gange så lang bremselængde.'},
+      {title:'Vigtigt at huske',text:'Bremselængden stiger kvadratisk med hastigheden.'},
+      {title:'Mini-spørgsmål',text:''}
+    ],
+    rule:'Bremselængden fir-dobles, når hastigheden fordobles.',
+    example:{title:'Eksempel: Motorvejen',text:'Ved 130 km/t har du brug for over 120 meter til at stoppe helt — mere end en fodboldbane.'},
+    question:{text:'Hvad sker der med bremselængden ved dobbelt hastighed?',options:['Den fordobles','Den fir-dobles','Den halveres'],correct:1,explanations:['Forkert. Den stiger mere.','Rigtigt! Den fir-dobles.','Forkert.']}
+  },
+  {
+    id:'hastighed-4',title:'Reaktionstid',catId:'hastighed',
+    desc:'Forstå din reaktionstid i trafikken.',
+    steps:[
+      {title:'Introduktion',text:'Reaktionstiden er den tid, der går fra du opdager en fare, til du reagerer.'},
+      {title:'Hovedregel',text:'Den gennemsnitlige reaktionstid er ca. 1 sekund.'},
+      {title:'Eksempel',text:'Ved 80 km/t kører du ca. 22 meter på 1 sekund.'},
+      {title:'Vigtigt at huske',text:'Træthed, alkohol og distraktioner forlænger reaktionstiden.'},
+      {title:'Mini-spørgsmål',text:''}
+    ],
+    rule:'Reaktionstiden er ca. 1 sekund — men kan være længere ved træthed eller distraktion.',
+    example:{title:'Eksempel: Distraktion',text:'Hvis du kigger på din telefon i 2 sekunder ved 80 km/t, har du kørt 44 meter blindt.'},
+    question:{text:'Hvad er den gennemsnitlige reaktionstid?',options:['0,5 sekund','1 sekund','2 sekunder'],correct:1,explanations:['Forkert.','Rigtigt! Ca. 1 sekund.','Forkert.']}
+  },
+  {
+    id:'hastighed-5',title:'Hastighed efter forholdene',catId:'hastighed',
+    desc:'Tilpas farten efter vejr, føre og trafik.',
+    steps:[
+      {title:'Introduktion',text:'Hastighedsgrænsen er et maksimum — ikke et mål.'},
+      {title:'Hovedregel',text:'Tilpas farten efter vejr, føre, sigbarhed og trafik.'},
+      {title:'Eksempel',text:'I tæt tåge med 50 meter sigt bør du køre meget langsomt.'},
+      {title:'Vigtigt at huske',text:'I regnvejr kan vandplaning forekomme ved hastigheder over 70 km/t.'},
+      {title:'Mini-spørgsmål',text:''}
+    ],
+    rule:'Tilpas altid farten efter forholdene — grænsen er kun et loft.',
+    example:{title:'Eksempel: Vinterkørsel',text:'På isglat vej kan selv 30 km/t være for hurtigt. Tilpas farten efter føreforholdene.'},
+    question:{text:'Hvad skal din hastighed afhænge af ud over skiltede grænser?',options:['Kun biltype','Vejr, føre og trafik','Kun tidspunkt'],correct:1,explanations:['Forkert.','Rigtigt! Tilpas efter forholdene.','Forkert.']}
+  },
+  {
+    id:'vigepligt-1',title:'Vigepligt og vejkryds',catId:'vigepligt',
+    desc:'Lær reglerne for vigepligt ved kryds.',
+    steps:[
+      {title:'Introduktion',text:'Vigepligt betyder at give plads til anden trafik.'},
+      {title:'Hovedregel',text:'Ved kryds uden skilte: vige for trafik fra højre.'},
+      {title:'Eksempel',text:'STOP-skilt: altid standse helt ved linjen.'},
+      {title:'Vigtigt at huske',text:'STOP-skilt og vigelinjer har forrang for højre-for-venstre.'},
+      {title:'Mini-spørgsmål',text:''}
+    ],
+    rule:'Ved kryds uden skilte viger du for højre. Ved STOP: standse helt.',
+    example:{title:'Eksempel: T-kryds',text:'I et T-kryds viger du for al trafik på tværvejen.'},
+    question:{text:'Hvad gælder ved et kryds uden skilte?',options:['Du har forkørsel','Vige for højre','Vige for al trafik'],correct:1,explanations:['Forkert.','Rigtigt! Vige for højre.','Forkert.']}
+  },
+  {
+    id:'kryds-1',title:'Rundkørsler',catId:'kryds',
+    desc:'Kør sikkert gennem rundkørsler.',
+    steps:[
+      {title:'Introduktion',text:'En rundkørsel reducerer ulykker og forbedrer trafikflowet.'},
+      {title:'Hovedregel',text:'Vig for trafik i rundkørslen. Brug blinklys ved udgang.'},
+      {title:'Eksempel',text:'Sænk farten og kig mod venstre ved indkørsel.'},
+      {title:'Vigtigt at huske',text:'På store rundkørsler: vælg vognbane efter destination.'},
+      {title:'Mini-spørgsmål',text:''}
+    ],
+    rule:'Vig for trafik i rundkørslen. Blink ved udgang.',
+    example:{title:'Eksempel: Indkørsel',text:'Nærmer du dig en rundkørsel, sænk farten og kig venstre.'},
+    question:{text:'Hvem har forkørselsret i en rundkørsel?',options:['Fra højre','I rundkørslen','Hurtigste'],correct:1,explanations:['Forkert.','Rigtigt! Trafik i rundkørslen.','Forkert.']}
+  },
+  {
+    id:'tavler-1',title:'Advarselstavler',catId:'tavler',
+    desc:'Lær om advarselstavler.',
+    steps:[
+      {title:'Introduktion',text:'Advarselstavler er trekantede med rød kant.'},
+      {title:'Hovedregel',text:'De advarer om farer forude.'},
+      {title:'Eksempel',text:'Udråbstegn = anden fare.'},
+      {title:'Vigtigt at huske',text:'Tavlerne placeres i god tid før faren.'},
+      {title:'Mini-spørgsmål',text:''}
+    ],
+    rule:'Advarselstavler er trekantede med rød kant.',
+    example:{title:'Eksempel',text:'Udråbstegnet betyder "anden fare".'},
+    question:{text:'Hvilken form har advarselstavler?',options:['Firkantede','Runde','Trekantede'],correct:2,explanations:['Forkert.','Forkert.','Rigtigt! Trekantede.']}
+  },
+  {
+    id:'bilteknik-1',title:'Driftsbremsen',catId:'bilteknik',
+    desc:'Lær om driftsbremsens funktion.',
+    steps:[
+      {title:'Introduktion',text:'Driftsbremsen er din primære bremse under normal kørsel.'},
+      {title:'Hovedregel',text:'Aktiveres med fodbremsen (midterste pedal).'},
+      {title:'Eksempel',text:'Test bremsen før du kører.'},
+      {title:'Vigtigt at huske',text:'Hvis bremsen føles blød, skal bilen efterses straks.'},
+      {title:'Mini-spørgsmål',text:''}
+    ],
+    rule:'Driftsbremsen aktiveres med fodbremsen og er din primære bremse.',
+    example:{title:'Eksempel: Bremsetest',text:'Før du kører, bør du altid teste bremsen ved at trykke let på pedalen.'},
+    question:{text:'Hvilken pedal aktiverer driftsbremsen?',options:['Speederen','Fodbremsen','Koblingen'],correct:1,explanations:['Forkert.','Rigtigt! Fodbremsen.','Forkert.']}
+  },
+  {
+    id:'bilteknik-2',title:'Horn',catId:'bilteknik',
+    desc:'Lær hvornår du må bruge hornet.',
+    steps:[
+      {title:'Introduktion',text:'Hornet er et signalapparat til at advare om fare.'},
+      {title:'Hovedregel',text:'Brug kun hornet til at advare om fare — ikke af utålmodighed.'},
+      {title:'Eksempel',text:'Hornknappen findes typisk i midten af rattet.'},
+      {title:'Vigtigt at huske',text:'Må ikke bruges mellem kl. 23.30-07.00 inden for bygrænser.'},
+      {title:'Mini-spørgsmål',text:''}
+    ],
+    rule:'Hornet må kun bruges til at advare om fare.',
+    example:{title:'Eksempel',text:'Hvis en bilist ikke har set dig, kan du bruge hornet kortvarigt.'},
+    question:{text:'Hvornår må du bruge hornet?',options:['Af utålmodighed','For at advare om fare','Altid'],correct:1,explanations:['Forkert.','Rigtigt! Kun for at advare.','Forkert.']}
+  }
+];
+
+// ===== SIGNS =====
+var SIGNS = [
+  {id:'stop',name:'Stoppligt',category:'Vigepligtstavler',icon:'🛑',meaning:'Standse helt ved stoplinjen',where:'Ved farlige kryds',note:'Standse helt'},
+  {id:'warning',name:'Generel fare',category:'Advarselstavler',icon:'️',meaning:'Advarer om fare',where:'Før farlige strækninger',note:'Sænk farten'},
+  {id:'prohibited',name:'Indkørsel forbudt',category:'Forbudstavler',icon:'🚫',meaning:'Må ikke køre ind',where:'Ensrettede veje',note:'Gælder alle'},
+  {id:'mandatory',name:'Kør lige frem',category:'Påbudstavler',icon:'⬆️',meaning:'Skal køre lige frem',where:'Kun lige kørsel',note:'Må ikke dreje'},
+  {id:'parking',name:'Parkering',category:'Oplysningstavler',icon:'🅿️',meaning:'Her må du parkere',where:'Parkeringszoner',note:'Tjek undertavler'},
+  {id:'roundabout',name:'Rundkørsel',category:'Advarselstavler',icon:'🔄',meaning:'Rundkørsel forude',where:'Før rundkørsler',note:'Vig for trafik'},
+  {id:'speed50',name:'Hastighedsgrænse 50',category:'Forbudstavler',icon:'5️⃣',meaning:'Max 50 km/t',where:'Inden for byer',note:'Generel by-grænse'},
+  {id:'pedestrian',name:'Fodgængerfelt',category:'Vejafmærkning',icon:'🚶',meaning:'Fodgængere har ret',where:'Fodgængerfelter',note:'Vær opmærksom'}
+];
+var SIGN_CATS = ['Advarselstavler','Vigepligtstavler','Forbudstavler','Påbudstavler','Oplysningstavler','Vejvisningstavler','Undertavler','Vejafmærkning'];
+
+// ===== TRAINING =====
+var TRAIN_TYPES = [
+  {id:'mixed',name:'Blandede spørgsmål',desc:'Tilfældige spørgsmål fra alle emner',icon:'🎲',color:'#ad7acb'},
+  {id:'topic',name:'Træn ét emne',desc:'Vælg et specifikt emne',icon:'📚',color:'#e8b6dc'},
+  {id:'quick',name:'Hurtig træning',desc:'10 spørgsmål på tid',icon:'⚡',color:'#f0a050'},
+  {id:'hard',name:'Svære spørgsmål',desc:'De udfordrende spørgsmål',icon:'',color:'#e07070'},
+  {id:'signs',name:'Tavletræning',desc:'Øv færdselstavler',icon:'🛑',color:'#6ba3d6'},
+  {id:'retry',name:'Gentag fejl',desc:'Træn tidligere fejl',icon:'🔄',color:'#69b58a'}
+];
+
+// ===== DEMO QUESTIONS =====
+var DEMO_Q = [
+  {id:'q1',catId:'hastighed',text:'Hvad er den generelle hastighedsgrænse på motorveje?',options:['110 km/t','120 km/t','130 km/t','140 km/t'],correct:2,explanations:['Forkert.','Forkert.','Rigtigt! 130 km/t.','Forkert.'],difficulty:'easy'},
+  {id:'q2',catId:'hastighed',text:'Hvad skal du gøre med afstanden i regnvejr?',options:['Holde samme','Halvere','Fordoble','Tripple'],correct:2,explanations:['Forkert.','Forkert.','Rigtigt! Fordobl til 4 sekunder.','Forkert.'],difficulty:'easy'},
+  {id:'q3',catId:'vigepligt',text:'Hvad betyder et STOP-skilt?',options:['Bremse op','Standse helt','Køre langsomt','Vige for højre'],correct:1,explanations:['Forkert.','Rigtigt! Standse helt.','Forkert.','Forkert.'],difficulty:'easy'},
+  {id:'q4',catId:'kryds',text:'Hvem har forkørselsret i en rundkørsel?',options:['Fra højre','I rundkørslen','Hurtigste','Største bil'],correct:1,explanations:['Forkert.','Rigtigt! Trafik i rundkørslen.','Forkert.','Forkert.'],difficulty:'medium'},
+  {id:'q5',catId:'tavler',text:'Hvilken form har advarselstavler?',options:['Firkantede','Runde','Trekantede','Ovale'],correct:2,explanations:['Forkert.','Forkert.','Rigtigt! Trekantede.','Forkert.'],difficulty:'easy'}
+];
+
+// ===== HELPERS =====
+function save(){try{localStorage.setItem('tf',JSON.stringify({progress:S.progress,mistakes:S.mistakes,streak:S.streak,dailyMin:S.dailyMin,dailyDate:S.dailyDate,settings:S.settings,vehicle:S.vehicle,lastTest:S.lastTest}));}catch(e){}}
+function load(){try{var s=localStorage.getItem('tf');if(s){var p=JSON.parse(s);if(p.progress)S.progress=p.progress;if(p.mistakes)S.mistakes=p.mistakes;if(p.streak!==undefined)S.streak=p.streak;if(p.dailyMin!==undefined)S.dailyMin=p.dailyMin;if(p.dailyDate)S.dailyDate=p.dailyDate;if(p.settings)S.settings=Object.assign({},S.settings,p.settings);if(p.vehicle)S.vehicle=p.vehicle;if(p.lastTest)S.lastTest=p.lastTest;}}catch(e){}}
+
+function getProg(id){return S.progress[id]||{status:'not-started',completedSteps:[],completed:false,bookmarked:false};}
+function setProg(id,d){S.progress[id]=Object.assign({},getProg(id),d);save();}
+function totalLessons(){return LESSONS.length;}
+function completedLessons(){var c=0;for(var k in S.progress){if(S.progress[k].completed)c++;}return c;}
+function overallPct(){var t=totalLessons();return t===0?0:Math.round((completedLessons()/t)*100);}
+function esc(s){var d=document.createElement('div');d.textContent=s;return d.innerHTML;}
+
+// ===== SVG ILLUSTRATIONS =====
+function roadIllustration(){
+  return '<svg viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg" style="max-width:100%;max-height:280px;">'+
+    '<rect width="400" height="250" fill="#e8f4e8"/>'+
+    '<rect x="0" y="180" width="400" height="70" fill="#666"/>'+
+    '<line x1="200" y1="180" x2="200" y2="250" stroke="#fff" stroke-width="3" stroke-dasharray="12 8"/>'+
+    '<rect x="20" y="100" width="60" height="80" rx="4" fill="#d4e4f4" stroke="#8ab4d4" stroke-width="1.5"/>'+
+    '<rect x="30" y="115" width="15" height="15" rx="2" fill="#a8d4f4"/>'+
+    '<rect x="55" y="115" width="15" height="15" rx="2" fill="#a8d4f4"/>'+
+    '<rect x="30" y="140" width="15" height="15" rx="2" fill="#a8d4f4"/>'+
+    '<rect x="55" y="140" width="15" height="15" rx="2" fill="#a8d4f4"/>'+
+    '<polygon points="50,80 20,100 80,100" fill="#c46060"/>'+
+    '<rect x="280" y="110" width="60" height="70" rx="4" fill="#d4e4f4" stroke="#8ab4d4" stroke-width="1.5"/>'+
+    '<rect x="290" y="125" width="15" height="15" rx="2" fill="#a8d4f4"/>'+
+    '<rect x="315" y="125" width="15" height="15" rx="2" fill="#a8d4f4"/>'+
+    '<rect x="290" y="150" width="15" height="15" rx="2" fill="#a8d4f4"/>'+
+    '<rect x="315" y="150" width="15" height="15" rx="2" fill="#a8d4f4"/>'+
+    '<polygon points="310,90 280,110 340,110" fill="#c46060"/>'+
+    '<rect x="175" y="60" width="50" height="50" rx="25" fill="#fff" stroke="#e04040" stroke-width="4"/>'+
+    '<text x="200" y="92" text-anchor="middle" font-size="22" font-weight="bold" fill="#181522" font-family="Segoe UI">50</text>'+
+    '<rect x="196" y="110" width="8" height="70" fill="#888"/>'+
+    '<ellipse cx="100" cy="50" rx="30" ry="20" fill="#fff" opacity="0.6"/>'+
+    '<ellipse cx="300" cy="40" rx="25" ry="15" fill="#fff" opacity="0.5"/>'+
+    '<circle cx="120" cy="170" r="8" fill="#4a8a4a"/>'+
+    '<circle cx="140" cy="175" r="6" fill="#4a8a4a"/>'+
+    '<circle cx="260" cy="170" r="8" fill="#4a8a4a"/>'+
+    '<circle cx="280" cy="175" r="6" fill="#4a8a4a"/>'+
+    '<rect x="330" y="140" width="4" height="40" fill="#888"/>'+
+    '<circle cx="332" cy="138" r="6" fill="#ffcc00"/>'+
+  '</svg>';
+}
+
+function getCatIcon(catId){
+  for(var i=0;i<CATS.length;i++){if(CATS[i].id===catId)return CATS[i].icon;}
+  return '📖';
+}
+
+// ===== NAVIGATION =====
+function navigateTo(page){
+  S.page=page;
+  var items=document.querySelectorAll('.nav-item');
+  for(var i=0;i<items.length;i++){items[i].classList.toggle('active',items[i].getAttribute('data-page')===page);}
+  var views=document.querySelectorAll('.page-view');
+  for(var i=0;i<views.length;i++){views[i].classList.toggle('active',views[i].id==='page-'+page);}
+  var titles={forside:'Forside',laer:'Lær',traen:'Træn',teoriprover:'Teoriprøver','mine-fejl':'Mine fejl',faerdselstavler:'Færdselstavler',statistik:'Statistik',indstillinger:'Indstillinger'};
+  var pt=document.getElementById('pageTitle');
+  if(pt)pt.textContent=titles[page]||'TeoriFri';
+  try{
+    switch(page){
+      case'forside':renderForside();break;
+      case'laer':renderLaer();break;
+      case'traen':renderTraen();break;
+      case'teoriprover':renderTeoriprover();break;
+      case'mine-fejl':renderMineFejl();break;
+      case'faerdselstavler':renderFaerdselstavler();break;
+      case'statistik':renderStatistik();break;
+      case'indstillinger':renderIndstillinger();break;
+      default:showPlaceholder('Denne side er ved at blive gjort klar.');
+    }
+  }catch(e){showPlaceholder('Siden kunne ikke indlæses: '+e.message);}
+  renderRightPanel();
+  updateProgress();
+  var ca=document.getElementById('contentArea');
+  if(ca)ca.scrollTop=0;
+  if(window.innerWidth<=850){document.getElementById('sidebar').classList.add('collapsed');}
+}
+
+function showPlaceholder(msg){
+  var el=document.getElementById('page-'+S.page);
+  if(!el)return;
+  el.innerHTML='<div class="placeholder-page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><h3>Denne side er ved at blive gjort klar</h3><p>'+msg+'</p></div>';
+}
+
+// ===== SIDEBAR & VEHICLE =====
+function selectVehicle(v){
+  S.vehicle=v;
+  document.getElementById('vehicleLabel').textContent=v==='bil'?'Bil (kategori B)':'Motorcykel (A)';
+  document.getElementById('vehicleDropdown').classList.remove('show');
+  save();
+}
+document.addEventListener('click',function(e){
+  if(!e.target.closest('.vehicle-select')){var d=document.getElementById('vehicleDropdown');if(d)d.classList.remove('show');}
+});
+
+// ===== RIGHT PANEL =====
+function toggleRightPanel(){
+  S.settings.panelVisible=!S.settings.panelVisible;
+  document.getElementById('rightPanel').classList.toggle('hidden',!S.settings.panelVisible);
+  save();applySettings();
+}
+
+function renderRightPanel(){
+  var panel=document.getElementById('rightPanel');
+  if(!panel)return;
+  var gp=Math.min(100,Math.round((S.dailyMin/S.settings.dailyGoal)*100));
+  var sl=S.streak||0;
+  var days=['S','M','T','O','T','F','L'];
+  var dh='';
+  for(var i=0;i<7;i++){
+    var f=i<Math.min(sl,7);
+    dh+='<div class="streak-day '+(f?'filled':'empty')+'">'+days[i]+'</div>';
+  }
+  panel.innerHTML=
+    '<div class="right-card">'+
+      '<h4>Din støtte 💜</h4>'+
+      '<p>Det er helt normalt at have dage, hvor det er svært. Du gør det godt! </p>'+
+      '<div style="display:flex;justify-content:center;padding:8px 0;">'+
+        '<svg viewBox="0 0 120 80" fill="none" width="70" height="50">'+
+          '<path d="M60 65 C30 45 10 30 15 18 C20 6 35 10 45 22 C50 28 55 25 60 18 C65 25 70 28 75 22 C85 10 100 6 105 18 C110 30 90 45 60 65Z" stroke="var(--pink)" stroke-width="2.5" fill="var(--surface-soft)"/>'+
+          '<circle cx="45" cy="35" r="3" fill="var(--purple)"/>'+
+          '<circle cx="75" cy="35" r="3" fill="var(--purple)"/>'+
+          '<path d="M50 45 Q60 55 70 45" stroke="var(--purple)" stroke-width="2.5" stroke-linecap="round" fill="none"/>'+
+        '</svg>'+
+      '</div>'+
+    '</div>'+
+    '<div class="right-card">'+
+      '<h4>💡 Dagens tip</h4>'+
+      '<p>Læs et emne ad gangen og tag små pauser. Det hjælper hjernen med at huske bedre.</p>'+
+      '<button class="btn-tip">Forstå hvorfor <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></button>'+
+    '</div>'+
+    '<div class="right-card">'+
+      '<h4>🔥 Streak</h4>'+
+      '<div class="streak-info">'+sl+' dag'+(sl!==1?'e':'')+' i træk</div>'+
+      '<div class="streak-sub">Fortsæt det gode arbejde!</div>'+
+      '<div class="streak-days">'+dh+'</div>'+
+    '</div>'+
+    '<div class="right-card">'+
+      '<h4>🎯 Dagens mål</h4>'+
+      '<div><div class="goal-label">'+S.dailyMin+' / '+S.settings.dailyGoal+' min</div><div class="goal-bar"><div class="goal-bar-fill" style="width:'+gp+'%"></div></div></div>'+
+    '</div>'+
+    '<div class="right-card">'+
+      '<h4>📚 Offline bibliotek</h4>'+
+      '<div class="offline-badge">'+
+        '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>'+
+        '100% offline'+
+      '</div>'+
+    '</div>';
+}
+
+// ===== PROGRESS =====
+function updateProgress(){
+  var pct=overallPct();
+  var pe=document.getElementById('progressPercent');
+  var pf=document.getElementById('progressFill');
+  if(pe)pe.textContent=pct;
+  if(pf)pf.style.width=pct+'%';
+}
+
+// ===== SETTINGS =====
+function applySettings(){
+  document.body.classList.toggle('dark-theme',S.settings.dark);
+  document.body.classList.toggle('large-text',S.settings.textSize==='large');
+  document.body.classList.toggle('reduced-motion',S.settings.reduced);
+  document.getElementById('rightPanel').classList.toggle('hidden',!S.settings.panelVisible);
+}
+function toggleSetting(k){S.settings[k]=!S.settings[k];save();applySettings();renderIndstillinger();}
+function setTextSize(s){S.settings.textSize=s;save();applySettings();renderIndstillinger();}
+function setDailyGoal(m){S.settings.dailyGoal=m;save();renderRightPanel();renderIndstillinger();}
+function setReadAloudSpeed(s){S.settings.readAloudSpeed=s;save();renderIndstillinger();}
+function testReadAloud(){
+  if('speechSynthesis' in window){var u=new SpeechSynthesisUtterance('Hej! Dette er en test af oplæsning i TeoriFri.');u.lang='da-DK';u.rate=S.settings.readAloudSpeed;speechSynthesis.speak(u);}
+  else alert('Oplæsning understøttes ikke.');
+}
+function exportData(){
+  var d=JSON.stringify({progress:S.progress,mistakes:S.mistakes,streak:S.streak,dailyMin:S.dailyMin,settings:S.settings},null,2);
+  var b=new Blob([d],{type:'application/json'});var u=URL.createObjectURL(b);
+  var a=document.createElement('a');a.href=u;a.download='teorifri-data.json';a.click();URL.revokeObjectURL(u);
+}
+function importData(e){
+  var f=e.target.files[0];if(!f)return;
+  var r=new FileReader();
+  r.onload=function(ev){try{var d=JSON.parse(ev.target.result);if(d.progress)S.progress=d.progress;if(d.mistakes)S.mistakes=d.mistakes;if(d.streak!==undefined)S.streak=d.streak;if(d.dailyMin!==undefined)S.dailyMin=d.dailyMin;if(d.settings)S.settings=Object.assign({},S.settings,d.settings);save();applySettings();navigateTo(S.page);alert('Data importeret!');}catch(err){alert('Kunne ikke importere.');}};
+  r.readAsText(f);
+}
+
+// ===== RENDER: FORSIDE =====
+function renderForside(){
+  var el=document.getElementById('page-forside');
+  if(!el)return;
+  var cl=completedLessons(),tl=totalLessons(),pct=overallPct();
+  var gp=Math.min(100,Math.round((S.dailyMin/S.settings.dailyGoal)*100));
+
+  // Recent lessons
+  var recentIds=[];
+  for(var k in S.progress){if(S.progress[k].status!=='not-started')recentIds.push(k);}
+  recentIds=recentIds.slice(-3);
+
+  var rh='';
+  if(recentIds.length>0){
+    rh='<div class="section-card fade-in"><div class="section-header"><div class="section-header-left"><div class="section-number" style="background:var(--info-bg);border-color:var(--info);color:var(--info);">⏱️</div><div><h3>Fortsæt hvor du slap</h3><p>Din seneste aktivitet</p></div></div></div><div class="lesson-grid">';
+    for(var i=0;i<recentIds.length;i++){
+      var l=LESSONS.find(function(x){return x.id===recentIds[i];});
+      if(!l)continue;
+      var pr=getProg(l.id);
+      var sc=pr.completed?'completed':(pr.completedSteps&&pr.completedSteps.length>0?'started':'');
+      var st=pr.completed?'Fuldført':(pr.completedSteps&&pr.completedSteps.length>0?'I gang':'Ikke startet');
+      rh+='<div class="lesson-card" onclick="openLesson(\''+l.id+'\')"><div class="lesson-card-top"><div class="lesson-card-img" style="background:var(--surface-soft);display:flex;align-items:center;justify-content:center;font-size:2em;">'+getCatIcon(l.catId)+'</div><div class="lesson-card-body"><h4>'+esc(l.title)+'</h4><div class="lesson-card-status '+sc+'"><span class="dot"></span>'+st+'</div></div></div></div>';
+    }
+    rh+='</div></div>';
+  }
+
+  // First 3 theory lessons
+  var theoryLessons=LESSONS.filter(function(l){return l.catId==='hastighed'||l.catId==='vigepligt'||l.catId==='kryds';}).slice(0,3);
+  var first3='';
+  for(var i=0;i<theoryLessons.length;i++){
+    var l=theoryLessons[i];var pr=getProg(l.id);
+    var sc=pr.completed?'completed':(pr.completedSteps&&pr.completedSteps.length>0?'started':'');
+    var st=pr.completed?'Fuldført':(pr.completedSteps&&pr.completedSteps.length>0?'I gang':'Ikke startet');
+    first3+='<div class="lesson-card" onclick="openLesson(\''+l.id+'\')"><div class="lesson-card-top"><div class="lesson-card-img" style="background:var(--surface-soft);display:flex;align-items:center;justify-content:center;font-size:2em;">'+getCatIcon(l.catId)+'</div><div class="lesson-card-body"><h4>'+esc(l.title)+'</h4><div class="lesson-card-status '+sc+'"><span class="dot"></span>'+st+'</div></div></div></div>';
+  }
+
+  // Bilteknik lessons
+  var biltekLessons=LESSONS.filter(function(l){return l.catId==='bilteknik';});
+  var biltek='';
+  for(var i=0;i<biltekLessons.length;i++){
+    var l=biltekLessons[i];var pr=getProg(l.id);
+    var sc=pr.completed?'completed':(pr.completedSteps&&pr.completedSteps.length>0?'started':'');
+    var st=pr.completed?'Fuldført':(pr.completedSteps&&pr.completedSteps.length>0?'I gang':'Ikke startet');
+    biltek+='<div class="lesson-card" onclick="openLesson(\''+l.id+'\')"><div class="lesson-card-top"><div class="lesson-card-img" style="background:var(--surface-soft);display:flex;align-items:center;justify-content:center;font-size:2em;"></div><div class="lesson-card-body"><h4>'+esc(l.title)+'</h4><div class="lesson-card-status '+sc+'"><span class="dot"></span>'+st+'</div></div></div></div>';
+  }
+
+  el.innerHTML=
+    '<div class="welcome-card fade-in">'+
+      '<div class="welcome-avatar">'+
+        '<svg viewBox="0 0 64 64" fill="none" width="36" height="36">'+
+          '<circle cx="32" cy="22" r="14" fill="#fdeef8" stroke="#e8b6dc" stroke-width="2"/>'+
+          '<circle cx="27" cy="20" r="2" fill="#ad7acb"/><circle cx="37" cy="20" r="2" fill="#ad7acb"/>'+
+          '<path d="M27 26 Q32 31 37 26" stroke="#ad7acb" stroke-width="2" stroke-linecap="round" fill="none"/>'+
+          '<path d="M18 36 Q16 56 32 60 Q48 56 46 36" fill="#fdeef8" stroke="#e8b6dc" stroke-width="1.5"/>'+
+        '</svg>'+
+      '</div>'+
+      '<div class="welcome-text">'+
+        '<h3>Hej! Klar til at tage næste skridt? 💜</h3>'+
+        '<p>Du klarer det – én lektion ad gangen.</p>'+
+      '</div>'+
+    '</div>'+
+    '<div class="section-card fade-in">'+
+      '<div class="section-header"><div class="section-header-left"><div class="section-number" style="background:var(--success-bg);border-color:var(--success);color:var(--success);">🎯</div><div><h3>Dagens mål</h3><p>'+S.dailyMin+' / '+S.settings.dailyGoal+' minutter</p></div></div></div>'+
+      '<div class="goal-bar" style="height:12px;"><div class="goal-bar-fill" style="width:'+gp+'%"></div></div>'+
+    '</div>'+
+    rh+
+    '<div class="section-card fade-in">'+
+      '<div class="section-header"><div class="section-header-left"><div class="section-number">1</div><div><h3>Teorien, trin for trin</h3><p>Alt du skal vide til teoriprøven</p></div></div><button class="btn-link" onclick="navigateTo(\'laer\')">Se alle trin <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></button></div>'+
+      '<div class="lesson-grid">'+first3+'</div>'+
+    '</div>'+
+    '<div class="section-card fade-in">'+
+      '<div class="section-header"><div class="section-header-left"><div class="section-number">2</div><svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 3 3 6 3s6-1 6-3v-5"/></svg><div><h3>Teoriprøver</h3><p>Prøver som den rigtige</p></div></div></div>'+
+      '<button class="action-btn primary" onclick="navigateTo(\'teoriprover\')">Start prøve</button>'+
+    '</div>'+
+    '<div class="section-card fade-in">'+
+      '<div class="section-header"><div class="section-header-left"><div class="section-number">3</div><svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 22 22 22"/></svg><div><h3>Tavler & vejafmærkning</h3><p>Oversigt med forklaringer</p></div></div></div>'+
+      '<button class="action-btn secondary" onclick="navigateTo(\'faerdselstavler\')">Oversigt</button>'+
+    '</div>'+
+    '<div class="section-card fade-in">'+
+      '<div class="section-header"><div class="section-header-left"><div class="section-number">4</div><svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12h8"/></svg><div><h3>Bilteknik (køreprøve)</h3><p>Hvad du kan blive spurgt om</p></div></div><button class="btn-link" onclick="navigateTo(\'laer\')">Se alle emner <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></button></div>'+
+      '<div class="lesson-grid">'+biltek+'</div>'+
+    '</div>'+
+    '<div class="section-card fade-in">'+
+      '<div class="section-header"><div class="section-header-left"><div class="section-number" style="background:var(--surface-soft);border-color:var(--purple);color:var(--purple);"></div><div><h3>Samlet fremgang</h3><p>'+cl+' af '+tl+' lektioner fuldført</p></div></div></div>'+
+      '<div class="progress-bar" style="height:12px;margin-bottom:8px;"><div class="progress-fill" style="width:'+pct+'%"></div></div>'+
+      '<p style="font-size:0.82em;color:var(--text-secondary);">'+pct+'% gennemført</p>'+
+      '<button class="action-btn secondary" style="margin-top:12px;" onclick="navigateTo(\'statistik\')">Se detaljeret statistik</button>'+
+    '</div>';
+}
+
+// ===== RENDER: LÆR =====
+function renderLaer(){
+  var el=document.getElementById('page-laer');
+  if(!el)return;
+  var pct=overallPct();
+
+  // Filter categories
+  var filtered=CATS;
+  if(S.laerSearch){
+    var q=S.laerSearch.toLowerCase();
+    filtered=CATS.filter(function(c){return c.name.toLowerCase().indexOf(q)!==-1||c.desc.toLowerCase().indexOf(q)!==-1;});
+  }
+
+  var catsHtml='';
+  for(var i=0;i<filtered.length;i++){
+    var c=filtered[i];
+    var cl=LESSONS.filter(function(l){return l.catId===c.id;});
+    var cc=0;for(var j=0;j<cl.length;j++){if(getProg(cl[j].id).completed)cc++;}
+    var cp=cl.length>0?Math.round((cc/cl.length)*100):0;
+    var cs=cp===100?'completed':(cc>0?'started':'');
+    var st='Ikke startet';if(cp===100)st='Fuldført';else if(cc>0)st='I gang';
+    catsHtml+='<div class="category-card" onclick="openCategory(\''+c.id+'\')">'+
+      '<div class="category-card-icon">'+c.icon+'</div>'+
+      '<h4>'+esc(c.name)+'</h4>'+
+      '<p>'+esc(c.desc)+'</p>'+
+      '<div class="category-card-footer">'+
+        '<div class="cat-status '+cs+'"><span class="dot"></span>'+cl.length+' lektioner</div>'+
+        '<div class="cat-progress">'+cp+'%</div>'+
+      '</div>'+
+      '<button class="open-btn" onclick="event.stopPropagation();openCategory(\''+c.id+'\')">Åbn →</button>'+
+    '</div>';
+  }
+
+  el.innerHTML=
+    '<div class="fade-in">'+
+      '<div style="margin-bottom:16px;">'+
+        '<h2 style="font-size:1.3em;font-weight:700;margin-bottom:4px;">Lær</h2>'+
+        '<p style="font-size:0.88em;color:var(--text-secondary);">Gå gennem teorien i dit eget tempo.</p>'+
+      '</div>'+
+      '<div style="display:flex;gap:10px;align-items:center;margin-bottom:16px;flex-wrap:wrap;">'+
+        '<div class="search-bar" style="flex:1;min-width:200px;margin-bottom:0;">'+
+          '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>'+
+          '<input type="text" placeholder="Søg i emner..." value="'+esc(S.laerSearch)+'" oninput="S.laerSearch=this.value;renderLaer();">'+
+        '</div>'+
+        '<span style="font-size:0.82em;color:var(--text-secondary);font-weight:600;">'+pct+'% gennemført</span>'+
+      '</div>'+
+      '<div class="category-grid" id="categoryGrid">'+catsHtml+'</div>'+
+      '<div id="categoryDetail" style="display:none;"></div>'+
+    '</div>';
+}
+
+function openCategory(catId){
+  var cat=null;for(var i=0;i<CATS.length;i++){if(CATS[i].id===catId){cat=CATS[i];break;}}
+  if(!cat)return;
+  var cl=LESSONS.filter(function(l){return l.catId===catId;});
+  var cc=0;for(var j=0;j<cl.length;j++){if(getProg(cl[j].id).completed)cc++;}
+  var cp=cl.length>0?Math.round((cc/cl.length)*100):0;
+  var detail=document.getElementById('categoryDetail');
+  if(!detail)return;
+  detail.style.display='block';
+
+  var lh='';
+  if(cl.length>0){
+    for(var i=0;i<cl.length;i++){
+      var l=cl[i];var pr=getProg(l.id);
+      var sc=pr.completed?'completed':(pr.completedSteps&&pr.completedSteps.length>0?'started':'');
+      var st=pr.completed?'Fuldført':(pr.completedSteps&&pr.completedSteps.length>0?'I gang':'Ikke startet');
+      lh+='<div class="lesson-card" onclick="openLesson(\''+l.id+'\')"><div class="lesson-card-top"><div class="lesson-card-img" style="background:var(--surface-soft);display:flex;align-items:center;justify-content:center;font-size:2em;">'+cat.icon+'</div><div class="lesson-card-body"><h4>'+esc(l.title)+'</h4><div class="lesson-card-status '+sc+'"><span class="dot"></span>'+st+'</div></div></div></div>';
+    }
+  }else{
+    lh='<div class="empty-state"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg><h3>Ingen lektioner endnu</h3><p>Indholdet kommer snart.</p></div>';
+  }
+
+  detail.innerHTML=
+    '<div class="fade-in">'+
+      '<button class="back-btn" onclick="document.getElementById(\'categoryDetail\').style.display=\'none\';document.getElementById(\'categoryGrid\').scrollIntoView({behavior:\'smooth\'});">'+
+        '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>Tilbage til kategorier'+
+      '</button>'+
+      '<div class="section-card">'+
+        '<div class="section-header">'+
+          '<div class="section-header-left">'+
+            '<div class="section-number" style="background:'+cat.color+'22;border-color:'+cat.color+';color:'+cat.color+';">'+cat.icon+'</div>'+
+            '<div><h3>'+esc(cat.name)+'</h3><p>'+esc(cat.desc)+'</p></div>'+
+          '</div>'+
+          '<span style="font-size:0.82em;font-weight:600;color:var(--text-secondary);">'+cp+'% • '+cl.length+' lektioner</span>'+
+        '</div>'+
+        '<div class="lesson-grid">'+lh+'</div>'+
+      '</div>'+
+    '</div>';
+  detail.scrollIntoView({behavior:'smooth'});
+}
+
+// ===== LESSON VIEWER =====
+function openLesson(lessonId){
+  var lesson=null;for(var i=0;i<LESSONS.length;i++){if(LESSONS[i].id===lessonId){lesson=LESSONS[i];break;}}
+  if(!lesson){showPlaceholder('Lektionen findes ikke.');return;}
+  S.lessonId=lessonId;
+  S.lessonStep=0;
+
+  var cat=null;for(var i=0;i<CATS.length;i++){if(CATS[i].id===lesson.catId){cat=CATS[i];break;}}
+  var pr=getProg(lessonId);
+  var cs=pr.completedSteps||[];
+  var ts=lesson.steps.length;
+
+  // Switch to Lær page
+  S.page='laer';
+  var items=document.querySelectorAll('.nav-item');
+  for(var i=0;i<items.length;i++){items[i].classList.toggle('active',items[i].getAttribute('data-page')==='laer');}
+  var views=document.querySelectorAll('.page-view');
+  for(var i=0;i<views.length;i++){views[i].classList.toggle('active',views[i].id==='page-laer');}
+  var pt=document.getElementById('pageTitle');
+  if(pt)pt.textContent=lesson.title;
+
+  var el=document.getElementById('page-laer');
+  if(!el)return;
+
+  // Render steps
+  var stepsHtml='';
+  for(var i=0;i<lesson.steps.length;i++){
+    if(i===lesson.steps.length-1)continue; // Skip the question step in steps list
+    var isActive=i===S.lessonStep;
+    var isDone=cs.indexOf(i)!==-1;
+    stepsHtml+='<div class="step-card'+(isActive?' active-step':'')+(isDone?' completed-step':'')+'" style="opacity:'+(isDone||isActive?1:0.5)+';">'+
+      '<div class="step-header">'+
+        '<div class="step-number">'+(isDone?'✓':(i+1))+'</div>'+
+        '<h4>'+esc(lesson.steps[i].title)+'</h4>'+
+      '</div>'+
+      '<p>'+esc(lesson.steps[i].text).replace(/\n/g,'<br>')+'</p>'+
+    '</div>';
+  }
+
+  // Mini question
+  var mqHtml='';
+  if(lesson.question){
+    var q=lesson.question;
+    var answered=pr.questionsAnswered&&pr.questionsAnswered.length>0;
+    var wasCorrect=pr.questionsCorrect&&pr.questionsCorrect.indexOf(0)!==-1;
+    mqHtml='<div class="mini-question" id="miniQuestion">'+
+      '<h4>📝 Mini-spørgsmål</h4>'+
+      '<p class="mq-text">'+esc(q.text)+'</p>'+
+      '<div class="mq-options">';
+    for(var i=0;i<q.options.length;i++){
+      var cls='mq-option';
+      if(answered){
+        if(i===q.correct)cls+=' correct';
+        else if(i===0&&!wasCorrect&&answered)cls+=' wrong';
+      }
+      mqHtml+='<div class="'+cls+'" onclick="answerMQ('+i+',\''+lessonId+'\')"'+(answered?' style="pointer-events:none;"':'')+'>'+
+        '<div class="radio"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>'+
+        '<span>'+esc(q.options[i])+'</span>'+
+      '</div>';
+    }
+    mqHtml+='</div>'+
+      '<div class="mq-feedback'+(answered?' '+((wasCorrect?'correct':'wrong')+' show'):'')+'" id="mqFeedback">'+
+        (answered?(wasCorrect?q.explanations[q.correct]:q.explanations[0]):'')+
+      '</div>'+
+      (answered?'<button class="action-btn secondary" style="margin-top:10px;" onclick="document.getElementById(\'miniQuestion\').style.display=\'none\'">Fortsæt</button>':'')+
+    '</div>';
+  }
+
+  el.innerHTML=
+    '<div class="lesson-viewer fade-in">'+
+      '<div class="lv-header">'+
+        '<div class="lv-header-left">'+
+          '<button class="back-btn" onclick="closeLesson()">'+
+            '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>Tilbage'+
+          '</button>'+
+          '<div>'+
+            '<div class="lv-title">'+esc(lesson.title)+'</div>'+
+            '<div class="lv-meta">'+
+              '<span class="lv-badge category">'+(cat?esc(cat.name):'')+'</span>'+
+              '<span class="lv-badge status'+(pr.completed?' completed':'')+'">'+(pr.completed?'Færdig':(cs.length>0?'I gang':'Ikke startet'))+'</span>'+
+              '<span class="lv-progress-text">'+cs.length+' af '+ts+' trin</span>'+
+            '</div>'+
+          '</div>'+
+        '</div>'+
+        '<div class="lv-actions">'+
+          '<button class="lv-action-btn'+(pr.bookmarked?' active':'')+'" onclick="toggleBM(\''+lessonId+'\')" title="Bogmærk">'+
+            '<svg viewBox="0 0 24 24" fill="'+(pr.bookmarked?'currentColor':'none')+'" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>'+
+          '</button>'+
+          '<button class="lv-action-btn" onclick="toggleReadAloud()" title="Oplæsning">'+
+            '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>'+
+          '</button>'+
+        '</div>'+
+      '</div>'+
+
+      '<div class="media-card">'+
+        '<div class="media-container">'+
+          roadIllustration()+
+        '</div>'+
+        '<div class="media-caption">'+esc(lesson.desc)+'</div>'+
+      '</div>'+
+
+      '<div class="lesson-steps" id="lessonSteps">'+stepsHtml+'</div>'+
+
+      (lesson.rule?'<div class="rule-card"><div class="rule-icon">💡</div><div><h4>Vigtigt at huske</h4><p>'+esc(lesson.rule)+'</p></div></div>':'')+
+
+      (lesson.example?'<div class="example-card"><h4>📌 '+esc(lesson.example.title)+'</h4><p>'+esc(lesson.example.text)+'</p></div>':'')+
+
+      mqHtml+
+
+      '<div class="lesson-nav">'+
+        '<button class="btn-prev" onclick="prevStep()"'+(S.lessonStep===0?' disabled style="opacity:0.3;cursor:not-allowed;"':'')+'>← Forrige</button>'+
+        (S.lessonStep<ts-1?'<button class="btn-next" onclick="nextStep()">Næste →</button>':'')+
+        '<button class="btn-complete" onclick="completeLesson(\''+lessonId+'\')"'+(pr.completed?' style="opacity:0.6;"':'')+'>'+
+          (pr.completed?'✓ Færdig':'Markér lektion som færdig')+
+        '</button>'+
+      '</div>'+
+    '</div>';
+
+  document.getElementById('contentArea').scrollTop=0;
+}
+
+function nextStep(){
+  S.lessonStep++;
+  var l=LESSONS.find(function(x){return x.id===S.lessonId;});
+  if(!l)return;
+  var pr=getProg(l.id);var cs=pr.completedSteps||[];
+  if(cs.indexOf(S.lessonStep-1)===-1)cs.push(S.lessonStep-1);
+  setProg(l.id,{completedSteps:cs,status:cs.length>0?'started':'not-started'});
+  openLesson(l.id);
+}
+function prevStep(){if(S.lessonStep<=0)return;S.lessonStep--;openLesson(S.lessonId);}
+function completeLesson(id){
+  var pr=getProg(id);if(pr.completed)return;
+  setProg(id,{status:'completed',completed:true});
+  S.streak=Math.max(S.streak,1);save();
+  openLesson(id);updateProgress();
+}
+function toggleBM(id){var pr=getProg(id);setProg(id,{bookmarked:!pr.bookmarked});openLesson(id);}
+function closeLesson(){S.lessonId=null;S.lessonStep=0;navigateTo('laer');}
+
+function answerMQ(idx,lessonId){
+  var lesson=null;for(var i=0;i<LESSONS.length;i++){if(LESSONS[i].id===lessonId){lesson=LESSONS[i];break;}}
+  if(!lesson)return;
+  var q=lesson.question;var isCorrect=idx===q.correct;
+  var pr=getProg(lessonId);
+  var ans=pr.questionsAnswered||[];if(ans.indexOf(0)===-1)ans.push(0);
+  var cor=pr.questionsCorrect||[];if(isCorrect&&cor.indexOf(0)===-1)cor.push(0);
+  setProg(lessonId,{questionsAnswered:ans,questionsCorrect:cor});
+  var opts=document.querySelectorAll('#miniQuestion .mq-option');
+  for(var i=0;i<opts.length;i++){
+    if(i===q.correct)opts[i].classList.add('correct');
+    else if(i===idx&&!isCorrect)opts[i].classList.add('wrong');
+    opts[i].style.pointerEvents='none';
+  }
+  var fb=document.getElementById('mqFeedback');
+  fb.className='mq-feedback show '+((isCorrect)?'correct':'wrong');
+  fb.textContent=q.explanations[idx];
+  if(!isCorrect){
+    var dq=DEMO_Q.find(function(d){return d.catId===lesson.catId;});
+    if(dq&&!S.mistakes.find(function(m){return m.questionId===dq.id;})){
+      var cn='';for(var i=0;i<CATS.length;i++){if(CATS[i].id===dq.catId){cn=CATS[i].name;break;}}
+      S.mistakes.push({questionId:dq.id,catId:dq.catId,topic:cn,date:new Date().toLocaleDateString('da-DK'),count:1});save();
+    }
+  }
+}
+
+function toggleReadAloud(){
+  if('speechSynthesis' in window&&S.lessonId){
+    var l=LESSONS.find(function(x){return x.id===S.lessonId;});if(!l)return;
+    var t=l.title+'. '+l.desc+'. ';
+    for(var i=0;i<l.steps.length;i++){t+=l.steps[i].title+'. '+l.steps[i].text+'. ';}
+    if(l.rule)t+='Vigtigt: '+l.rule+'.';
+    speechSynthesis.cancel();
+    var u=new SpeechSynthesisUtterance(t);u.lang='da-DK';u.rate=S.settings.readAloudSpeed;
+    speechSynthesis.speak(u);
+  }
+}
+
+// ===== RENDER: TRÆN =====
+function renderTraen(){
+  var el=document.getElementById('page-traen');if(!el)return;
+  var th='';
+  for(var i=0;i<TRAIN_TYPES.length;i++){
+    var t=TRAIN_TYPES[i];
+    th+='<div class="training-card" onclick="startTraining(\''+t.id+'\')">'+
+      '<div class="training-card-icon" style="background:'+t.color+'22;">'+t.icon+'</div>'+
+      '<h4>'+esc(t.name)+'</h4>'+
+      '<p>'+esc(t.desc)+'</p>'+
+    '</div>';
+  }
+  el.innerHTML='<div class="fade-in"><h2 style="font-size:1.2em;font-weight:700;margin-bottom:16px;">Vælg træningstype</h2><div class="training-grid">'+th+'</div><div id="trainingArea" style="margin-top:20px;"></div></div>';
+}
+
+function startTraining(type){
+  var area=document.getElementById('trainingArea');if(!area)return;
+  var qs;
+  switch(type){
+    case'mixed':qs=[...DEMO_Q].sort(function(){return Math.random()-0.5;}).slice(0,5);break;
+    case'topic':qs=DEMO_Q.slice(0,3);break;
+    case'quick':qs=[...DEMO_Q].sort(function(){return Math.random()-0.5;}).slice(0,10);break;
+    case'hard':qs=DEMO_Q.filter(function(q){return q.difficulty==='medium';}).slice(0,5);if(qs.length<3)qs=DEMO_Q.slice(0,3);break;
+    case'signs':qs=DEMO_Q.filter(function(q){return q.catId==='tavler';}).slice(0,5);if(qs.length<3)qs=DEMO_Q.slice(0,3);break;
+    case'retry':qs=S.mistakes.length>0?DEMO_Q.filter(function(q){return S.mistakes.some(function(m){return m.questionId===q.id;});}).slice(0,5):DEMO_Q.slice(0,3);break;
+    default:qs=DEMO_Q.slice(0,5);
+  }
+  S.quiz={questions:qs,type:type};S.quizIdx=0;S.quizScore=0;S.quizAnswered=false;
+  renderQuiz();
+}
+
+function renderQuiz(){
+  var area=document.getElementById('trainingArea');if(!area)return;
+  var qs=S.quiz.questions;
+  if(S.quizIdx>=qs.length){
+    var pct=Math.round((S.quizScore/qs.length)*100);
+    area.innerHTML='<div class="section-card fade-in"><div style="text-align:center;padding:30px;"><div style="font-size:3em;margin-bottom:10px;">'+(pct>=80?'🎉':'📝')+'</div><h3 style="font-size:1.2em;font-weight:700;margin-bottom:8px;">'+(pct>=80?'Flot klaret!':'Godt forsøg!')+'</h3><p style="font-size:1.5em;font-weight:700;color:var(--purple);margin-bottom:6px;">'+S.quizScore+' / '+qs.length+'</p><p style="font-size:0.9em;color:var(--text-secondary);margin-bottom:20px;">'+pct+'% korrekte svar</p><button class="action-btn primary" style="max-width:300px;margin:0 auto;" onclick="S.quizIdx=0;S.quizScore=0;renderQuiz();">Prøv igen</button><button class="action-btn secondary" style="max-width:300px;margin:8px auto 0;" onclick="navigateTo(\'forside\')">Tilbage</button></div></div>';
+    return;
+  }
+  var q=qs[S.quizIdx];var prog=Math.round((S.quizIdx/qs.length)*100);
+  var oh='';
+  for(var i=0;i<q.options.length;i++){
+    oh+='<div class="quiz-option" id="qopt-'+i+'" onclick="answerQuiz('+i+')"><div class="radio"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><span>'+esc(q.options[i])+'</span></div>';
+  }
+  area.innerHTML='<div class="quiz-area fade-in"><div class="quiz-progress"><div class="quiz-progress-bar"><div class="quiz-progress-fill" style="width:'+prog+'%"></div></div><div class="quiz-progress-text">'+(S.quizIdx+1)+' / '+qs.length+'</div></div><div class="quiz-question-card"><div class="quiz-question-text">'+esc(q.text)+'</div><div class="quiz-options">'+oh+'</div><div id="quizFeedback" class="quiz-feedback" style="display:none;"></div><div id="quizNext" style="display:none;margin-top:14px;"><button class="action-btn primary" onclick="S.quizIdx++;S.quizAnswered=false;renderQuiz();">Næste →</button></div></div></div>';
+}
+
+function answerQuiz(idx){
+  if(S.quizAnswered)return;S.quizAnswered=true;
+  var q=S.quiz.questions[S.quizIdx];var ok=idx===q.correct;
+  if(ok)S.quizScore++;
+  for(var i=0;i<q.options.length;i++){
+    var el=document.getElementById('qopt-'+i);
+    if(i===q.correct)el.classList.add('correct');
+    else if(i===idx&&!ok)el.classList.add('wrong');
+  }
+  var fb=document.getElementById('quizFeedback');fb.className='quiz-feedback '+((ok)?'correct':'wrong');fb.style.display='block';fb.textContent=q.explanations[idx];
+  document.getElementById('quizNext').style.display='block';
+  if(!ok){
+    if(!S.mistakes.find(function(m){return m.questionId===q.id;})){
+      var cn='';for(var i=0;i<CATS.length;i++){if(CATS[i].id===q.catId){cn=CATS[i].name;break;}}
+      S.mistakes.push({questionId:q.id,catId:q.catId,topic:cn,date:new Date().toLocaleDateString('da-DK'),count:1});save();
+    }else{var m=S.mistakes.find(function(m){return m.questionId===q.id;});if(m)m.count++;}
+  }
+}
+
+// ===== RENDER: TEORIPRØVER =====
+function renderTeoriprover(){
+  var el=document.getElementById('page-teoriprover');if(!el)return;
+  var lr=S.lastTest;
+  var rh='';
+  if(lr){
+    rh='<div class="section-card fade-in"><div class="section-header"><div class="section-header-left"><div class="section-number"></div><div><h3>Seneste resultat</h3></div></div></div><div style="text-align:center;padding:16px;"><div style="font-size:2em;font-weight:700;color:'+(lr.passed?'var(--success)':'var(--danger)')+';">'+lr.score+'/'+lr.total+'</div><p style="font-size:0.88em;color:var(--text-secondary);margin-top:4px;">'+(lr.passed?'Bestået ':'Ikke bestået')+'</p><p style="font-size:0.78em;color:var(--text-tertiary);margin-top:2px;">'+lr.date+'</p></div></div>';
+  }else{
+    rh='<div class="section-card fade-in"><div class="empty-state"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="9" y1="3" x2="9" y2="21"/></svg><h3>Ingen gennemførte prøver</h3><p>Du har endnu ikke gennemført en teoriprøve.</p></div></div>';
+  }
+  el.innerHTML='<div class="fade-in"><div class="section-card"><div class="section-header"><div class="section-header-left"><div class="section-number">📝</div><div><h3>Start ny teoriprøve</h3><p>10 spørgsmål • bestået ved 85%</p></div></div></div><button class="action-btn primary" onclick="startFullTest()">Start teoriprøve</button></div><div class="section-card"><div class="section-header"><div class="section-header-left"><div class="section-number">🛑</div><div><h3>Tavleprøve</h3><p>Kun spørgsmål om færdselstavler</p></div></div></div><button class="action-btn secondary" onclick="startSignTest()">Start tavleprøve</button></div>'+rh+'</div>';
+}
+
+function startFullTest(){
+  S.quiz={questions:[...DEMO_Q].sort(function(){return Math.random()-0.5;}).slice(0,10),type:'test'};
+  S.quizIdx=0;S.quizScore=0;S.quizAnswered=false;
+  navigateTo('teoriprover');
+  setTimeout(function(){
+    var el=document.getElementById('page-teoriprover');
+    if(el){el.innerHTML='<div id="trainingArea"></div>';renderQuiz();}
+  },50);
+}
+function startSignTest(){
+  var sq=DEMO_Q.filter(function(q){return q.catId==='tavler';});
+  if(sq.length===0)sq=DEMO_Q.slice(0,5);
+  S.quiz={questions:[...sq].sort(function(){return Math.random()-0.5;}).slice(0,5),type:'sign'};
+  S.quizIdx=0;S.quizScore=0;S.quizAnswered=false;
+  navigateTo('teoriprover');
+  setTimeout(function(){
+    var el=document.getElementById('page-teoriprover');
+    if(el){el.innerHTML='<div id="trainingArea"></div>';renderQuiz();}
+  },50);
+}
+
+// ===== RENDER: MINE FEJL =====
+function renderMineFejl(){
+  var el=document.getElementById('page-mine-fejl');if(!el)return;
+  if(S.mistakes.length===0){
+    el.innerHTML='<div class="section-card fade-in"><div class="empty-state"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg><h3>Du har endnu ingen gemte fejl</h3><p>Her samles spørgsmål du har svaret forkert på.</p></div></div>';
+    return;
+  }
+  var mh='';
+  for(var i=0;i<S.mistakes.length;i++){
+    var m=S.mistakes[i];
+    var q=DEMO_Q.find(function(x){return x.id===m.questionId;});
+    mh+='<div class="mistake-item"><div class="mistake-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg></div><div class="mistake-content"><h4>'+((q)?esc(q.text):'Ukendt')+'</h4><div class="mistake-meta"><span class="topic-tag">'+esc(m.topic)+'</span><span class="date-tag">'+m.date+'</span><span class="count-tag">'+m.count+' gang'+(m.count>1?'e':'')+'</span></div></div><button class="btn-retry" onclick="retryMistake(\''+m.questionId+'\')">Træn igen</button></div>';
+  }
+  el.innerHTML='<div class="fade-in"><h2 style="font-size:1.2em;font-weight:700;margin-bottom:16px;">'+S.mistakes.length+' fejl gemt</h2><div class="mistakes-list">'+mh+'</div><div style="margin-top:16px;text-align:center;"><button class="btn-danger" onclick="if(confirm(\'Slet alle fejl?\')){S.mistakes=[];save();renderMineFejl();}">Nulstil alle fejl</button></div></div>';
+}
+function retryMistake(qId){
+  var q=DEMO_Q.find(function(x){return x.id===qId;});if(!q)return;
+  S.quiz={questions:[q],type:'retry'};S.quizIdx=0;S.quizScore=0;S.quizAnswered=false;
+  navigateTo('traen');
+  setTimeout(function(){var a=document.getElementById('trainingArea');if(a)renderQuiz();},50);
+}
+
+// ===== RENDER: FÆRDSELSTAVLER =====
+function renderFaerdselstavler(){
+  var el=document.getElementById('page-faerdselstavler');if(!el)return;
+  var filtered=S.signCategory==='all'?SIGNS:SIGNS.filter(function(s){return s.category===S.signCategory;});
+  if(S.signSearch){var q=S.signSearch.toLowerCase();filtered=filtered.filter(function(s){return s.name.toLowerCase().indexOf(q)!==-1||s.category.toLowerCase().indexOf(q)!==-1;});}
+
+  var sh='<button class="btn-small" style="'+(S.signCategory==='all'?'background:var(--purple);color:#fff;border-color:var(--purple);':'')+'" onclick="S.signCategory=\'all\';renderFaerdselstavler();">Alle</button>';
+  for(var i=0;i<SIGN_CATS.length;i++){
+    sh+='<button class="btn-small" style="'+(S.signCategory===SIGN_CATS[i]?'background:var(--purple);color:#fff;border-color:var(--purple);':'')+'" onclick="S.signCategory=\''+SIGN_CATS[i]+'\';renderFaerdselstavler();">'+SIGN_CATS[i]+'</button>';
+  }
+
+  var sgh='';
+  for(var i=0;i<filtered.length;i++){
+    var s=filtered[i];
+    sgh+='<div class="sign-card" onclick="openSign(\''+s.id+'\')"><div class="sign-card-img">'+s.icon+'</div><h4>'+esc(s.name)+'</h4><p>'+esc(s.category)+'</p></div>';
+  }
+
+  el.innerHTML='<div class="fade-in"><div class="search-bar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><input type="text" placeholder="Søg i skilte..." oninput="S.signSearch=this.value;renderFaerdselstavler();"></div><div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:16px;">'+sh+'</div><div class="signs-grid" id="signsGrid">'+sgh+'</div><div id="signDetail" style="margin-top:20px;"></div></div>';
+}
+
+function openSign(sid){
+  var s=null;for(var i=0;i<SIGNS.length;i++){if(SIGNS[i].id===sid){s=SIGNS[i];break;}}
+  if(!s)return;
+  var detail=document.getElementById('signDetail');if(!detail)return;
+  var rel=SIGNS.filter(function(x){return x.id!==s.id&&x.category===s.category;}).slice(0,4);
+  var rhtml='';
+  for(var i=0;i<rel.length;i++){
+    rhtml+='<div class="sign-card" style="padding:10px;cursor:pointer;" onclick="openSign(\''+rel[i].id+'\')"><div class="sign-card-img" style="width:60px;height:60px;font-size:1.5em;">'+rel[i].icon+'</div><h4 style="font-size:0.76em;">'+esc(rel[i].name)+'</h4></div>';
+  }
+  detail.innerHTML='<div class="fade-in"><button class="back-btn" onclick="document.getElementById(\'signDetail\').innerHTML=\'\';"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>Tilbage</button><div class="section-card" style="max-width:600px;margin:0 auto;"><div style="text-align:center;margin-bottom:16px;"><div style="font-size:4em;margin-bottom:10px;">'+s.icon+'</div><h2 style="font-size:1.2em;font-weight:700;">'+esc(s.name)+'</h2><div style="font-size:0.82em;color:var(--text-secondary);">'+esc(s.category)+'</div></div><div style="margin-bottom:14px;"><h4 style="font-size:0.9em;font-weight:600;margin-bottom:6px;">Betydning</h4><p style="font-size:0.86em;color:var(--text-secondary);line-height:1.5;">'+esc(s.meaning)+'</p></div><div style="margin-bottom:14px;"><h4 style="font-size:0.9em;font-weight:600;margin-bottom:6px;">Hvor bruges det</h4><p style="font-size:0.86em;color:var(--text-secondary);line-height:1.5;">'+esc(s.where)+'</p></div><div class="rule-card" style="margin-top:14px;"><div class="rule-icon">💡</div><div><h4>Vigtigt at huske</h4><p>'+esc(s.note)+'</p></div></div>'+(rel.length>0?'<div style="margin-top:14px;"><h4 style="font-size:0.9em;font-weight:600;margin-bottom:8px;">Relaterede skilte</h4><div style="display:flex;gap:8px;flex-wrap:wrap;">'+rhtml+'</div></div>':'')+'</div></div>';
+  detail.scrollIntoView({behavior:'smooth'});
+}
+
+// ===== RENDER: STATISTIK =====
+function renderStatistik(){
+  var el=document.getElementById('page-statistik');if(!el)return;
+  var cl=completedLessons(),tl=totalLessons(),pct=overallPct();
+  var started=0;for(var k in S.progress){if(S.progress[k].status!=='not-started')started++;}
+  var tq=0;for(var k in S.progress){var p=S.progress[k];if(p.questionsAnswered)tq+=p.questionsAnswered.length;}
+
+  var tp=[];
+  for(var i=0;i<CATS.length;i++){
+    var c=CATS[i];
+    var cl2=LESSONS.filter(function(l){return l.catId===c.id;});
+    var cc=0;for(var j=0;j<cl2.length;j++){if(getProg(cl2[j].id).completed)cc++;}
+    var cp=cl2.length>0?Math.round((cc/cl2.length)*100):0;
+    tp.push({name:c.name,pct:cp,color:c.color});
+  }
+
+  var mbt={};
+  for(var i=0;i<S.mistakes.length;i++){mbt[S.mistakes[i].topic]=(mbt[S.mistakes[i].topic]||0)+1;}
+
+  var thtml='';for(var i=0;i<tp.length;i++){var t=tp[i];thtml+='<div class="topic-item"><div class="topic-name">'+esc(t.name)+'</div><div class="topic-bar"><div class="topic-bar-fill" style="width:'+t.pct+'%;background:'+t.color+';"></div></div><div class="topic-pct">'+t.pct+'%</div></div>';}
+
+  var weak=[];for(var i=0;i<tp.length;i++){if(tp[i].pct<50)weak.push(tp[i]);}
+  weak.sort(function(a,b){return a.pct-b.pct;});
+  var whtml='';for(var i=0;i<weak.length;i++){var t=weak[i];whtml+='<div class="topic-item"><div class="topic-name">'+esc(t.name)+'</div><div class="topic-bar"><div class="topic-bar-fill" style="width:'+t.pct+'%;background:var(--warning);"></div></div><div class="topic-pct" style="color:var(--warning);">'+t.pct+'%</div></div>';}
+
+  var mh='';var entries=[];for(var k in mbt)entries.push([k,mbt[k]]);entries.sort(function(a,b){return b[1]-a[1];});
+  for(var i=0;i<entries.length;i++){mh+='<div class="topic-item"><div class="topic-name">'+esc(entries[i][0])+'</div><div class="topic-pct" style="color:var(--danger);">'+entries[i][1]+' fejl</div></div>';}
+
+  el.innerHTML='<div class="fade-in"><h2 style="font-size:1.2em;font-weight:700;margin-bottom:16px;">Din statistik</h2><div class="stats-grid"><div class="stat-card"><div class="stat-value">'+pct+'%</div><div class="stat-label">Samlet fremgang</div></div><div class="stat-card"><div class="stat-value">'+cl+'</div><div class="stat-label">Fuldførte lektioner</div></div><div class="stat-card"><div class="stat-value">'+started+'</div><div class="stat-label">Startede lektioner</div></div><div class="stat-card"><div class="stat-value">'+tq+'</div><div class="stat-label">Besvarede spørgsmål</div></div></div><div class="section-card"><div class="section-header"><div class="section-header-left"><div class="section-number">📚</div><div><h3>Fremgang pr. emne</h3></div></div></div><div class="topics-list">'+thtml+'</div></div><div class="section-card"><div class="section-header"><div class="section-header-left"><div class="section-number"></div><div><h3>Kræver mere træning</h3></div></div></div>'+((weak.length>0)?'<div class="topics-list">'+whtml+'</div>':'<p style="font-size:0.86em;color:var(--text-secondary);padding:10px;">Ingen emner kræver mere træning.</p>')+'</div>'+(S.mistakes.length>0?'<div class="section-card"><div class="section-header"><div class="section-header-left"><div class="section-number">❌</div><div><h3>Mine fejl</h3><p>'+S.mistakes.length+' fejl gemt</p></div></div></div><div class="topics-list">'+mh+'</div><button class="action-btn secondary" style="margin-top:14px;" onclick="navigateTo(\'mine-fejl\')">Se alle fejl →</button></div>':'')+'</div>';
+}
+
+// ===== RENDER: INDSTILLINGER =====
+function renderIndstillinger(){
+  var el=document.getElementById('page-indstillinger');if(!el)return;
+  var s=S.settings;
+  el.innerHTML='<div class="fade-in"><h2 style="font-size:1.2em;font-weight:700;margin-bottom:20px;">Indstillinger</h2>'+
+    '<div class="settings-section"><h3>🎨 Udseende</h3><div class="settings-grid">'+
+      '<div class="settings-item"><div class="settings-item-left"><h4>Mørkt tema</h4><p>Skift til mørk farvetilstand</p></div><div class="toggle-switch '+(s.dark?'on':'')+'" onclick="toggleSetting(\'dark\')"></div></div>'+
+      '<div class="settings-item"><div class="settings-item-left"><h4>Tekststørrelse</h4><p>Vælg mellem normal og stor</p></div><div class="text-size-options"><button class="text-size-btn '+(s.textSize==='normal'?'active':'')+'" onclick="setTextSize(\'normal\')">Normal</button><button class="text-size-btn '+(s.textSize==='large'?'active':'')+'" onclick="setTextSize(\'large\')">Stor</button></div></div>'+
+      '<div class="settings-item"><div class="settings-item-left"><h4>Reducer animationer</h4><p>Slå animationer fra</p></div><div class="toggle-switch '+(s.reduced?'on':'')+'" onclick="toggleSetting(\'reduced\')"></div></div>'+
+      '<div class="settings-item"><div class="settings-item-left"><h4>Støttepanel</h4><p>Vis eller skjul højre panel</p></div><div class="toggle-switch '+(s.panelVisible?'on':'')+'" onclick="toggleSetting(\'panelVisible\')"></div></div>'+
+    '</div></div>'+
+    '<div class="settings-section"><h3> Dagligt mål</h3><div class="settings-item"><div class="settings-item-left"><h4>Mål pr. dag</h4><p>Minutter du vil lære dagligt</p></div><div class="goal-options">'+[5,10,15,20,30].map(function(m){return '<button class="goal-btn '+(s.dailyGoal===m?'active':'')+'" onclick="setDailyGoal('+m+')">'+m+' min</button>';}).join('')+'</div></div></div>'+
+    '<div class="settings-section"><h3>📖 Læring</h3><div class="settings-grid">'+
+      '<div class="settings-item"><div class="settings-item-left"><h4>Fortsæt automatisk</h4><p>Gå til næste lektion</p></div><div class="toggle-switch '+(s.autoContinue?'on':'')+'" onclick="toggleSetting(\'autoContinue\')"></div></div>'+
+      '<div class="settings-item"><div class="settings-item-left"><h4>Vis forklaringer</h4><p>Efter hvert svar</p></div><div class="toggle-switch '+(s.showExplanations?'on':'')+'" onclick="toggleSetting(\'showExplanations\')"></div></div>'+
+      '<div class="settings-item"><div class="settings-item-left"><h4>Bland spørgsmål</h4><p>Tilfældig rækkefølge</p></div><div class="toggle-switch '+(s.shuffleQuestions?'on':'')+'" onclick="toggleSetting(\'shuffleQuestions\')"></div></div>'+
+      '<div class="settings-item"><div class="settings-item-left"><h4>Husk senest åbne</h4><p>Gem sidste lektion</p></div><div class="toggle-switch '+(s.rememberLesson?'on':'')+'" onclick="toggleSetting(\'rememberLesson\')"></div></div>'+
+    '</div></div>'+
+    '<div class="settings-section"><h3>🔊 Oplæsning</h3><div class="settings-grid">'+
+      '<div class="settings-item"><div class="settings-item-left"><h4>Oplæsning</h4><p>Læs tekst højt</p></div><div class="toggle-switch '+(s.readAloud?'on':'')+'" onclick="toggleSetting(\'readAloud\')"></div></div>'+
+      '<div class="settings-item"><div class="settings-item-left"><h4>Automatisk oplæsning</h4><p>Start automatisk</p></div><div class="toggle-switch '+(s.autoReadLessons?'on':'')+'" onclick="toggleSetting(\'autoReadLessons\')"></div></div>'+
+      '<div class="settings-item"><div class="settings-item-left"><h4>Hastighed</h4><p>Tilpas hastigheden</p></div><div class="goal-options"><button class="goal-btn '+(s.readAloudSpeed===0.75?'active':'')+'" onclick="setReadAloudSpeed(0.75)">Langsom</button><button class="goal-btn '+(s.readAloudSpeed===1?'active':'')+'" onclick="setReadAloudSpeed(1)">Normal</button><button class="goal-btn '+(s.readAloudSpeed===1.25?'active':'')+'" onclick="setReadAloudSpeed(1.25)">Hurtig</button></div></div>'+
+      '<div class="settings-item"><div class="settings-item-left"><h4>Prøveoplæsning</h4><p>Test lyden</p></div><button class="btn-small" onclick="testReadAloud()">🔊 Test</button></div>'+
+    '</div></div>'+
+    '<div class="settings-section"><h3>💾 Data</h3><div class="settings-grid">'+
+      '<div class="settings-item"><div class="settings-item-left"><h4>Eksporter data</h4><p>Gem som fil</p></div><button class="btn-secondary" onclick="exportData()">Eksporter</button></div>'+
+      '<div class="settings-item"><div class="settings-item-left"><h4>Importer data</h4><p>Indlæs fra fil</p></div><button class="btn-secondary" onclick="document.getElementById(\'importFile\').click()">Importer</button><input type="file" id="importFile" accept=".json" style="display:none;" onchange="importData(event)"></div>'+
+      '<div class="settings-item"><div class="settings-item-left"><h4>Nulstil fremgang</h4><p>Slet alt</p></div><button class="btn-danger" onclick="if(confirm(\'Nulstille alt?\')){S.progress={};S.mistakes=[];S.streak=0;S.dailyMin=0;S.lastTest=null;save();navigateTo(\'indstillinger\');}">Nulstil</button></div>'+
+    '</div></div></div>';
+}
+
+// ===== INIT =====
+function init(){
+  load();
+  applySettings();
+  var today=new Date().toDateString();
+  if(S.dailyDate!==today){S.dailyMin=0;S.dailyDate=today;save();}
+  setInterval(function(){if(S.page!=='indstillinger'){S.dailyMin=(S.dailyMin||0)+1;save();renderRightPanel();}},60000);
+  navigateTo('forside');
+}
+
+if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',init);}else{init();}
+</script>
+</body>
+</html>
+

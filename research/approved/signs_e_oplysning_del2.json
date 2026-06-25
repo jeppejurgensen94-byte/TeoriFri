@@ -1,0 +1,678 @@
+[
+  {
+    "id": "e21_1",
+    "officialCode": "E 21,1",
+    "name": "Anbefalet rute for cyklister",
+    "appDisplayName": "Anbefalet cykelrute",
+    "elementType": "trafficSign",
+    "categoryId": "information-route",
+    "categoryName": "Anbefalede ruter",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen viser en hensigtsmæssig, men ikke obligatorisk, rute for cyklister.",
+    "shortMeaning": "Anbefalet rute for cyklister.",
+    "detailedMeaning": "Tavlen angiver en vej, sti eller lignende, der hensigtsmæssigt kan benyttes af cyklister. Tavlen gør ikke ruten obligatorisk og tilsidesætter ikke andre forbud, påbud eller lokale begrænsninger.",
+    "routeStatus": "recommended",
+    "targetRoadUsers": "cyklister",
+    "areaReservation": "Tavlen reserverer ikke i sig selv vejen eller stien til den viste færdselsart.",
+    "driverAction": "Følg ruten, når det er hensigtsmæssigt, men overhold altid anden gældende afmærkning og færdselsregler.",
+    "startsAt": "Ved tavlen eller det sted, hvor den anbefalede rute vises.",
+    "duration": "Indtil ruten ændres, afsluttes eller en ny vejvisning gives.",
+    "exceptions": [],
+    "supplementaryRules": [
+      "På ruter afmærket med E 21,1 kan kørsel med lille knallert være forbudt på visse delstrækninger. Se også F 21-stivejvisere."
+    ],
+    "commonMistakes": [
+      "At tro, at ruten er obligatorisk.",
+      "At tro, at tavlen ophæver et forbud eller et påbud.",
+      "At tro, at andre færdselsarter automatisk er forbudt på ruten."
+    ],
+    "relatedElements": [
+      {
+        "id": "d21",
+        "relationType": "educationalRelation",
+        "explanation": "D 21 Cykelsti er et påbud om brug af en bestemt bane, mens E 21,1 kun anbefaler en rute.",
+        "sourceReferences": []
+      }
+    ],
+    "imageFile": "assets/images/signs/e21_1.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§§ 24-27, E 21,1",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "e21_2",
+    "officialCode": "E 21,2",
+    "name": "Anbefalet rute for vandrere",
+    "appDisplayName": "Anbefalet vandrerute",
+    "elementType": "trafficSign",
+    "categoryId": "information-route",
+    "categoryName": "Anbefalede ruter",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen viser en hensigtsmæssig, men ikke obligatorisk, rute for vandrere.",
+    "shortMeaning": "Anbefalet rute for vandrere.",
+    "detailedMeaning": "Tavlen angiver en vej, sti eller lignende, der hensigtsmæssigt kan benyttes af vandrere. Tavlen gør ikke ruten obligatorisk og tilsidesætter ikke andre forbud, påbud eller lokale begrænsninger.",
+    "routeStatus": "recommended",
+    "targetRoadUsers": "vandrere",
+    "areaReservation": "Tavlen reserverer ikke i sig selv vejen eller stien til den viste færdselsart.",
+    "driverAction": "Følg ruten, når det er hensigtsmæssigt, men overhold altid anden gældende afmærkning og færdselsregler.",
+    "startsAt": "Ved tavlen eller det sted, hvor den anbefalede rute vises.",
+    "duration": "Indtil ruten ændres, afsluttes eller en ny vejvisning gives.",
+    "exceptions": [],
+    "supplementaryRules": [
+      "Se også F 21-stivejvisere for vandrere."
+    ],
+    "commonMistakes": [
+      "At tro, at ruten er obligatorisk.",
+      "At tro, at tavlen ophæver et forbud eller et påbud.",
+      "At tro, at andre færdselsarter automatisk er forbudt på ruten."
+    ],
+    "relatedElements": [
+      {
+        "id": "d22",
+        "relationType": "educationalRelation",
+        "explanation": "D 22 Gangsti angiver en bane, der er forbeholdt gående, mens E 21,2 alene anbefaler en rute.",
+        "sourceReferences": []
+      }
+    ],
+    "imageFile": "assets/images/signs/e21_2.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§§ 24-27, E 21,2",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "e21_3",
+    "officialCode": "E 21,3",
+    "name": "Anbefalet rute for ridende",
+    "appDisplayName": "Anbefalet riderute",
+    "elementType": "trafficSign",
+    "categoryId": "information-route",
+    "categoryName": "Anbefalede ruter",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen viser en hensigtsmæssig, men ikke obligatorisk, rute for ridende.",
+    "shortMeaning": "Anbefalet rute for ridende.",
+    "detailedMeaning": "Tavlen angiver en vej, sti eller lignende, der hensigtsmæssigt kan benyttes af ridende. Tavlen gør ikke ruten obligatorisk og tilsidesætter ikke andre forbud, påbud eller lokale begrænsninger.",
+    "routeStatus": "recommended",
+    "targetRoadUsers": "ridende",
+    "areaReservation": "Tavlen reserverer ikke i sig selv vejen eller stien til den viste færdselsart.",
+    "driverAction": "Følg ruten, når det er hensigtsmæssigt, men overhold altid anden gældende afmærkning og færdselsregler.",
+    "startsAt": "Ved tavlen eller det sted, hvor den anbefalede rute vises.",
+    "duration": "Indtil ruten ændres, afsluttes eller en ny vejvisning gives.",
+    "exceptions": [],
+    "supplementaryRules": [
+      "Se også F 21-stivejvisere for ridende."
+    ],
+    "commonMistakes": [
+      "At tro, at ruten er obligatorisk.",
+      "At tro, at tavlen ophæver et forbud eller et påbud.",
+      "At tro, at andre færdselsarter automatisk er forbudt på ruten."
+    ],
+    "relatedElements": [
+      {
+        "id": "d23",
+        "relationType": "educationalRelation",
+        "explanation": "D 23 Ridesti angiver en bane for ridende, mens E 21,3 alene anbefaler en rute.",
+        "sourceReferences": []
+      }
+    ],
+    "imageFile": "assets/images/signs/e21_3.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§§ 24-27, E 21,3",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "e21_4",
+    "officialCode": "E 21,4",
+    "name": "Anbefalet rute for lille knallert",
+    "appDisplayName": "Anbefalet rute for lille knallert",
+    "elementType": "trafficSign",
+    "categoryId": "information-route",
+    "categoryName": "Anbefalede ruter",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen viser en hensigtsmæssig, men ikke obligatorisk, rute for førere af lille knallert.",
+    "shortMeaning": "Anbefalet rute for førere af lille knallert.",
+    "detailedMeaning": "Tavlen angiver en vej, sti eller lignende, der hensigtsmæssigt kan benyttes af førere af lille knallert. Tavlen gør ikke ruten obligatorisk og tilsidesætter ikke andre forbud, påbud eller lokale begrænsninger.",
+    "routeStatus": "recommended",
+    "targetRoadUsers": "førere af lille knallert",
+    "areaReservation": "Tavlen reserverer ikke i sig selv vejen eller stien til den viste færdselsart.",
+    "driverAction": "Følg ruten, når det er hensigtsmæssigt, men overhold altid anden gældende afmærkning og færdselsregler.",
+    "startsAt": "Ved tavlen eller det sted, hvor den anbefalede rute vises.",
+    "duration": "Indtil ruten ændres, afsluttes eller en ny vejvisning gives.",
+    "exceptions": [],
+    "supplementaryRules": [
+      "Ruteanbefalingen tilsidesætter ikke regler om, hvor lille knallert skal køre, eller andre forbuds- og påbudstavler."
+    ],
+    "commonMistakes": [
+      "At tro, at ruten er obligatorisk.",
+      "At tro, at tavlen ophæver et forbud eller et påbud.",
+      "At tro, at andre færdselsarter automatisk er forbudt på ruten."
+    ],
+    "relatedElements": [],
+    "imageFile": "assets/images/signs/e21_4.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§§ 24-27, E 21,4",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "e22_1",
+    "officialCode": "E 22,1",
+    "name": "Anbefalet rute for lastbiler",
+    "appDisplayName": "Anbefalet lastbilrute",
+    "elementType": "trafficSign",
+    "categoryId": "information-route",
+    "categoryName": "Anbefalede ruter",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen viser en hensigtsmæssig, men ikke obligatorisk, rute for lastbiler.",
+    "shortMeaning": "Anbefalet rute for lastbiler.",
+    "detailedMeaning": "Tavlen angiver en vej, sti eller lignende, der hensigtsmæssigt kan benyttes af lastbiler. Tavlen gør ikke ruten obligatorisk og tilsidesætter ikke andre forbud, påbud eller lokale begrænsninger.",
+    "routeStatus": "recommended",
+    "targetRoadUsers": "lastbiler",
+    "areaReservation": "Tavlen reserverer ikke i sig selv vejen eller stien til den viste færdselsart.",
+    "driverAction": "Følg ruten, når det er hensigtsmæssigt, men overhold altid anden gældende afmærkning og færdselsregler.",
+    "startsAt": "Ved tavlen eller det sted, hvor den anbefalede rute vises.",
+    "duration": "Indtil ruten ændres, afsluttes eller en ny vejvisning gives.",
+    "exceptions": [],
+    "supplementaryRules": [
+      "Tavlen ophæver ikke vægt-, højde-, bredde- eller andre lokale begrænsninger."
+    ],
+    "commonMistakes": [
+      "At tro, at ruten er obligatorisk.",
+      "At tro, at tavlen ophæver et forbud eller et påbud.",
+      "At tro, at andre færdselsarter automatisk er forbudt på ruten."
+    ],
+    "relatedElements": [
+      {
+        "id": "c23_1",
+        "relationType": "educationalRelation",
+        "explanation": "C 23,1 Lastbil forbudt er et forbud, mens E 22,1 alene anbefaler en rute.",
+        "sourceReferences": []
+      }
+    ],
+    "imageFile": "assets/images/signs/e22_1.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§§ 24-27, E 22,1",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "e22_2",
+    "officialCode": "E 22,2",
+    "name": "Anbefalet rute for køretøjer med farligt gods",
+    "appDisplayName": "Anbefalet rute for farligt gods",
+    "elementType": "trafficSign",
+    "categoryId": "information-route",
+    "categoryName": "Anbefalede ruter",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen viser en hensigtsmæssig, men ikke obligatorisk, rute for køretøjer med farligt gods.",
+    "shortMeaning": "Anbefalet rute for køretøjer med farligt gods.",
+    "detailedMeaning": "Tavlen angiver en vej, sti eller lignende, der hensigtsmæssigt kan benyttes af køretøjer med farligt gods. Tavlen gør ikke ruten obligatorisk og tilsidesætter ikke andre forbud, påbud eller lokale begrænsninger.",
+    "routeStatus": "recommended",
+    "targetRoadUsers": "køretøjer med farligt gods",
+    "areaReservation": "Tavlen reserverer ikke i sig selv vejen eller stien til den viste færdselsart.",
+    "driverAction": "Følg ruten, når det er hensigtsmæssigt, men overhold altid anden gældende afmærkning og færdselsregler.",
+    "startsAt": "Ved tavlen eller det sted, hvor den anbefalede rute vises.",
+    "duration": "Indtil ruten ændres, afsluttes eller en ny vejvisning gives.",
+    "exceptions": [],
+    "supplementaryRules": [
+      "Farligt gods forstås som i reglerne om vejtransport af farligt gods."
+    ],
+    "commonMistakes": [
+      "At tro, at ruten er obligatorisk.",
+      "At tro, at tavlen ophæver et forbud eller et påbud.",
+      "At tro, at andre færdselsarter automatisk er forbudt på ruten."
+    ],
+    "relatedElements": [
+      {
+        "id": "c23_3",
+        "relationType": "educationalRelation",
+        "explanation": "C 23,3 Kørsel med farligt gods forbudt er et forbud, mens E 22,2 alene anbefaler en rute.",
+        "sourceReferences": []
+      }
+    ],
+    "imageFile": "assets/images/signs/e22_2.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§§ 24-27, E 22,2",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "e22_3",
+    "officialCode": "E 22,3",
+    "name": "Anbefalet rute for traktor- og motorredskab",
+    "appDisplayName": "Anbefalet rute for traktor og motorredskab",
+    "elementType": "trafficSign",
+    "categoryId": "information-route",
+    "categoryName": "Anbefalede ruter",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen viser en hensigtsmæssig, men ikke obligatorisk, rute for traktorer og motorredskaber.",
+    "shortMeaning": "Anbefalet rute for traktorer og motorredskaber.",
+    "detailedMeaning": "Tavlen angiver en vej, sti eller lignende, der hensigtsmæssigt kan benyttes af traktorer og motorredskaber. Tavlen gør ikke ruten obligatorisk og tilsidesætter ikke andre forbud, påbud eller lokale begrænsninger.",
+    "routeStatus": "recommended",
+    "targetRoadUsers": "traktorer og motorredskaber",
+    "areaReservation": "Tavlen reserverer ikke i sig selv vejen eller stien til den viste færdselsart.",
+    "driverAction": "Følg ruten, når det er hensigtsmæssigt, men overhold altid anden gældende afmærkning og færdselsregler.",
+    "startsAt": "Ved tavlen eller det sted, hvor den anbefalede rute vises.",
+    "duration": "Indtil ruten ændres, afsluttes eller en ny vejvisning gives.",
+    "exceptions": [],
+    "supplementaryRules": [
+      "Ruten er kun en anbefaling og ændrer ikke andre regler for langsomtkørende køretøjer."
+    ],
+    "commonMistakes": [
+      "At tro, at ruten er obligatorisk.",
+      "At tro, at tavlen ophæver et forbud eller et påbud.",
+      "At tro, at andre færdselsarter automatisk er forbudt på ruten."
+    ],
+    "relatedElements": [
+      {
+        "id": "c24_1",
+        "relationType": "educationalRelation",
+        "explanation": "C 24,1 Traktor og motorredskab forbudt er et forbud, mens E 22,3 alene anbefaler en rute.",
+        "sourceReferences": []
+      }
+    ],
+    "imageFile": "assets/images/signs/e22_3.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§§ 24-27, E 22,3",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "e22_4",
+    "officialCode": "E 22,4",
+    "name": "Anbefalet rute for bus",
+    "appDisplayName": "Anbefalet busrute",
+    "elementType": "trafficSign",
+    "categoryId": "information-route",
+    "categoryName": "Anbefalede ruter",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen viser en hensigtsmæssig, men ikke obligatorisk, rute for busser.",
+    "shortMeaning": "Anbefalet rute for busser.",
+    "detailedMeaning": "Tavlen angiver en vej, sti eller lignende, der hensigtsmæssigt kan benyttes af busser. Tavlen gør ikke ruten obligatorisk og tilsidesætter ikke andre forbud, påbud eller lokale begrænsninger.",
+    "routeStatus": "recommended",
+    "targetRoadUsers": "busser",
+    "areaReservation": "Tavlen reserverer ikke i sig selv vejen eller stien til den viste færdselsart.",
+    "driverAction": "Følg ruten, når det er hensigtsmæssigt, men overhold altid anden gældende afmærkning og færdselsregler.",
+    "startsAt": "Ved tavlen eller det sted, hvor den anbefalede rute vises.",
+    "duration": "Indtil ruten ændres, afsluttes eller en ny vejvisning gives.",
+    "exceptions": [],
+    "supplementaryRules": [
+      "Tavlen gælder køretøjstypen bus og er ikke begrænset til busser i almindelig rutekørsel."
+    ],
+    "commonMistakes": [
+      "At tro, at ruten er obligatorisk.",
+      "At tro, at tavlen ophæver et forbud eller et påbud.",
+      "At tro, at andre færdselsarter automatisk er forbudt på ruten."
+    ],
+    "relatedElements": [
+      {
+        "id": "c23_2",
+        "relationType": "educationalRelation",
+        "explanation": "C 23,2 Bus forbudt er et forbud, mens E 22,4 alene anbefaler en rute.",
+        "sourceReferences": []
+      }
+    ],
+    "imageFile": "assets/images/signs/e22_4.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§§ 24-27, E 22,4",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "e23",
+    "officialCode": "E 23",
+    "name": "Vejledning for invalide",
+    "appDisplayName": "Vejledning for personer med handicap",
+    "elementType": "trafficSign",
+    "categoryId": "information-accessibility",
+    "categoryName": "Tilgængelighedsvejledning",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen vejleder til tilgængelige faciliteter og kan bruges i forbindelse med reserverede parkeringsbåse.",
+    "shortMeaning": "Vejledning til faciliteter eller parkering for personer med handicap.",
+    "detailedMeaning": "Der kan på tavlen anføres symbol for rampe, og rampehældningen kan angives på undertavle. Ved parkeringsbåse kan undertavle angive, at reservationen gælder et eller flere bestemte køretøjer.",
+    "guidanceStatus": "informational",
+    "targetRoadUsers": "Personer med handicap og førere af køretøjer med relevant parkeringstilladelse.",
+    "areaReservation": "Tavlen reserverer kun en parkeringsbås, når den anvendes sammen med den relevante parkeringsafmærkning og tilladelsesregel.",
+    "driverAction": "Følg vejledningen og respekter reserverede parkeringsbåse.",
+    "startsAt": "Ved den facilitet, rampe eller parkeringsbås, som tavlen vedrører.",
+    "duration": "Gælder det viste område eller den viste facilitet.",
+    "exceptions": [],
+    "supplementaryRules": [
+      "Symbol for rampe kan vises på tavlen.",
+      "Rampehældning kan angives på undertavle.",
+      "Ved parkeringsbåse kan undertavle reservere pladsen til et eller flere bestemte køretøjer.",
+      "Sammen med E 33 kan tavlen angive parkering for køretøjer med gyldig parkeringstilladelse."
+    ],
+    "commonMistakes": [
+      "At parkere på en reserveret plads uden gyldig tilladelse.",
+      "At forveksle vejledning til en facilitet med en generel parkeringstilladelse."
+    ],
+    "relatedElements": [
+      {
+        "id": "e33",
+        "relationType": "commonlyCombined",
+        "explanation": "E 33 Parkering kan kombineres med E 23 for at reservere parkeringsarealet.",
+        "sourceReferences": []
+      }
+    ],
+    "imageFile": "assets/images/signs/e23.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§§ 24-27, E 23 og E 33",
+        "checkedDate": "2026-06-25"
+      },
+      {
+        "title": "Bekendtgørelse af færdselsloven",
+        "url": "https://www.retsinformation.dk/eli/lta/2026/118/dan/pdf",
+        "section": "§ 88 a og § 92, stk. 3",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "e24",
+    "officialCode": "E 24",
+    "name": "Vejledning for synshandicappede",
+    "appDisplayName": "Vejledning for blinde og svagsynede",
+    "elementType": "trafficSign",
+    "categoryId": "information-accessibility",
+    "categoryName": "Tilgængelighedsvejledning",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen giver vejledning, som er rettet mod synshandicappede.",
+    "shortMeaning": "Vejledning for blinde og svagsynede.",
+    "detailedMeaning": "Tavlen angiver vejledning, der er rettet mod synshandicappede. Tavlen fastsætter ikke i sig selv lydsignaler, taktile felter eller andre tekniske hjælpemidler.",
+    "guidanceStatus": "informational",
+    "targetRoadUsers": "Blinde og svagsynede.",
+    "areaReservation": "Ingen reservation følger alene af tavlen.",
+    "driverAction": "Vær opmærksom på, at området eller ruten kan være særligt indrettet for blinde og svagsynede.",
+    "startsAt": "Ved det sted eller den rute, som vejledningen vedrører.",
+    "duration": "Gælder den viste facilitet eller rute.",
+    "exceptions": [],
+    "supplementaryRules": [],
+    "commonMistakes": [
+      "At tillægge tavlen tekniske funktioner, som ikke fremgår af den officielle afmærkning.",
+      "At behandle tavlen som et forbud eller påbud."
+    ],
+    "relatedElements": [],
+    "imageFile": "assets/images/signs/e24.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§§ 24-27, E 24",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "e26",
+    "officialCode": "E 26",
+    "name": "Fodgængertunnel eller fodgængerbro",
+    "appDisplayName": "Fodgængertunnel eller -bro",
+    "elementType": "trafficSign",
+    "categoryId": "information-pedestrian",
+    "categoryName": "Fodgængerfaciliteter",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen viser adgang eller retning til en fodgængertunnel eller fodgængerbro.",
+    "shortMeaning": "Viser vej til en fodgængertunnel eller fodgængerbro.",
+    "detailedMeaning": "Tavlen oplyser om en fodgængertunnel eller fodgængerbro. Den er vejledende og er ikke i sig selv et påbud om at benytte forbindelsen.",
+    "symbolVariants": [
+      "Fodgængertunnel",
+      "Fodgængerbro",
+      "Retningsvisning kan fremgå af tavlens udformning eller supplerende afmærkning"
+    ],
+    "guidanceStatus": "informational",
+    "targetRoadUsers": "Gående.",
+    "areaReservation": "Ingen reservation følger alene af tavlen.",
+    "driverAction": "Følg tavlen for at finde den sikre passage for gående.",
+    "startsAt": "Ved adgangsvejen eller i nærheden af tunnelen eller broen.",
+    "duration": "Indtil den viste forbindelse er fundet eller passeret.",
+    "exceptions": [],
+    "supplementaryRules": [
+      "Afstand kan angives på tavlen eller undertavle efter de almindelige regler for oplysningstavler.",
+      "D 22 Gangsti kan være relevant for den faktiske sti, men E 26 er alene vejledning til forbindelsen."
+    ],
+    "commonMistakes": [
+      "At tro, at E 26 i sig selv er et lovpligtigt påbud.",
+      "At forveksle tavlen med D 22 Gangsti."
+    ],
+    "relatedElements": [
+      {
+        "id": "d22",
+        "relationType": "educationalRelation",
+        "explanation": "D 22 angiver en gangsti, mens E 26 viser vej til tunnel eller bro.",
+        "sourceReferences": []
+      }
+    ],
+    "imageFile": "assets/images/signs/e26.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§§ 24-27, E 26",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "e30",
+    "officialCode": "E 30",
+    "name": "Letbaneholdeplads",
+    "appDisplayName": "Letbaneholdeplads",
+    "elementType": "trafficSign",
+    "categoryId": "information-stop",
+    "categoryName": "Holdepladser",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen angiver en plads, hvor letbanekøretøjer må standse.",
+    "shortMeaning": "Holdeplads for letbanekøretøjer.",
+    "detailedMeaning": "Tavlen angiver en plads, hvor letbanekøretøj må standse, og hvor færdselslovens regler om letbanekøretøj gælder. Pladsen må kun benyttes af letbanekøretøjer.",
+    "placeStatus": "reserved",
+    "allowedUsers": [
+      "Letbanekøretøjer."
+    ],
+    "notAllowedUsers": [
+      "Andre køretøjer må ikke benytte selve holdepladsen."
+    ],
+    "driverAction": "Undlad at standse eller parkere, så letbanekøretøjets kørsel eller holdeplads hindres.",
+    "startsAt": "Ved den afmærkede letbaneholdeplads.",
+    "duration": "Gælder selve den afmærkede plads.",
+    "exceptions": [],
+    "supplementaryRules": [
+      "Færdselsloven forbyder standsning eller parkering på en måde, der hindrer kørsel med letbanekøretøj.",
+      "Cyklister på en cykelsti ved stoppestedet skal holde tilbage og om nødvendigt standse for på- eller afstigende passagerer, når der ikke er et særskilt passagerareal."
+    ],
+    "commonMistakes": [
+      "At bruge busstoppestedets 12-metersregel på en letbaneholdeplads.",
+      "At standse, så letbanekøretøjet eller passagererne hindres."
+    ],
+    "relatedElements": [],
+    "imageFile": "assets/images/signs/e30.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§§ 24-27, E 30",
+        "checkedDate": "2026-06-25"
+      },
+      {
+        "title": "Bekendtgørelse af færdselsloven",
+        "url": "https://www.retsinformation.dk/eli/lta/2026/118/dan/pdf",
+        "section": "§ 27, stk. 4, og § 29, stk. 1",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "e31",
+    "officialCode": "E 31",
+    "name": "Busholdeplads",
+    "appDisplayName": "Busholdeplads",
+    "elementType": "trafficSign",
+    "categoryId": "information-stop",
+    "categoryName": "Holdepladser",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen angiver en plads, som kun må benyttes af busser i almindelig rutekørsel.",
+    "shortMeaning": "Holdeplads for busser i almindelig rutekørsel.",
+    "detailedMeaning": "Tavlen angiver en plads, hvor busser må standse. Pladsen må kun benyttes af busser i almindelig rutekørsel.",
+    "placeStatus": "reserved",
+    "allowedUsers": [
+      "Busser i almindelig rutekørsel."
+    ],
+    "notAllowedUsers": [
+      "Personbiler.",
+      "Turistbusser og andre busser, der ikke er i almindelig rutekørsel.",
+      "Andre køretøjer."
+    ],
+    "driverAction": "Undlad at standse eller parkere på den afmærkede strækning. I tættere bebygget område skal du nedsætte hastigheden og om nødvendigt standse, når en bus giver tegn til at køre ud.",
+    "startsAt": "Ved den afmærkede holdeplads.",
+    "duration": "På den afmærkede strækning på hver side af skiltet. Hvis der ikke findes en sådan afmærkning, gælder standsnings- og parkeringsforbuddet 12 meter på hver side af skiltet.",
+    "exceptions": [],
+    "supplementaryRules": [
+      "I tættere bebygget område skal andre kørende hjælpe en bus ud fra stoppestedet, når busføreren giver tegn til igangsætning.",
+      "Busføreren skal stadig udvise særlig forsigtighed.",
+      "Cyklister på en cykelsti ved stoppestedet skal holde tilbage og om nødvendigt standse for på- eller afstigende passagerer, når der ikke er et særskilt passagerareal."
+    ],
+    "commonMistakes": [
+      "At tro, at kun parkering er forbudt.",
+      "At tro, at 12 meter kun gælder før skiltet.",
+      "At tro, at en turistbus må bruge pladsen.",
+      "At sige, at bussen har ubetinget vigepligt eller automatisk forrang ved udkørsel."
+    ],
+    "relatedElements": [],
+    "imageFile": "assets/images/signs/e31.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§§ 24-27, E 31",
+        "checkedDate": "2026-06-25"
+      },
+      {
+        "title": "Bekendtgørelse af færdselsloven",
+        "url": "https://www.retsinformation.dk/eli/lta/2026/118/dan/pdf",
+        "section": "§ 19, § 27, stk. 4, og § 29, stk. 2",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "e32",
+    "officialCode": "E 32",
+    "name": "Taxiholdeplads",
+    "appDisplayName": "Taxiholdeplads",
+    "elementType": "trafficSign",
+    "categoryId": "information-stop",
+    "categoryName": "Holdepladser",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen angiver en afmærket holdeplads for taxier.",
+    "shortMeaning": "Holdeplads for taxier.",
+    "detailedMeaning": "Tavlen angiver en taxiholdeplads. Andre køretøjer må ikke standse eller parkere på en afmærket holdeplads for hyrevogne.",
+    "placeStatus": "reserved",
+    "allowedUsers": [
+      "Taxier, som er omfattet af den viste afmærkning."
+    ],
+    "notAllowedUsers": [
+      "Andre køretøjer må ikke standse eller parkere på den afmærkede taxiholdeplads."
+    ],
+    "driverAction": "Hold taxiholdepladsen fri, medmindre du fører en taxi, som er omfattet af den viste afmærkning.",
+    "startsAt": "Ved den afmærkede taxiholdeplads.",
+    "duration": "Gælder den afmærkede plads og eventuelle begrænsninger, der fremgår af tavler eller kørebaneafmærkning.",
+    "exceptions": [
+      "V 45 på kørebanen kan begrænse pladsen til taxier, der er nulemissionsbiler."
+    ],
+    "supplementaryRules": [
+      "Hvor V 45 Taxisymbol for nulemissionsbil anvendes på kørebanen, må holdepladsen kun bruges til standsning og parkering af taxier som nulemissionsbil."
+    ],
+    "commonMistakes": [
+      "At bruge pladsen til kort af- og påstigning i en almindelig bil.",
+      "At overse et V 45-symbol, der begrænser pladsen til nulemissionstaxier."
+    ],
+    "relatedElements": [
+      {
+        "id": "v45",
+        "relationType": "commonlyCombined",
+        "explanation": "V 45 kan begrænse taxiholdepladsen til nulemissionstaxier.",
+        "sourceReferences": []
+      }
+    ],
+    "imageFile": "assets/images/signs/e32.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§§ 24-27, E 32 og § 61, V 45",
+        "checkedDate": "2026-06-25"
+      },
+      {
+        "title": "Bekendtgørelse af færdselsloven",
+        "url": "https://www.retsinformation.dk/eli/lta/2026/118/dan/pdf",
+        "section": "§ 29, stk. 1, nr. 10",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  }
+]

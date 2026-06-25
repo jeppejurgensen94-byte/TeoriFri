@@ -1,0 +1,803 @@
+[
+  {
+    "id": "d11",
+    "officialCode": "D 11",
+    "name": "Påbudt kørselsretning",
+    "elementType": "trafficSign",
+    "categoryId": "mandatory",
+    "categoryName": "Påbudstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen angiver den eller de retninger, som den kørende skal følge.",
+    "shortMeaning": "Du skal følge den viste kørselsretning.",
+    "detailedMeaning": "Tavlen påbyder den eller de kørselsretninger, som vises med pil. Den angiver et positivt påbud og er derfor ikke det samme som en forbudstavle, der alene forbyder en bestemt retning.",
+    "symbolVariants": [
+      {
+        "code": "D 11,1",
+        "meaning": "Ligeud"
+      },
+      {
+        "code": "D 11,2",
+        "meaning": "Til venstre"
+      },
+      {
+        "code": "D 11,3",
+        "meaning": "Til højre"
+      },
+      {
+        "code": "D 11,4",
+        "meaning": "Venstresving"
+      },
+      {
+        "code": "D 11,5",
+        "meaning": "Højresving"
+      },
+      {
+        "code": "D 11,6",
+        "meaning": "Ligeud eller til venstre"
+      },
+      {
+        "code": "D 11,7",
+        "meaning": "Ligeud eller til højre"
+      },
+      {
+        "code": "D 11,8",
+        "meaning": "Til venstre eller til højre"
+      }
+    ],
+    "appliesTo": "Den trafik, som tavlen er rettet mod. Tavlens betydning kan præciseres, indskrænkes eller udvides med undertavle.",
+    "driverAction": "Følg en af de viste pile ved det sted, hvor tavlen står.",
+    "startsAt": "Umiddelbart ved det sted, hvor eller hvorfra påbuddet gælder.",
+    "duration": "Gælder for den konkrete manøvre eller passage ved tavlen.",
+    "endsBy": [
+      "Når den påbudte manøvre eller passage er gennemført."
+    ],
+    "exceptions": [],
+    "supplementaryRules": [
+      "Undertavle kan præcisere, indskrænke eller udvide påbuddet."
+    ],
+    "commonMistakes": [
+      "At læse tavlen som et forbud i stedet for et påbud.",
+      "At overse, at kombinationspile giver flere lovlige retninger."
+    ],
+    "relatedElements": [
+      {
+        "id": "c11_1",
+        "relationType": "educationalRelation",
+        "explanation": "C 11,1 forbyder højresving, mens D 11 viser en retning, der skal følges.",
+        "sourceReferences": []
+      },
+      {
+        "id": "c11_2",
+        "relationType": "educationalRelation",
+        "explanation": "C 11,2 forbyder venstresving, mens D 11 viser en retning, der skal følges.",
+        "sourceReferences": []
+      }
+    ],
+    "imageFile": "assets/images/signs/d11.svg",
+    "variantImageFiles": {
+      "D 11,1": "assets/images/signs/d11_1.svg",
+      "D 11,2": "assets/images/signs/d11_2.svg",
+      "D 11,3": "assets/images/signs/d11_3.svg",
+      "D 11,4": "assets/images/signs/d11_4.svg",
+      "D 11,5": "assets/images/signs/d11_5.svg",
+      "D 11,6": "assets/images/signs/d11_6.svg",
+      "D 11,7": "assets/images/signs/d11_7.svg",
+      "D 11,8": "assets/images/signs/d11_8.svg"
+    },
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§§ 20-23, D 11",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "d12",
+    "officialCode": "D 12",
+    "name": "Påbudt kørselsretning i rundkørsel",
+    "elementType": "trafficSign",
+    "categoryId": "mandatory",
+    "categoryName": "Påbudstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen angiver den retning, som trafikken skal følge rundt i rundkørslen.",
+    "shortMeaning": "Følg den viste retning rundt i rundkørslen.",
+    "detailedMeaning": "Tavlen angiver den påbudte kørselsretning i en rundkørsel. Tavlen fastsætter ikke i sig selv vigepligten; vigepligten følger af B 11, B 13 eller anden afmærkning.",
+    "symbolVariants": [
+      {
+        "code": "D 12",
+        "meaning": "Påbudt cirkulationsretning"
+      }
+    ],
+    "appliesTo": "Den trafik, som kører ind i rundkørslen.",
+    "driverAction": "Kør rundt i den viste retning og følg separat vigepligtsafmærkning.",
+    "startsAt": "Ved indkørslen til rundkørslen.",
+    "duration": "Gennem rundkørslen.",
+    "endsBy": [
+      "Ved udkørsel fra rundkørslen."
+    ],
+    "exceptions": [],
+    "supplementaryRules": [
+      "B 11 Ubetinget vigepligt kan stå sammen med D 12."
+    ],
+    "commonMistakes": [
+      "At tro, at D 12 alene giver vigepligt.",
+      "At overse B 11 eller B 13 ved indkørslen."
+    ],
+    "relatedElements": [
+      {
+        "id": "b11",
+        "relationType": "commonlyCombined",
+        "explanation": "B 11 fastsætter normalt vigepligten ved indkørsel i rundkørslen.",
+        "sourceReferences": []
+      }
+    ],
+    "imageFile": "assets/images/signs/d12.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 16, B 11 samt §§ 20-23, D 12",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "d15",
+    "officialCode": "D 15",
+    "name": "Påbudt passage",
+    "elementType": "trafficSign",
+    "categoryId": "mandatory",
+    "categoryName": "Påbudstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen bestemmer, på hvilken side motorkøretøjer og store knallerter skal passere en helle eller forhindring.",
+    "shortMeaning": "Passér tavlen på den side, pilen peger mod.",
+    "detailedMeaning": "Motorkøretøjer og store knallerter skal passere tavlen på den side, som pilen peger mod. Påbuddet gælder ikke ved kørsel til stoppested, i busbane, parkeringsbane eller lignende.",
+    "symbolVariants": [
+      {
+        "code": "D 15,2",
+        "meaning": "Passage til venstre"
+      },
+      {
+        "code": "D 15,3",
+        "meaning": "Passage til højre"
+      }
+    ],
+    "appliesTo": "Motorkøretøjer og store knallerter.",
+    "driverAction": "Passér på den side, pilen viser.",
+    "startsAt": "Umiddelbart ved tavlen.",
+    "duration": "Gælder selve passagen af tavlen eller forhindringen.",
+    "endsBy": [
+      "Når tavlen eller forhindringen er passeret."
+    ],
+    "exceptions": [
+      "Kørsel til stoppested.",
+      "Kørsel i busbane.",
+      "Kørsel i parkeringsbane.",
+      "Lignende nødvendig kørsel til et areal ved tavlen."
+    ],
+    "supplementaryRules": [],
+    "commonMistakes": [
+      "At forveksle D 15 med D 11.",
+      "At tro, at tavlen gælder alle færdselsarter på samme måde."
+    ],
+    "relatedElements": [
+      {
+        "id": "d16",
+        "relationType": "educationalRelation",
+        "explanation": "D 16 tillader passage på begge sider.",
+        "sourceReferences": []
+      }
+    ],
+    "imageFile": "assets/images/signs/d15.svg",
+    "variantImageFiles": {
+      "D 15,2": "assets/images/signs/d15_2.svg",
+      "D 15,3": "assets/images/signs/d15_3.svg"
+    },
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§§ 20-23, D 15",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "d16",
+    "officialCode": "D 16",
+    "name": "Valgfri passage",
+    "elementType": "trafficSign",
+    "categoryId": "mandatory",
+    "categoryName": "Påbudstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen fortæller, at motorkøretøjer og store knallerter kan passere på begge sider.",
+    "shortMeaning": "Passage er tilladt på begge sider.",
+    "detailedMeaning": "Motorkøretøjer og store knallerter kan passere tavlen på begge sider.",
+    "symbolVariants": [
+      {
+        "code": "D 16",
+        "meaning": "Passage på begge sider"
+      }
+    ],
+    "appliesTo": "Motorkøretøjer og store knallerter.",
+    "driverAction": "Vælg den sikre og lovlige side af tavlen.",
+    "startsAt": "Umiddelbart ved tavlen.",
+    "duration": "Gælder selve passagen af tavlen eller forhindringen.",
+    "endsBy": [
+      "Når tavlen eller forhindringen er passeret."
+    ],
+    "exceptions": [],
+    "supplementaryRules": [],
+    "commonMistakes": [
+      "At tro, at kun én side er lovlig.",
+      "At forveksle tavlen med D 15."
+    ],
+    "relatedElements": [
+      {
+        "id": "d15",
+        "relationType": "educationalRelation",
+        "explanation": "D 15 påbyder passage på én bestemt side.",
+        "sourceReferences": []
+      }
+    ],
+    "imageFile": "assets/images/signs/d16.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§§ 20-23, D 16",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "d21",
+    "officialCode": "D 21",
+    "name": "Cykelsti",
+    "elementType": "trafficSign",
+    "categoryId": "mandatory-path",
+    "categoryName": "Påbudte stier",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen viser en bane, der som udgangspunkt skal bruges af cyklister og førere af lille knallert.",
+    "shortMeaning": "Banen er cykelsti for cyklister og lille knallert.",
+    "detailedMeaning": "Banen skal benyttes af cyklister og førere af lille knallert og må kun benyttes af disse, dog med de undtagelser der følger af færdselslovens §§ 10 og 14. Fodgængere må benytte cykelstien, når der ikke findes fortov, gangsti eller egnet rabat. Undertavle kan angive, at lille knallert skal føres på kørebanen.",
+    "symbolVariants": [
+      {
+        "code": "D 21",
+        "meaning": "Cykelsti"
+      }
+    ],
+    "appliesTo": "Cyklister og førere af lille knallert.",
+    "allowedUsers": [
+      "Cyklister.",
+      "Førere af lille knallert, medmindre andet er angivet.",
+      "Fodgængere, når betingelserne i færdselslovens § 10 er opfyldt."
+    ],
+    "notAllowedUsers": [
+      "Andre motorkøretøjer og store knallerter, medmindre særlige regler eller afmærkning tillader det."
+    ],
+    "driverAction": "Brug cykelstien, når du er omfattet, og vær opmærksom på eventuel dobbeltrettet trafik.",
+    "startsAt": "Umiddelbart ved tavlen.",
+    "duration": "Indtil stien eller den påbudte bane ophører eller ændres ved anden afmærkning.",
+    "endsBy": [
+      "Stien ophører.",
+      "En anden sti- eller baneafmærkning begynder.",
+      "UD 21,2 ophæver kun dobbeltretningen, ikke selve cykelstien."
+    ],
+    "exceptions": [
+      "Fodgængere kan benytte cykelstien efter færdselslovens § 10.",
+      "Undertavle kan påbyde, at lille knallert føres på kørebanen."
+    ],
+    "supplementaryRules": [
+      "UD 21,1 angiver dobbeltrettet cykeltrafik.",
+      "UD 21,2 angiver, at dobbeltrettet cykeltrafik ophører.",
+      "UD 1 udpeger den konkrete bane."
+    ],
+    "commonMistakes": [
+      "At tro, at alle fodgængere frit kan vælge cykelstien.",
+      "At overse undertavlen om lille knallert.",
+      "At overse dobbeltrettet cykeltrafik."
+    ],
+    "relatedElements": [
+      {
+        "id": "ud21_1",
+        "relationType": "commonlyCombined",
+        "explanation": "Angiver dobbeltrettet cykeltrafik.",
+        "sourceReferences": []
+      },
+      {
+        "id": "ud21_2",
+        "relationType": "endsRestriction",
+        "explanation": "Ophæver dobbeltretningen.",
+        "sourceReferences": []
+      },
+      {
+        "id": "ud1",
+        "relationType": "commonlyCombined",
+        "explanation": "Udpeger den konkrete bane.",
+        "sourceReferences": []
+      }
+    ],
+    "imageFile": "assets/images/signs/d21.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§§ 20-23, D 21, UD 21,1, UD 21,2 og UD 1",
+        "checkedDate": "2026-06-25"
+      },
+      {
+        "title": "Bekendtgørelse af færdselsloven",
+        "url": "https://www.retsinformation.dk/eli/lta/2026/118/dan/pdf",
+        "section": "§ 10 og § 14",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "d22",
+    "officialCode": "D 22",
+    "name": "Gangsti",
+    "elementType": "trafficSign",
+    "categoryId": "mandatory-path",
+    "categoryName": "Påbudte stier",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen viser en bane, som skal bruges af gående og kun må bruges af gående.",
+    "shortMeaning": "Banen er gangsti.",
+    "detailedMeaning": "Banen skal benyttes af gående og må kun benyttes af disse. Personer, der efter færdselsloven anses som gående, er også omfattet, fx personer der trækker cykel eller knallert eller skubber en kørestol.",
+    "symbolVariants": [
+      {
+        "code": "D 22",
+        "meaning": "Gangsti"
+      }
+    ],
+    "appliesTo": "Gående og personer, som efter færdselsloven anses som gående.",
+    "allowedUsers": [
+      "Gående.",
+      "Personer, der trækker cykel eller knallert.",
+      "Personer, der skubber kørestol, barnevogn eller legevogn.",
+      "Andre, som efter færdselslovens § 11 anses som gående."
+    ],
+    "notAllowedUsers": [
+      "Cyklister under kørsel.",
+      "Motorkøretøjer og knallerter under kørsel.",
+      "Ridende."
+    ],
+    "driverAction": "Brug gangstien til fods. Træk cykel eller knallert.",
+    "startsAt": "Umiddelbart ved tavlen.",
+    "duration": "Indtil gangstien ophører eller ændres ved anden afmærkning.",
+    "endsBy": [
+      "Stien ophører.",
+      "En anden sti- eller baneafmærkning begynder."
+    ],
+    "exceptions": [],
+    "supplementaryRules": [],
+    "commonMistakes": [
+      "At cykle på gangstien.",
+      "At tro, at en cykel, der trækkes, stadig behandles som kørende."
+    ],
+    "relatedElements": [],
+    "imageFile": "assets/images/signs/d22.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§§ 20-23, D 22",
+        "checkedDate": "2026-06-25"
+      },
+      {
+        "title": "Bekendtgørelse af færdselsloven",
+        "url": "https://www.retsinformation.dk/eli/lta/2026/118/dan/pdf",
+        "section": "§ 10 og § 11",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "d23",
+    "officialCode": "D 23",
+    "name": "Ridesti",
+    "elementType": "trafficSign",
+    "categoryId": "mandatory-path",
+    "categoryName": "Påbudte stier",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen viser en bane, som skal bruges af ridende og kun må bruges af ridende.",
+    "shortMeaning": "Banen er ridesti.",
+    "detailedMeaning": "Banen skal benyttes af ridende og må kun benyttes af disse. Færdselsreglerne for kørende gælder, i det omfang de kan anvendes, også for ridende og personer, der fører heste.",
+    "symbolVariants": [
+      {
+        "code": "D 23",
+        "meaning": "Ridesti"
+      }
+    ],
+    "appliesTo": "Ridende.",
+    "allowedUsers": [
+      "Ridende."
+    ],
+    "notAllowedUsers": [
+      "Gående.",
+      "Cyklister.",
+      "Knallerter og motorkøretøjer."
+    ],
+    "driverAction": "Brug ridestien, når du rider, og følg gældende regler for kørende i det omfang de kan anvendes.",
+    "startsAt": "Umiddelbart ved tavlen.",
+    "duration": "Indtil ridestien ophører eller ændres ved anden afmærkning.",
+    "endsBy": [
+      "Stien ophører.",
+      "En anden sti- eller baneafmærkning begynder."
+    ],
+    "exceptions": [],
+    "supplementaryRules": [],
+    "commonMistakes": [
+      "At bruge ridestien som almindelig gang- eller cykelsti.",
+      "At antage, at alle regler for motorkøretøjer gælder uændret for ridende."
+    ],
+    "relatedElements": [],
+    "imageFile": "assets/images/signs/d23.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§§ 20-23, D 23",
+        "checkedDate": "2026-06-25"
+      },
+      {
+        "title": "Bekendtgørelse af færdselsloven",
+        "url": "https://www.retsinformation.dk/eli/lta/2026/118/dan/pdf",
+        "section": "§ 2, nr. 10",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "d26",
+    "officialCode": "D 26",
+    "name": "Delt sti",
+    "elementType": "trafficSign",
+    "categoryId": "mandatory-path",
+    "categoryName": "Påbudte stier",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen viser en sti med adskilte baner for forskellige færdselsarter.",
+    "shortMeaning": "Forskellige færdselsarter har hver sin adskilte del af stien.",
+    "detailedMeaning": "Stien har flere baner, der er adskilt ved afstribning, rabat eller lignende. Hver bane skal benyttes af den færdselsart, der vises med symbol, og må kun benyttes af denne. Symbolernes placering svarer til banernes placering.",
+    "symbolVariants": [
+      {
+        "code": "D 26",
+        "meaning": "Delt sti med symboler for de aktuelle færdselsarter"
+      }
+    ],
+    "appliesTo": "De færdselsarter, som vises på tavlen.",
+    "allowedUsers": [
+      "Den viste færdselsart på den tilhørende bane."
+    ],
+    "notAllowedUsers": [
+      "Andre færdselsarter på den pågældende bane."
+    ],
+    "driverAction": "Brug den del af stien, som passer til dit symbol.",
+    "startsAt": "Umiddelbart ved tavlen.",
+    "duration": "Indtil den delte sti ophører eller ændres ved anden afmærkning.",
+    "endsBy": [
+      "Stien ophører.",
+      "En anden sti- eller baneafmærkning begynder."
+    ],
+    "exceptions": [],
+    "supplementaryRules": [
+      "UD 1 kan udpege den konkrete bane.",
+      "UD 21,1 og UD 21,2 kan bruges, når en cykeldel er dobbeltrettet."
+    ],
+    "commonMistakes": [
+      "At gå eller cykle i den forkerte del.",
+      "At forveksle delt sti med fællessti."
+    ],
+    "relatedElements": [
+      {
+        "id": "d27",
+        "relationType": "educationalRelation",
+        "explanation": "D 27 har én fælles bane uden opdeling mellem de viste færdselsarter.",
+        "sourceReferences": []
+      }
+    ],
+    "imageFile": "assets/images/signs/d26.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§§ 20-23, D 26",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "d27",
+    "officialCode": "D 27",
+    "name": "Fællessti",
+    "elementType": "trafficSign",
+    "categoryId": "mandatory-path",
+    "categoryName": "Påbudte stier",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen viser en fælles bane for flere viste færdselsarter.",
+    "shortMeaning": "Flere viste færdselsarter deler den samme sti.",
+    "detailedMeaning": "Banen skal benyttes af de færdselsarter, som vises med symbol, og må kun benyttes af disse. Trafikanterne på fællesstien skal udvise gensidig hensynsfuldhed.",
+    "symbolVariants": [
+      {
+        "code": "D 27",
+        "meaning": "Fællessti med symboler for de aktuelle færdselsarter"
+      }
+    ],
+    "appliesTo": "De færdselsarter, som vises på tavlen.",
+    "allowedUsers": [
+      "De viste færdselsarter."
+    ],
+    "notAllowedUsers": [
+      "Andre færdselsarter end dem, der vises."
+    ],
+    "driverAction": "Del stien og vis særlig hensyn til de andre viste færdselsarter.",
+    "startsAt": "Umiddelbart ved tavlen.",
+    "duration": "Indtil fællesstien ophører eller ændres ved anden afmærkning.",
+    "endsBy": [
+      "Stien ophører.",
+      "En anden sti- eller baneafmærkning begynder."
+    ],
+    "exceptions": [],
+    "supplementaryRules": [
+      "UD 1 kan udpege den konkrete bane.",
+      "UD 21,1 og UD 21,2 kan bruges, når cykeltrafikken er dobbeltrettet."
+    ],
+    "commonMistakes": [
+      "At forvente en fysisk opdeling mellem gående og cyklister.",
+      "At undlade at tilpasse fart og afstand til andre brugere."
+    ],
+    "relatedElements": [
+      {
+        "id": "d26",
+        "relationType": "educationalRelation",
+        "explanation": "D 26 har separate baner for de viste færdselsarter.",
+        "sourceReferences": []
+      }
+    ],
+    "imageFile": "assets/images/signs/d27.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§§ 20-23, D 27",
+        "checkedDate": "2026-06-25"
+      },
+      {
+        "title": "Bekendtgørelse af færdselsloven",
+        "url": "https://www.retsinformation.dk/eli/lta/2026/118/dan/pdf",
+        "section": "§ 3, stk. 1",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "d55",
+    "officialCode": "D 55",
+    "name": "Mindste hastighed",
+    "elementType": "trafficSign",
+    "categoryId": "mandatory",
+    "categoryName": "Påbudstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen angiver en mindste hastighed for kørende, bortset fra cyklister og førere af lille knallert.",
+    "shortMeaning": "Kør mindst med den viste hastighed, når forholdene tillader det.",
+    "detailedMeaning": "Påbuddet gælder kørende bortset fra cyklister og førere af lille knallert. Det gælder, indtil det ophæves ved D 56 eller ved afstandsangivelse på undertavle.",
+    "symbolVariants": [
+      {
+        "code": "D 55",
+        "meaning": "Tallet angiver mindste hastighed"
+      }
+    ],
+    "appliesTo": "Kørende, bortset fra cyklister og førere af lille knallert.",
+    "driverAction": "Kør ikke langsommere end den viste hastighed, når trafik, vejr, vejforhold og sikkerhed gør det forsvarligt.",
+    "startsAt": "Umiddelbart ved tavlen.",
+    "duration": "Indtil D 56 eller den afstand, der er angivet på undertavle.",
+    "endsBy": [
+      "D 56 Ophør af mindste hastighed.",
+      "Afstandsangivelse på undertavle."
+    ],
+    "exceptions": [
+      "Cyklister.",
+      "Førere af lille knallert.",
+      "Nødvendig lavere hastighed af hensyn til trafik, vejrlig, vejforhold eller sikkerhed."
+    ],
+    "supplementaryRules": [
+      "Afstandsangivelse kan angive, hvor langt påbuddet gælder."
+    ],
+    "commonMistakes": [
+      "At tro, at tallet er en maksimal hastighed.",
+      "At tro, at næste vejkryds automatisk ophæver påbuddet.",
+      "At holde den viste hastighed, selvom forholdene kræver lavere fart."
+    ],
+    "relatedElements": [
+      {
+        "id": "d56",
+        "relationType": "endsRestriction",
+        "explanation": "D 56 ophæver mindstehastigheden.",
+        "sourceReferences": []
+      },
+      {
+        "id": "c55",
+        "relationType": "oppositeMeaning",
+        "explanation": "C 55 angiver maksimal hastighed, mens D 55 angiver mindste hastighed.",
+        "sourceReferences": []
+      }
+    ],
+    "imageFile": "assets/images/signs/d55.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§§ 20-23, D 55",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "d56",
+    "officialCode": "D 56",
+    "name": "Ophør af mindste hastighed",
+    "elementType": "trafficSign",
+    "categoryId": "mandatory-end",
+    "categoryName": "Ophør af påbud",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen ophæver et tidligere påbud om mindste hastighed.",
+    "shortMeaning": "Mindstehastigheden ophører.",
+    "detailedMeaning": "Tavlen ophæver påbuddet fra D 55. Tavlen fastsætter ikke selv en maksimal hastighed.",
+    "symbolVariants": [
+      {
+        "code": "D 56",
+        "meaning": "Ophør af den viste mindste hastighed"
+      }
+    ],
+    "appliesTo": "De kørende, som var omfattet af D 55.",
+    "driverAction": "Følg herefter de almindelige hastighedsregler og anden gældende afmærkning.",
+    "startsAt": "Ved tavlens placering.",
+    "duration": "Virker ved passage af tavlen.",
+    "endsBy": [],
+    "exceptions": [],
+    "supplementaryRules": [],
+    "commonMistakes": [
+      "At tro, at D 56 angiver en ny maksimal hastighed.",
+      "At overse en separat C 55-hastighedstavle."
+    ],
+    "relatedElements": [
+      {
+        "id": "d55",
+        "relationType": "endsRestriction",
+        "explanation": "D 56 ophæver D 55.",
+        "sourceReferences": []
+      }
+    ],
+    "imageFile": "assets/images/signs/d56.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§§ 20-23, D 56",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "ud21_1",
+    "officialCode": "UD 21,1",
+    "name": "Dobbeltrettet cykeltrafik",
+    "elementType": "supplementarySign",
+    "categoryId": "supplementary-mandatory",
+    "categoryName": "Undertavler til påbudstavler",
+    "categoryBRelevance": "direct",
+    "shortMeaning": "Cykelstien har trafik i begge retninger.",
+    "detailedMeaning": "Undertavlen angiver, at cykelstien har trafik i begge retninger.",
+    "appliesTo": "Trafik på og ved den pågældende cykelsti.",
+    "driverAction": "Forvent cyklister og små knallerter fra begge retninger.",
+    "startsAt": "Ved tavlen.",
+    "duration": "Indtil UD 21,2 eller stiens dobbeltretning på anden måde ophører.",
+    "endsBy": [
+      "UD 21,2 Dobbeltrettet cykeltrafik ophører.",
+      "Stiens dobbeltretning ophører ved anden tydelig afmærkning."
+    ],
+    "commonMistakes": [
+      "Kun at se efter cyklister fra én retning."
+    ],
+    "imageFile": "assets/images/signs/ud21_1.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 23, UD 21,1",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "ud21_2",
+    "officialCode": "UD 21,2",
+    "name": "Dobbeltrettet cykeltrafik ophører",
+    "elementType": "supplementarySign",
+    "categoryId": "supplementary-mandatory",
+    "categoryName": "Undertavler til påbudstavler",
+    "categoryBRelevance": "direct",
+    "shortMeaning": "Cykelstien er ikke længere dobbeltrettet.",
+    "detailedMeaning": "Undertavlen angiver, at cykelstien ikke længere har trafik i begge retninger.",
+    "appliesTo": "Trafik på og ved den pågældende cykelsti.",
+    "driverAction": "Følg den nye retning og den videre afmærkning.",
+    "startsAt": "Ved tavlen.",
+    "duration": "Virker ved passage af tavlen.",
+    "endsBy": [],
+    "commonMistakes": [
+      "At tro, at selve cykelstien ophører.",
+      "At fortsætte med at forvente lovlig cykeltrafik i begge retninger."
+    ],
+    "imageFile": "assets/images/signs/ud21_2.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 23, UD 21,2",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "ud1",
+    "officialCode": "UD 1",
+    "name": "Baneangivelse for den viste færdselsart",
+    "elementType": "supplementarySign",
+    "categoryId": "supplementary-mandatory",
+    "categoryName": "Undertavler til påbudstavler",
+    "categoryBRelevance": "direct",
+    "shortMeaning": "Pilen udpeger den bane, der er forbeholdt den viste færdselsart.",
+    "detailedMeaning": "Undertavlen udpeger den bane, som kun må benyttes af den færdselsart, der angives med hovedtavlens symbol.",
+    "appliesTo": "Den færdselsart, der vises på hovedtavlen.",
+    "driverAction": "Brug den bane, som pilen peger på.",
+    "startsAt": "Ved tavlen.",
+    "duration": "Indtil banen eller afmærkningen ændres.",
+    "endsBy": [
+      "En anden bane- eller sti-afmærkning.",
+      "Banen ophører."
+    ],
+    "commonMistakes": [
+      "At følge hovedtavlens symbol, men overse hvilken konkret bane pilen peger på."
+    ],
+    "imageFile": "assets/images/signs/ud1.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 23, UD 1",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  }
+]

@@ -1,0 +1,372 @@
+[
+  {
+    "id": "b11",
+    "officialCode": "B 11",
+    "name": "Ubetinget vigepligt",
+    "elementType": "trafficSign",
+    "categoryId": "priority",
+    "categoryName": "Vigepligtstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen er central for at forstå vigepligtsregler i kryds og ved indkørsler, og den ses hyppigt i trafikbilledet for kategori B-førere.",
+    "shortMeaning": "Vigepligt for tværgående færdsel fra begge sider.",
+    "detailedMeaning": "Tavlen angiver, at føreren har ubetinget vigepligt for al kørende færdsel på den vej, der krydses eller køres ind på. Vigepligten gælder fra begge sider uanset trafikkens retning.",
+    "driverAction": "Sæt farten ned i god tid og stands helt, hvis der kommer trafik. Kør først frem, når det kan ske uden fare for eller ulempe for anden trafik.",
+    "exceptions": [],
+    "commonMistakes": [
+      "At tro, at vigepligten kun gælder fra venstre.",
+      "At køre frem uden at standse, selvom der er tværgående trafik tæt på."
+    ],
+    "relatedElements": [
+      {
+        "id": "b13",
+        "relationType": "sameCategory",
+        "explanation": "B 13 er en skærpet form for ubetinget vigepligt med stoppligt.",
+        "sourceReferences": [
+          {
+            "title": "Bekendtgørelse om vejafmærkning",
+            "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+            "section": "§ 16, B 13",
+            "checkedDate": "2026-06-25"
+          }
+        ]
+      },
+      {
+        "id": "b16",
+        "relationType": "educationalRelation",
+        "explanation": "B 16 angiver hovedvej, hvor færdsel fra sideveje normalt har ubetinget vigepligt.",
+        "sourceReferences": [
+          {
+            "title": "Bekendtgørelse om vejafmærkning",
+            "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+            "section": "§ 16, B 16",
+            "checkedDate": "2026-06-25"
+          }
+        ]
+      }
+    ],
+    "imageFile": "assets/images/signs/b11.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 16, B 11",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "b13",
+    "officialCode": "B 13",
+    "name": "Stop",
+    "elementType": "trafficSign",
+    "categoryId": "priority",
+    "categoryName": "Vigepligtstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen kræver både stoppligt og ubetinget vigepligt og ses blandt andet ved uoverskuelige kryds og jernbaneoverkørsler.",
+    "shortMeaning": "Ubetinget vigepligt og stoppligt.",
+    "detailedMeaning": "Tavlen angiver ubetinget vigepligt for al kørende færdsel samt pligt til at standse helt før stoplinjen eller, hvis der ikke findes en stoplinje, før fremkørsel i krydset eller over jernbanesporet.",
+    "driverAction": "Du skal standse helt før stoplinjen. Hvis der ikke findes en stoplinje, skal du standse før fremkørsel i krydset eller over jernbanesporet. Du må først køre videre, når det kan ske uden fare.",
+    "exceptions": [
+      "Cyklister og førere af lille knallert, der lovligt benytter cykelstien, kan i kryds uden at stoppe svinge til højre ad cykelsti langs den krydsende vejs højre side, hvis det kan ske uden ulempe for andre trafikanter."
+    ],
+    "commonMistakes": [
+      "At rulle langsomt frem i stedet for at standse helt.",
+      "At standse for sent, så dele af køretøjet befinder sig efter stoplinjen."
+    ],
+    "relatedElements": [
+      {
+        "id": "b11",
+        "relationType": "sameCategory",
+        "explanation": "B 11 angiver ubetinget vigepligt uden stoppligt, mens B 13 også kræver fuldt stop.",
+        "sourceReferences": [
+          {
+            "title": "Bekendtgørelse om vejafmærkning",
+            "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+            "section": "§ 16, B 11 og B 13",
+            "checkedDate": "2026-06-25"
+          }
+        ]
+      }
+    ],
+    "imageFile": "assets/images/signs/b13.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 16, B 13",
+        "checkedDate": "2026-06-25"
+      },
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 59, S 13 Stoplinje",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "b15",
+    "officialCode": "B 15",
+    "name": "Sammenfletning",
+    "elementType": "trafficSign",
+    "categoryId": "priority",
+    "categoryName": "Vigepligtstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen ses, hvor kørebaner løber sammen, og føreren skal kunne samarbejde med andre trafikanter om en sikker sammenfletning.",
+    "shortMeaning": "Kørebaner løber sammen.",
+    "detailedMeaning": "Tavlen angiver, at kørebaner løber sammen, og at trafikanterne under gensidig hensyntagen skal lette sammenfletningen af trafikstrømmene. Ingen har automatisk forrang.",
+    "driverAction": "Vis gensidig hensyntagen og tilpas hastighed og placering, så sammenfletningen kan ske sikkert.",
+    "exceptions": [],
+    "commonMistakes": [
+      "At tro, at man automatisk har forrang, fordi man kører i den gennemgående bane.",
+      "At nægte at give plads, selvom sammenfletning er nødvendig."
+    ],
+    "relatedElements": [
+      {
+        "id": "b11",
+        "relationType": "sameCategory",
+        "explanation": "B 11 angiver ubetinget vigepligt, mens B 15 bygger på gensidig hensyntagen uden fast vigepligt.",
+        "sourceReferences": [
+          {
+            "title": "Bekendtgørelse om vejafmærkning",
+            "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+            "section": "§ 16, B 11 og B 15",
+            "checkedDate": "2026-06-25"
+          }
+        ]
+      }
+    ],
+    "imageFile": "assets/images/signs/b15.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 16, B 15",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "b16",
+    "officialCode": "B 16",
+    "name": "Hovedvej",
+    "elementType": "trafficSign",
+    "categoryId": "priority",
+    "categoryName": "Vigepligtstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen er afgørende for at forstå vigepligtsforhold i kryds og parkeringsreglen på hovedvej uden for tættere bebygget område.",
+    "shortMeaning": "Hovedvej, hvor færdsel fra sideveje normalt har ubetinget vigepligt.",
+    "detailedMeaning": "Tavlen angiver, at føreren befinder sig på en hovedvej. Færdsel fra sideveje har ubetinget vigepligt, medmindre B 11, B 13 eller B 15 er opsat på hovedvejen. Parkering på kørebanen er forbudt uden for tættere bebygget område.",
+    "driverAction": "Hold fortsat øje med færdsel fra sideveje og følg eventuelle andre vigepligtstavler. Parkér ikke på kørebanen uden for tættere bebygget område.",
+    "exceptions": [
+      "Hvis B 11, B 13 eller B 15 er opsat på hovedvejen ved et kryds, er det disse tavlers betydning, der regulerer vigepligten."
+    ],
+    "commonMistakes": [
+      "At tro, at hovedvejsstatus fortsætter efter B 17.",
+      "At parkere på kørebanen uden for tættere bebygget område."
+    ],
+    "relatedElements": [
+      {
+        "id": "b17",
+        "relationType": "oppositeMeaning",
+        "explanation": "B 16 etablerer hovedvejsstatus, mens B 17 ophæver den.",
+        "sourceReferences": [
+          {
+            "title": "Bekendtgørelse om vejafmærkning",
+            "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+            "section": "§ 16, B 16 og B 17",
+            "checkedDate": "2026-06-25"
+          }
+        ]
+      },
+      {
+        "id": "b11",
+        "relationType": "exception",
+        "explanation": "B 11 kan være opsat på hovedvejen og regulerer da vigepligten på stedet.",
+        "sourceReferences": [
+          {
+            "title": "Bekendtgørelse om vejafmærkning",
+            "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+            "section": "§ 16, B 16",
+            "checkedDate": "2026-06-25"
+          }
+        ]
+      },
+      {
+        "id": "b13",
+        "relationType": "exception",
+        "explanation": "B 13 kan være opsat på hovedvejen og regulerer da vigepligten på stedet.",
+        "sourceReferences": [
+          {
+            "title": "Bekendtgørelse om vejafmærkning",
+            "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+            "section": "§ 16, B 16",
+            "checkedDate": "2026-06-25"
+          }
+        ]
+      },
+      {
+        "id": "b15",
+        "relationType": "exception",
+        "explanation": "B 15 kan være opsat på hovedvejen og regulerer da vigepligten på stedet.",
+        "sourceReferences": [
+          {
+            "title": "Bekendtgørelse om vejafmærkning",
+            "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+            "section": "§ 16, B 16",
+            "checkedDate": "2026-06-25"
+          }
+        ]
+      }
+    ],
+    "imageFile": "assets/images/signs/b16.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 16, B 16",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "b17",
+    "officialCode": "B 17",
+    "name": "Hovedvej ophører",
+    "elementType": "trafficSign",
+    "categoryId": "priority",
+    "categoryName": "Vigepligtstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen markerer, at hovedvejsstatus ophører, så føreren igen skal følge andre tavler eller de almindelige vigepligtsregler.",
+    "shortMeaning": "Hovedvejsstatus ophører.",
+    "detailedMeaning": "Tavlen angiver, at hovedvejsstatus ophører. Føreren skal herefter følge eventuelle andre tavler eller de almindelige vigepligtsregler.",
+    "driverAction": "Vær opmærksom på andre tavler og på almindelige vigepligtsregler i de følgende kryds.",
+    "exceptions": [],
+    "commonMistakes": [
+      "At fortsætte med at tro, at sideveje automatisk har vigepligt.",
+      "At overse andre tavler i det følgende kryds."
+    ],
+    "relatedElements": [
+      {
+        "id": "b16",
+        "relationType": "oppositeMeaning",
+        "explanation": "B 16 etablerer hovedvejsstatus, mens B 17 ophæver den.",
+        "sourceReferences": [
+          {
+            "title": "Bekendtgørelse om vejafmærkning",
+            "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+            "section": "§ 16, B 16 og B 17",
+            "checkedDate": "2026-06-25"
+          }
+        ]
+      }
+    ],
+    "imageFile": "assets/images/signs/b17.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 16, B 17",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "b18",
+    "officialCode": "B 18",
+    "name": "Hold tilbage for modkørende",
+    "elementType": "trafficSign",
+    "categoryId": "priority",
+    "categoryName": "Vigepligtstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen ses ved smalle vejstrækninger, hvor føreren skal vurdere, om passage kan ske uden at tvinge modkørende til at standse.",
+    "shortMeaning": "Du skal holde tilbage for modkørende på den smalle vejstrækning.",
+    "detailedMeaning": "Tavlen angiver, at føreren kun må køre ind på vejstrækningen, når vedkommende kan passere uden at tvinge modkørende til at standse.",
+    "driverAction": "Vent før den smalle vejstrækning, hvis din passage vil tvinge modkørende til at standse.",
+    "exceptions": [],
+    "commonMistakes": [
+      "At køre ind, selvom modkørende allerede er på vej ind på den smalle strækning.",
+      "At tro, at den først ankomne altid har ret til at fortsætte."
+    ],
+    "relatedElements": [
+      {
+        "id": "b19",
+        "relationType": "oppositeMeaning",
+        "explanation": "B 19 angiver, at modkørende skal holde tilbage.",
+        "sourceReferences": [
+          {
+            "title": "Bekendtgørelse om vejafmærkning",
+            "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+            "section": "§ 16, B 18 og B 19",
+            "checkedDate": "2026-06-25"
+          }
+        ]
+      }
+    ],
+    "imageFile": "assets/images/signs/b18.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 16, B 18",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "b19",
+    "officialCode": "B 19",
+    "name": "Modkørende færdsel skal holde tilbage",
+    "elementType": "trafficSign",
+    "categoryId": "priority",
+    "categoryName": "Vigepligtstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen fortæller, at modkørende har pligt til at holde tilbage på den smalle vejstrækning, men føreren skal stadig sikre en forsvarlig passage.",
+    "shortMeaning": "Modkørende færdsel skal holde tilbage på den smalle vejstrækning.",
+    "detailedMeaning": "Tavlen angiver, at modkørende færdsel skal holde tilbage på den smalle vejstrækning. Føreren skal stadig sikre sig, at passage kan ske uden fare.",
+    "driverAction": "Fortsæt kun, når du kan se, at modkørende holder tilbage, og at passagen kan ske sikkert.",
+    "exceptions": [],
+    "commonMistakes": [
+      "At betragte tavlen som en ubetinget ret til at køre frem.",
+      "At fortsætte, selvom modkørende allerede befinder sig på den smalle strækning."
+    ],
+    "relatedElements": [
+      {
+        "id": "b18",
+        "relationType": "oppositeMeaning",
+        "explanation": "B 18 angiver, at føreren skal holde tilbage for modkørende.",
+        "sourceReferences": [
+          {
+            "title": "Bekendtgørelse om vejafmærkning",
+            "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+            "section": "§ 16, B 18 og B 19",
+            "checkedDate": "2026-06-25"
+          }
+        ]
+      }
+    ],
+    "imageFile": "assets/images/signs/b19.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 16, B 19",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  }
+]

@@ -1,0 +1,773 @@
+[
+  {
+    "id": "a72",
+    "officialCode": "A 72",
+    "name": "Jernbaneoverkørsel uden bomme",
+    "elementType": "trafficSign",
+    "categoryId": "warning",
+    "categoryName": "Advarselstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen advarer om en jernbaneoverkørsel uden bomme, hvor føreren skal være særligt opmærksom på tog og øvrig afmærkning.",
+    "shortMeaning": "Advarsel om jernbaneoverkørsel uden bomme.",
+    "detailedMeaning": "Tavlen angiver en jernbaneoverkørsel uden bomme. Den kan suppleres med UA 72 »Se efter tog« eller UB 11,1 som forvarsling af stop.",
+    "driverAction": "Sænk hastigheden, orientér dig i begge retninger, og vær klar til at standse. Følg lyssignaler, lydsignaler, B 13 Stop og anden afmærkning på stedet.",
+    "exceptions": [],
+    "commonMistakes": [
+      "At tro, at fravær af bomme betyder, at der ikke kan komme tog.",
+      "At overse stop- eller lyssignaler ved overkørslen."
+    ],
+    "relatedElements": [
+      {
+        "id": "ua72",
+        "relationType": "commonlyCombined",
+        "explanation": "UA 72 kan anvendes sammen med A 72 ved overkørsler, der alene er sikret ved afmærkning og eventuelt oversigtsareal.",
+        "sourceReferences": [
+          {
+            "title": "Bekendtgørelse om vejafmærkning",
+            "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+            "section": "§ 13, A 72 og UA 72",
+            "checkedDate": "2026-06-25"
+          }
+        ]
+      },
+      {
+        "id": "ub11_1",
+        "relationType": "commonlyCombined",
+        "explanation": "UB 11,1 kan bruges under A 72 til forvarsling af stop ved jernbaneoverkørslen.",
+        "sourceReferences": [
+          {
+            "title": "Bekendtgørelse om vejafmærkning",
+            "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+            "section": "§ 13, A 72 og UB 11,1",
+            "checkedDate": "2026-06-25"
+          }
+        ]
+      },
+      {
+        "id": "a74_1",
+        "relationType": "educationalRelation",
+        "explanation": "A 74,1 markerer selve enkeltsporede jernbaneoverkørsel.",
+        "sourceReferences": [
+          {
+            "title": "Bekendtgørelse om vejafmærkning",
+            "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+            "section": "§ 13, A 74,1",
+            "checkedDate": "2026-06-25"
+          }
+        ]
+      },
+      {
+        "id": "a74_2",
+        "relationType": "educationalRelation",
+        "explanation": "A 74,2 markerer selve flersporede jernbaneoverkørsel.",
+        "sourceReferences": [
+          {
+            "title": "Bekendtgørelse om vejafmærkning",
+            "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+            "section": "§ 13, A 74,2",
+            "checkedDate": "2026-06-25"
+          }
+        ]
+      }
+    ],
+    "imageFile": "assets/images/signs/a72.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 13, A 72",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "a73",
+    "officialCode": "A 73",
+    "name": "Jernbaneoverkørsel med bomme",
+    "elementType": "trafficSign",
+    "categoryId": "warning",
+    "categoryName": "Advarselstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen advarer om en jernbaneoverkørsel med bomme og tilhørende signaler.",
+    "shortMeaning": "Advarsel om jernbaneoverkørsel med bomme.",
+    "detailedMeaning": "Tavlen angiver en jernbaneoverkørsel med bomme. Den kan suppleres med UA 73 ved elektrificeret bane.",
+    "driverAction": "Sænk hastigheden og følg bomme, lyssignaler, lydsignaler og anden afmærkning. Kør ikke ind på overkørslen, når signalerne eller bommene kræver standsning.",
+    "exceptions": [],
+    "commonMistakes": [
+      "At fortsætte, mens bommene er ved at gå ned.",
+      "At overse lyssignalet, fordi bommen endnu ikke er helt nede."
+    ],
+    "relatedElements": [
+      {
+        "id": "ua73",
+        "relationType": "commonlyCombined",
+        "explanation": "UA 73 kan anvendes ved elektrificeret bane for at angive sikker frihøjde.",
+        "sourceReferences": [
+          {
+            "title": "Bekendtgørelse om vejafmærkning",
+            "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+            "section": "§ 13, A 73 og UA 73",
+            "checkedDate": "2026-06-25"
+          }
+        ]
+      },
+      {
+        "id": "a75",
+        "relationType": "commonlyCombined",
+        "explanation": "A 75 kan anvendes sammen med A 73 til at vise afstanden til overkørslen.",
+        "sourceReferences": [
+          {
+            "title": "Bekendtgørelse om vejafmærkning",
+            "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+            "section": "§ 13, A 75",
+            "checkedDate": "2026-06-25"
+          }
+        ]
+      }
+    ],
+    "imageFile": "assets/images/signs/a73.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 13, A 73",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "a74_1",
+    "officialCode": "A 74,1",
+    "name": "Krydsmærke for enkeltsporet jernbaneoverkørsel",
+    "elementType": "trafficSign",
+    "categoryId": "warning",
+    "categoryName": "Advarselstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen markerer selve stedet for en enkeltsporet jernbaneoverkørsel.",
+    "shortMeaning": "Markering af enkeltsporet jernbaneoverkørsel.",
+    "detailedMeaning": "Tavlen opsættes umiddelbart foran en enkeltsporet jernbaneoverkørsel. B 13 Stop og UA 72 kan opsættes under krydsmærket.",
+    "driverAction": "Nærm dig langsomt, orientér dig, og følg eventuelle signaler og B 13 Stop. Kryds først, når det kan ske sikkert.",
+    "exceptions": [],
+    "commonMistakes": [
+      "At tro, at krydsmærket altid betyder stoppligt.",
+      "At overse tog fra den ene retning."
+    ],
+    "relatedElements": [
+      {
+        "id": "a74_2",
+        "relationType": "sameCategory",
+        "explanation": "A 74,2 bruges ved flersporet jernbaneoverkørsel.",
+        "sourceReferences": [
+          {
+            "title": "Bekendtgørelse om vejafmærkning",
+            "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+            "section": "§ 13, A 74,1 og A 74,2",
+            "checkedDate": "2026-06-25"
+          }
+        ]
+      },
+      {
+        "id": "b13",
+        "relationType": "commonlyCombined",
+        "explanation": "B 13 Stop kan opsættes under krydsmærket.",
+        "sourceReferences": [
+          {
+            "title": "Bekendtgørelse om vejafmærkning",
+            "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+            "section": "§ 13, A 74 og § 16, B 13",
+            "checkedDate": "2026-06-25"
+          }
+        ]
+      }
+    ],
+    "imageFile": "assets/images/signs/a74_1.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 13, A 74,1",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "a74_2",
+    "officialCode": "A 74,2",
+    "name": "Krydsmærke for flersporet jernbaneoverkørsel",
+    "elementType": "trafficSign",
+    "categoryId": "warning",
+    "categoryName": "Advarselstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen markerer selve stedet for en flersporet jernbaneoverkørsel.",
+    "shortMeaning": "Markering af flersporet jernbaneoverkørsel.",
+    "detailedMeaning": "Tavlen opsættes umiddelbart foran en flersporet jernbaneoverkørsel. B 13 Stop og UA 72 kan opsættes under krydsmærket.",
+    "driverAction": "Nærm dig langsomt, orientér dig i begge retninger, og vær opmærksom på, at flere spor kan betyde flere tog. Følg eventuelle signaler og B 13 Stop.",
+    "exceptions": [],
+    "commonMistakes": [
+      "At fortsætte efter ét tog uden at kontrollere, om der kommer et andet tog på et andet spor.",
+      "At tro, at krydsmærket altid betyder stoppligt."
+    ],
+    "relatedElements": [
+      {
+        "id": "a74_1",
+        "relationType": "sameCategory",
+        "explanation": "A 74,1 bruges ved enkeltsporet jernbaneoverkørsel.",
+        "sourceReferences": [
+          {
+            "title": "Bekendtgørelse om vejafmærkning",
+            "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+            "section": "§ 13, A 74,1 og A 74,2",
+            "checkedDate": "2026-06-25"
+          }
+        ]
+      },
+      {
+        "id": "b13",
+        "relationType": "commonlyCombined",
+        "explanation": "B 13 Stop kan opsættes under krydsmærket.",
+        "sourceReferences": [
+          {
+            "title": "Bekendtgørelse om vejafmærkning",
+            "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+            "section": "§ 13, A 74 og § 16, B 13",
+            "checkedDate": "2026-06-25"
+          }
+        ]
+      }
+    ],
+    "imageFile": "assets/images/signs/a74_2.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 13, A 74,2",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "a75",
+    "officialCode": "A 75",
+    "name": "Afstandsmærker",
+    "elementType": "trafficSign",
+    "categoryId": "warning",
+    "categoryName": "Advarselstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlerne viser den resterende afstand til en jernbaneoverkørsel.",
+    "shortMeaning": "Afstand til jernbaneoverkørsel.",
+    "detailedMeaning": "Afstandsmærker bruges sammen med A 72 eller A 73. Mærket med tre skråstriber opsættes under A 72 eller A 73. Mærker med to og én skråstribe placeres ved henholdsvis to tredjedele og én tredjedel af den oprindelige afstand til overkørslen.",
+    "driverAction": "Brug mærkerne til gradvist at sænke hastigheden og forberede dig på overkørslen.",
+    "exceptions": [
+      "Tavlerne bruges normalt ikke på veje, hvor den tilladte hastighed er 60 km/t eller lavere."
+    ],
+    "commonMistakes": [
+      "At tro, at skråstriberne viser et fast antal meter.",
+      "At vente med at sænke hastigheden til det sidste mærke."
+    ],
+    "relatedElements": [
+      {
+        "id": "a72",
+        "relationType": "commonlyCombined",
+        "explanation": "A 75 kan anvendes sammen med A 72.",
+        "sourceReferences": [
+          {
+            "title": "Bekendtgørelse om vejafmærkning",
+            "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+            "section": "§ 13, A 75",
+            "checkedDate": "2026-06-25"
+          }
+        ]
+      },
+      {
+        "id": "a73",
+        "relationType": "commonlyCombined",
+        "explanation": "A 75 kan anvendes sammen med A 73.",
+        "sourceReferences": [
+          {
+            "title": "Bekendtgørelse om vejafmærkning",
+            "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+            "section": "§ 13, A 75",
+            "checkedDate": "2026-06-25"
+          }
+        ]
+      }
+    ],
+    "imageFile": "assets/images/signs/a75.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 13, A 75",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "a91",
+    "officialCode": "A 91",
+    "name": "Oplukkelig bro",
+    "elementType": "trafficSign",
+    "categoryId": "warning",
+    "categoryName": "Advarselstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen advarer om en oplukkelig bro forude.",
+    "shortMeaning": "Advarsel om oplukkelig bro.",
+    "detailedMeaning": "Tavlen angiver en oplukkelig bro forude.",
+    "driverAction": "Sænk hastigheden og følg bomme, lyssignaler og anden afmærkning ved broen.",
+    "exceptions": [],
+    "commonMistakes": [
+      "At overse signaler, fordi broen ser lukket ud.",
+      "At holde for kort afstand til forankørende."
+    ],
+    "relatedElements": [],
+    "imageFile": "assets/images/signs/a91.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 13, A 91",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "a92",
+    "officialCode": "A 92",
+    "name": "Havnekaj",
+    "elementType": "trafficSign",
+    "categoryId": "warning",
+    "categoryName": "Advarselstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen advarer om færgeleje, kaj eller lignende, hvor der er risiko for at køre i vandet.",
+    "shortMeaning": "Advarsel om færgeleje, kaj eller lignende.",
+    "detailedMeaning": "Tavlen angiver færgeleje, kaj eller lignende. Den kan også opsættes umiddelbart på kanten af kajen eller det tilsvarende sted.",
+    "driverAction": "Sænk hastigheden, orientér dig og hold sikker afstand til kanten.",
+    "exceptions": [
+      "Tavlen kan opsættes umiddelbart på kanten af kaj eller lignende."
+    ],
+    "commonMistakes": [
+      "At køre for hurtigt frem mod kajområdet.",
+      "At overse kanten i mørke eller dårligt vejr."
+    ],
+    "relatedElements": [],
+    "imageFile": "assets/images/signs/a92.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 13, A 92",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "a95",
+    "officialCode": "A 95",
+    "name": "Sidevind",
+    "elementType": "trafficSign",
+    "categoryId": "warning",
+    "categoryName": "Advarselstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen advarer om risiko for kraftig sidevind.",
+    "shortMeaning": "Advarsel om sidevind.",
+    "detailedMeaning": "Tavlen angiver fare for sidevind.",
+    "driverAction": "Sænk hastigheden efter forholdene, hold godt fast i rattet og vær forberedt på pludselige vindstød.",
+    "exceptions": [],
+    "commonMistakes": [
+      "At reagere med en brat styrebevægelse.",
+      "At overse den øgede risiko ved broer, åbne områder og passage af store køretøjer."
+    ],
+    "relatedElements": [],
+    "imageFile": "assets/images/signs/a95.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 13, A 95",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "a96",
+    "officialCode": "A 96",
+    "name": "Lavtgående fly",
+    "elementType": "trafficSign",
+    "categoryId": "warning",
+    "categoryName": "Advarselstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen advarer om lavtgående fly, som kan give pludselig støj eller virke distraherende.",
+    "shortMeaning": "Advarsel om lavtgående fly.",
+    "detailedMeaning": "Tavlen angiver fare eller særlig opmærksomhed på grund af lavtgående fly.",
+    "driverAction": "Bevar opmærksomheden på vejen og undgå pludselige manøvrer på grund af støj eller distraktion.",
+    "exceptions": [],
+    "commonMistakes": [
+      "At kigge efter flyet i stedet for at følge trafikken.",
+      "At reagere brat på kraftig støj."
+    ],
+    "relatedElements": [
+      {
+        "id": "a97",
+        "relationType": "sameCategory",
+        "explanation": "A 97 advarer om lavtgående helikopter.",
+        "sourceReferences": [
+          {
+            "title": "Bekendtgørelse om vejafmærkning",
+            "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+            "section": "§ 13, A 96 og A 97",
+            "checkedDate": "2026-06-25"
+          }
+        ]
+      }
+    ],
+    "imageFile": "assets/images/signs/a96.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 13, A 96",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "a97",
+    "officialCode": "A 97",
+    "name": "Lavtgående helikopter",
+    "elementType": "trafficSign",
+    "categoryId": "warning",
+    "categoryName": "Advarselstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen advarer om lavtgående helikoptere, som kan give pludselig støj eller virke distraherende.",
+    "shortMeaning": "Advarsel om lavtgående helikopter.",
+    "detailedMeaning": "Tavlen angiver fare eller særlig opmærksomhed på grund af lavtgående helikopter.",
+    "driverAction": "Bevar opmærksomheden på vejen og undgå pludselige manøvrer på grund af støj eller distraktion.",
+    "exceptions": [],
+    "commonMistakes": [
+      "At kigge efter helikopteren i stedet for at følge trafikken.",
+      "At reagere brat på kraftig støj eller lufttryk."
+    ],
+    "relatedElements": [
+      {
+        "id": "a96",
+        "relationType": "sameCategory",
+        "explanation": "A 96 advarer om lavtgående fly.",
+        "sourceReferences": [
+          {
+            "title": "Bekendtgørelse om vejafmærkning",
+            "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+            "section": "§ 13, A 96 og A 97",
+            "checkedDate": "2026-06-25"
+          }
+        ]
+      }
+    ],
+    "imageFile": "assets/images/signs/a97.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 13, A 97",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "a99",
+    "officialCode": "A 99",
+    "name": "Anden fare",
+    "elementType": "trafficSign",
+    "categoryId": "warning",
+    "categoryName": "Advarselstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen advarer om en fare, som ikke har sit eget standardsymbol, og hvis art forklares på en undertavle.",
+    "shortMeaning": "Advarsel om anden fare, som forklares på undertavlen.",
+    "detailedMeaning": "Tavlen angiver en fare, hvis art anføres på en tavle under advarselstavlen. Sammen med undertavlen »Spor« angiver den krydsende spor, hvor personale advarer vejtrafikken, når tog nærmer sig.",
+    "driverAction": "Læs undertavlen og tilpas hastighed, placering og opmærksomhed efter den konkrete fare.",
+    "exceptions": [
+      "Farens art skal anføres på tavlen under A 99."
+    ],
+    "commonMistakes": [
+      "At ignorere undertavlen.",
+      "At antage, at A 99 altid betyder den samme fare."
+    ],
+    "relatedElements": [
+      {
+        "id": "ua99",
+        "relationType": "commonlyCombined",
+        "explanation": "UA 99 kan bruges til at angive et særligt uheldsbelastet kryds.",
+        "sourceReferences": [
+          {
+            "title": "Bekendtgørelse om vejafmærkning",
+            "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+            "section": "§ 13, A 99 og UA 99",
+            "checkedDate": "2026-06-25"
+          }
+        ]
+      }
+    ],
+    "imageFile": "assets/images/signs/a99.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 13, A 99",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "ua72",
+    "officialCode": "UA 72",
+    "name": "Se efter tog",
+    "elementType": "supplementarySign",
+    "categoryId": "supplementary-warning",
+    "categoryName": "Undertavler til advarselstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Undertavlen understreger, at føreren aktivt skal orientere sig efter tog ved overkørslen.",
+    "shortMeaning": "Se efter tog.",
+    "detailedMeaning": "Undertavlen bruges ved jernbaneoverkørsler, der alene er sikret ved afmærkning og eventuelt oversigtsareal. Den kan bruges under A 72 og A 74, men ikke hvis overkørslen er afmærket med B 13 Stop.",
+    "driverAction": "Orientér dig aktivt i begge retninger og kryds først, når det kan ske sikkert.",
+    "exceptions": [
+      "Må ikke bruges, hvis jernbaneoverkørslen er afmærket med B 13 Stop."
+    ],
+    "commonMistakes": [
+      "At kigge kun i én retning.",
+      "At tro, at undertavlen erstatter øvrige signaler og vigepligtsregler."
+    ],
+    "relatedElements": [
+      {
+        "id": "a72",
+        "relationType": "commonlyCombined",
+        "explanation": "UA 72 kan bruges under A 72.",
+        "sourceReferences": [
+          {
+            "title": "Bekendtgørelse om vejafmærkning",
+            "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+            "section": "§ 13, UA 72",
+            "checkedDate": "2026-06-25"
+          }
+        ]
+      },
+      {
+        "id": "a74_1",
+        "relationType": "commonlyCombined",
+        "explanation": "UA 72 kan bruges under A 74,1.",
+        "sourceReferences": [
+          {
+            "title": "Bekendtgørelse om vejafmærkning",
+            "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+            "section": "§ 13, UA 72",
+            "checkedDate": "2026-06-25"
+          }
+        ]
+      },
+      {
+        "id": "a74_2",
+        "relationType": "commonlyCombined",
+        "explanation": "UA 72 kan bruges under A 74,2.",
+        "sourceReferences": [
+          {
+            "title": "Bekendtgørelse om vejafmærkning",
+            "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+            "section": "§ 13, UA 72",
+            "checkedDate": "2026-06-25"
+          }
+        ]
+      }
+    ],
+    "imageFile": "assets/images/signs/ua72.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 13, UA 72",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "ua73",
+    "officialCode": "UA 73",
+    "name": "Varsling af elektrificeret bane",
+    "elementType": "supplementarySign",
+    "categoryId": "supplementary-warning",
+    "categoryName": "Undertavler til advarselstavler",
+    "categoryBRelevance": "indirect",
+    "relevanceExplanation": "Undertavlen er vigtig for førere af høje køretøjer eller køretøjer med højt læs ved elektrificerede jernbaneoverkørsler.",
+    "shortMeaning": "Advarsel om strømførende ledninger og sikker frihøjde.",
+    "detailedMeaning": "Undertavlen bruges ved jernbaneoverkørsler med strømførende ledninger. Den viste afstand er den sikre frihøjde under ledningerne. Tavlen kan også ophænges selvstændigt over kørebanen umiddelbart før overkørslen.",
+    "driverAction": "Kontrollér køretøjets og lastens samlede højde, og fortsæt kun, hvis den er lavere end den angivne sikre frihøjde.",
+    "exceptions": [
+      "Tavlen kan ophænges selvstændigt over kørebanen umiddelbart før overkørslen."
+    ],
+    "commonMistakes": [
+      "At glemme højde på last eller udstyr på taget.",
+      "At tro, at tallet angiver ledningernes faktiske højde i stedet for den sikre frihøjde."
+    ],
+    "relatedElements": [
+      {
+        "id": "a72",
+        "relationType": "commonlyCombined",
+        "explanation": "UA 73 kan anvendes ved elektrificeret bane sammen med A 72.",
+        "sourceReferences": [
+          {
+            "title": "Bekendtgørelse om vejafmærkning",
+            "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+            "section": "§ 13, UA 73",
+            "checkedDate": "2026-06-25"
+          }
+        ]
+      },
+      {
+        "id": "a73",
+        "relationType": "commonlyCombined",
+        "explanation": "UA 73 kan anvendes ved elektrificeret bane sammen med A 73.",
+        "sourceReferences": [
+          {
+            "title": "Bekendtgørelse om vejafmærkning",
+            "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+            "section": "§ 13, UA 73",
+            "checkedDate": "2026-06-25"
+          }
+        ]
+      }
+    ],
+    "imageFile": "assets/images/signs/ua73.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 13, UA 73",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "ua99",
+    "officialCode": "UA 99",
+    "name": "Uheldskryds",
+    "elementType": "supplementarySign",
+    "categoryId": "supplementary-warning",
+    "categoryName": "Undertavler til advarselstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Undertavlen angiver, at krydset er særligt belastet af uheld.",
+    "shortMeaning": "Krydset er særligt belastet af uheld.",
+    "detailedMeaning": "Undertavlen angiver, at krydset er særligt belastet af uheld.",
+    "driverAction": "Sænk hastigheden, orientér dig grundigt og kør defensivt gennem krydset.",
+    "exceptions": [],
+    "commonMistakes": [
+      "At behandle krydset som et almindeligt overskueligt kryds.",
+      "At holde for høj hastighed frem mod krydset."
+    ],
+    "relatedElements": [
+      {
+        "id": "a99",
+        "relationType": "commonlyCombined",
+        "explanation": "UA 99 bruges som undertavle til A 99.",
+        "sourceReferences": [
+          {
+            "title": "Bekendtgørelse om vejafmærkning",
+            "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+            "section": "§ 13, A 99 og UA 99",
+            "checkedDate": "2026-06-25"
+          }
+        ]
+      }
+    ],
+    "imageFile": "assets/images/signs/ua99.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 13, UA 99",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "ub11_1",
+    "officialCode": "UB 11,1",
+    "name": "Forvarsling for stop",
+    "elementType": "supplementarySign",
+    "categoryId": "supplementary-priority",
+    "categoryName": "Undertavler til vigepligts- og advarselstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Undertavlen forvarsler stoppligt og viser afstanden til krydset eller jernbaneoverkørslen.",
+    "shortMeaning": "Forvarsling af stoppligt og afstand til stopstedet.",
+    "detailedMeaning": "Undertavlen bruges sammen med B 11 til forvarsling af B 13 Stop ved kryds. Den bruges også sammen med A 72 til forvarsling af stop ved jernbaneoverkørsel. Afstanden til krydset eller sporet angives på undertavlen.",
+    "driverAction": "Sænk hastigheden i god tid og forbered dig på at standse ved den angivne afstand.",
+    "exceptions": [],
+    "commonMistakes": [
+      "At tro, at stoppligten gælder ved selve forvarslingstavlen.",
+      "At overse den angivne afstand."
+    ],
+    "relatedElements": [
+      {
+        "id": "a72",
+        "relationType": "commonlyCombined",
+        "explanation": "UB 11,1 kan anvendes under A 72 til forvarsling af stop ved jernbaneoverkørsel.",
+        "sourceReferences": [
+          {
+            "title": "Bekendtgørelse om vejafmærkning",
+            "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+            "section": "§ 13, A 72 og UB 11,1",
+            "checkedDate": "2026-06-25"
+          }
+        ]
+      },
+      {
+        "id": "b11",
+        "relationType": "commonlyCombined",
+        "explanation": "UB 11,1 bruges under B 11 til forvarsling af B 13 Stop ved kryds.",
+        "sourceReferences": [
+          {
+            "title": "Bekendtgørelse om vejafmærkning",
+            "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+            "section": "§ 16, B 11 og UB 11,1",
+            "checkedDate": "2026-06-25"
+          }
+        ]
+      }
+    ],
+    "imageFile": "assets/images/signs/ub11_1.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 13 og § 16, UB 11,1",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  }
+]

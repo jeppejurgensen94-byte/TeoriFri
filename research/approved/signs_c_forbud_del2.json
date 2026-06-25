@@ -1,0 +1,415 @@
+[
+  {
+    "id": "c31",
+    "officialCode": "C 31",
+    "name": "Totalvægt",
+    "elementType": "trafficSign",
+    "categoryId": "prohibition",
+    "categoryName": "Forbudstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen er relevant ved broer, mindre veje og andre steder med begrænset bæreevne.",
+    "shortMeaning": "Køretøjer over den angivne faktiske totalvægt må ikke passere.",
+    "detailedMeaning": "Tavlen forbyder kørsel med køretøjer, hvis faktiske totalvægt er større end den angivne. Ved vogntog gælder begrænsningen for hvert enkelt køretøj i vogntoget.",
+    "measurementType": "actualTotalWeightPerVehicle",
+    "measurementExplanation": "Den reelle vægt ved passagen, inklusive køretøj, fører, passagerer, brændstof og læs. Ved vogntog vurderes hvert køretøj separat.",
+    "driverAction": "Passér ikke tavlen, hvis den faktiske totalvægt for dit køretøj overstiger tallet på tavlen.",
+    "duration": "Fra tavlen til næste vejkryds, medmindre forbuddet ophæves tidligere eller andet fremgår af undertavle.",
+    "exceptions": [],
+    "applicableSupplementaryTexts": [
+      {
+        "text": "Gælder kun gennemkørsel",
+        "meaning": "Passage af vejen uden ærinde er ulovlig."
+      },
+      {
+        "text": "Ærindekørsel tilladt",
+        "meaning": "Kørsel i forbindelse med blandt andet aflevering, afhentning, arbejde, indkøb, gæstebud samt kørsel til og fra egen bolig eller egen virksomhed er tilladt."
+      },
+      {
+        "text": "Varekørsel tilladt",
+        "meaning": "Kørsel for at aflevere eller afhente varer eller materialer, som ellers vil være urimeligt besværlige at transportere, er tilladt."
+      },
+      {
+        "text": "Arbejdskørsel tilladt",
+        "meaning": "Ærindekørsel i forbindelse med udførelse af et erhverv er tilladt."
+      },
+      {
+        "text": "Beboerkørsel tilladt",
+        "meaning": "Kørsel er tilladt, når føreren eller en passager har egen bolig eller egen virksomhed på vejstrækningen."
+      }
+    ],
+    "commonMistakes": [
+      "At bruge den tilladte totalvægt i stedet for den faktiske totalvægt.",
+      "At lægge hele vogntogets vægt sammen i stedet for at vurdere hvert køretøj separat."
+    ],
+    "relatedElements": [
+      {
+        "id": "c32",
+        "relationType": "educationalRelation",
+        "explanation": "C 32 bruger den samlede faktiske totalvægt for hele vogntoget.",
+        "sourceReferences": []
+      }
+    ],
+    "imageFile": "assets/images/signs/c31.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 18 og § 19, C 31",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "c32",
+    "officialCode": "C 32",
+    "name": "Totalvægt af vogntog",
+    "elementType": "trafficSign",
+    "categoryId": "prohibition",
+    "categoryName": "Forbudstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen er relevant for biler med påhængskøretøj og andre typer vogntog.",
+    "shortMeaning": "Vogntog over den angivne samlede faktiske totalvægt må ikke passere.",
+    "detailedMeaning": "Tavlen forbyder kørsel med alle typer vogntog, hvis den samlede faktiske totalvægt er større end den angivne.",
+    "measurementType": "combinedActualTotalWeight",
+    "measurementExplanation": "Den reelle samlede vægt af alle køretøjer og alt læs i vogntoget ved passagen.",
+    "driverAction": "Passér ikke tavlen, hvis vogntogets samlede faktiske totalvægt overstiger tallet på tavlen.",
+    "duration": "Fra tavlen til næste vejkryds, medmindre forbuddet ophæves tidligere eller andet fremgår af undertavle.",
+    "exceptions": [],
+    "applicableSupplementaryTexts": [
+      {
+        "text": "Gælder kun gennemkørsel",
+        "meaning": "Passage af vejen uden ærinde er ulovlig."
+      },
+      {
+        "text": "Ærindekørsel tilladt",
+        "meaning": "Kørsel i forbindelse med blandt andet aflevering, afhentning, arbejde, indkøb, gæstebud samt kørsel til og fra egen bolig eller egen virksomhed er tilladt."
+      },
+      {
+        "text": "Varekørsel tilladt",
+        "meaning": "Kørsel for at aflevere eller afhente varer eller materialer, som ellers vil være urimeligt besværlige at transportere, er tilladt."
+      },
+      {
+        "text": "Arbejdskørsel tilladt",
+        "meaning": "Ærindekørsel i forbindelse med udførelse af et erhverv er tilladt."
+      },
+      {
+        "text": "Beboerkørsel tilladt",
+        "meaning": "Kørsel er tilladt, når føreren eller en passager har egen bolig eller egen virksomhed på vejstrækningen."
+      }
+    ],
+    "commonMistakes": [
+      "At vurdere bil og påhængskøretøj hver for sig.",
+      "At bruge den registrerede tilladte totalvægt i stedet for den faktiske samlede vægt."
+    ],
+    "relatedElements": [
+      {
+        "id": "c31",
+        "relationType": "educationalRelation",
+        "explanation": "C 31 vurderer hvert køretøjs faktiske totalvægt separat.",
+        "sourceReferences": []
+      }
+    ],
+    "imageFile": "assets/images/signs/c32.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 18 og § 19, C 32",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "c35",
+    "officialCode": "C 35",
+    "name": "Akseltryk",
+    "elementType": "trafficSign",
+    "categoryId": "prohibition",
+    "categoryName": "Forbudstavler",
+    "categoryBRelevance": "indirect",
+    "relevanceExplanation": "Tavlen beskytter veje og broer mod for stort tryk fra en enkelt aksel.",
+    "shortMeaning": "Køretøjer med større faktisk akseltryk end angivet må ikke passere.",
+    "detailedMeaning": "Tavlen forbyder kørsel med køretøjer, hvis det faktiske akseltryk er større end det angivne.",
+    "measurementType": "actualAxleLoad",
+    "measurementExplanation": "Det reelle tryk, som én aksel belaster vejen med. Lastens placering påvirker akseltrykket.",
+    "driverAction": "Passér ikke tavlen, hvis en aksels faktiske tryk overstiger tallet på tavlen.",
+    "duration": "Fra tavlen til næste vejkryds, medmindre forbuddet ophæves tidligere eller andet fremgår af undertavle.",
+    "exceptions": [],
+    "applicableSupplementaryTexts": [
+      {
+        "text": "Gælder kun gennemkørsel",
+        "meaning": "Passage af vejen uden ærinde er ulovlig."
+      },
+      {
+        "text": "Ærindekørsel tilladt",
+        "meaning": "Kørsel i forbindelse med blandt andet aflevering, afhentning, arbejde, indkøb, gæstebud samt kørsel til og fra egen bolig eller egen virksomhed er tilladt."
+      },
+      {
+        "text": "Varekørsel tilladt",
+        "meaning": "Kørsel for at aflevere eller afhente varer eller materialer, som ellers vil være urimeligt besværlige at transportere, er tilladt."
+      },
+      {
+        "text": "Arbejdskørsel tilladt",
+        "meaning": "Ærindekørsel i forbindelse med udførelse af et erhverv er tilladt."
+      },
+      {
+        "text": "Beboerkørsel tilladt",
+        "meaning": "Kørsel er tilladt, når føreren eller en passager har egen bolig eller egen virksomhed på vejstrækningen."
+      }
+    ],
+    "commonMistakes": [
+      "At sammenligne med køretøjets samlede vægt.",
+      "At overse, at lastens placering kan ændre akseltrykket."
+    ],
+    "relatedElements": [
+      {
+        "id": "c36",
+        "relationType": "educationalRelation",
+        "explanation": "C 36 vedrører tryk på en akselgruppe eller en enkelt aksel som angivet ved tavlen.",
+        "sourceReferences": []
+      }
+    ],
+    "imageFile": "assets/images/signs/c35.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 18 og § 19, C 35",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "c36",
+    "officialCode": "C 36",
+    "name": "Bogietryk",
+    "elementType": "trafficSign",
+    "categoryId": "prohibition",
+    "categoryName": "Forbudstavler",
+    "categoryBRelevance": "indirect",
+    "relevanceExplanation": "Tavlen beskytter veje og broer mod for stort tryk fra en akselgruppe.",
+    "shortMeaning": "Køretøjer med større faktisk bogietryk end angivet må ikke passere.",
+    "detailedMeaning": "Tavlen forbyder kørsel med køretøjer, hvis det faktiske tryk på en akselgruppe, eller på en enkelt aksel som angivet ved tavlen, er større end det angivne.",
+    "measurementType": "actualBogieOrAxleGroupLoad",
+    "measurementExplanation": "Det samlede reelle tryk fra den relevante akselgruppe. Lastens vægt og placering påvirker trykket.",
+    "driverAction": "Passér ikke tavlen, hvis det faktiske tryk på den relevante akselgruppe overstiger tallet på tavlen.",
+    "duration": "Fra tavlen til næste vejkryds, medmindre forbuddet ophæves tidligere eller andet fremgår af undertavle.",
+    "exceptions": [],
+    "applicableSupplementaryTexts": [
+      {
+        "text": "Gælder kun gennemkørsel",
+        "meaning": "Passage af vejen uden ærinde er ulovlig."
+      },
+      {
+        "text": "Ærindekørsel tilladt",
+        "meaning": "Kørsel i forbindelse med blandt andet aflevering, afhentning, arbejde, indkøb, gæstebud samt kørsel til og fra egen bolig eller egen virksomhed er tilladt."
+      },
+      {
+        "text": "Varekørsel tilladt",
+        "meaning": "Kørsel for at aflevere eller afhente varer eller materialer, som ellers vil være urimeligt besværlige at transportere, er tilladt."
+      },
+      {
+        "text": "Arbejdskørsel tilladt",
+        "meaning": "Ærindekørsel i forbindelse med udførelse af et erhverv er tilladt."
+      },
+      {
+        "text": "Beboerkørsel tilladt",
+        "meaning": "Kørsel er tilladt, når føreren eller en passager har egen bolig eller egen virksomhed på vejstrækningen."
+      }
+    ],
+    "commonMistakes": [
+      "At sammenligne med køretøjets samlede vægt.",
+      "At forveksle bogietryk med akseltryk."
+    ],
+    "relatedElements": [
+      {
+        "id": "c35",
+        "relationType": "educationalRelation",
+        "explanation": "C 35 vedrører det faktiske tryk på en aksel.",
+        "sourceReferences": []
+      }
+    ],
+    "imageFile": "assets/images/signs/c36.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 18 og § 19, C 36",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "c41",
+    "officialCode": "C 41",
+    "name": "Køretøjsbredde",
+    "elementType": "trafficSign",
+    "categoryId": "prohibition",
+    "categoryName": "Forbudstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen bruges ved smalle passager, veje og konstruktioner.",
+    "shortMeaning": "Køretøjer, der er bredere end angivet, må ikke passere.",
+    "detailedMeaning": "Tavlen forbyder kørsel med køretøjer, hvis bredde inklusive læs er større end den angivne.",
+    "measurementType": "vehicleWidthIncludingLoad",
+    "measurementExplanation": "Køretøjets største samlede bredde inklusive alt læs og udstyr, der rager ud.",
+    "driverAction": "Passér ikke tavlen, hvis køretøjets bredde inklusive læs overstiger tallet på tavlen.",
+    "duration": "Fra tavlen til næste vejkryds, medmindre forbuddet ophæves tidligere eller andet fremgår af undertavle.",
+    "exceptions": [],
+    "applicableSupplementaryTexts": [
+      {
+        "text": "Gælder kun gennemkørsel",
+        "meaning": "Passage af vejen uden ærinde er ulovlig."
+      },
+      {
+        "text": "Ærindekørsel tilladt",
+        "meaning": "Kørsel i forbindelse med blandt andet aflevering, afhentning, arbejde, indkøb, gæstebud samt kørsel til og fra egen bolig eller egen virksomhed er tilladt."
+      },
+      {
+        "text": "Varekørsel tilladt",
+        "meaning": "Kørsel for at aflevere eller afhente varer eller materialer, som ellers vil være urimeligt besværlige at transportere, er tilladt."
+      },
+      {
+        "text": "Arbejdskørsel tilladt",
+        "meaning": "Ærindekørsel i forbindelse med udførelse af et erhverv er tilladt."
+      },
+      {
+        "text": "Beboerkørsel tilladt",
+        "meaning": "Kørsel er tilladt, når føreren eller en passager har egen bolig eller egen virksomhed på vejstrækningen."
+      }
+    ],
+    "commonMistakes": [
+      "At måle kun selve karrosseriet og glemme læs.",
+      "At glemme spejle, udstyr eller genstande, der rager ud."
+    ],
+    "relatedElements": [],
+    "imageFile": "assets/images/signs/c41.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 18 og § 19, C 41",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "c42",
+    "officialCode": "C 42",
+    "name": "Køretøjshøjde",
+    "elementType": "trafficSign",
+    "categoryId": "prohibition",
+    "categoryName": "Forbudstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen bruges ved tunneler, broer og andre steder med begrænset frihøjde.",
+    "shortMeaning": "Køretøjer, der er højere end angivet, må ikke passere.",
+    "detailedMeaning": "Tavlen forbyder kørsel med køretøjer, hvis højde inklusive læs er større end den angivne.",
+    "measurementType": "vehicleHeightIncludingLoad",
+    "measurementExplanation": "Køretøjets største samlede højde inklusive læs, tagboks, antenner og andet fast eller medbragt udstyr.",
+    "driverAction": "Passér ikke tavlen, hvis køretøjets højde inklusive læs overstiger tallet på tavlen.",
+    "duration": "Fra tavlen til næste vejkryds, medmindre forbuddet ophæves tidligere eller andet fremgår af undertavle.",
+    "exceptions": [],
+    "applicableSupplementaryTexts": [
+      {
+        "text": "Gælder kun gennemkørsel",
+        "meaning": "Passage af vejen uden ærinde er ulovlig."
+      },
+      {
+        "text": "Ærindekørsel tilladt",
+        "meaning": "Kørsel i forbindelse med blandt andet aflevering, afhentning, arbejde, indkøb, gæstebud samt kørsel til og fra egen bolig eller egen virksomhed er tilladt."
+      },
+      {
+        "text": "Varekørsel tilladt",
+        "meaning": "Kørsel for at aflevere eller afhente varer eller materialer, som ellers vil være urimeligt besværlige at transportere, er tilladt."
+      },
+      {
+        "text": "Arbejdskørsel tilladt",
+        "meaning": "Ærindekørsel i forbindelse med udførelse af et erhverv er tilladt."
+      },
+      {
+        "text": "Beboerkørsel tilladt",
+        "meaning": "Kørsel er tilladt, når føreren eller en passager har egen bolig eller egen virksomhed på vejstrækningen."
+      }
+    ],
+    "commonMistakes": [
+      "At glemme tagboks eller andet udstyr på taget.",
+      "At stole på køretøjets standardhøjde efter at have tilføjet læs."
+    ],
+    "relatedElements": [],
+    "imageFile": "assets/images/signs/c42.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 18 og § 19, C 42",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "c43",
+    "officialCode": "C 43",
+    "name": "Køretøjslængde",
+    "elementType": "trafficSign",
+    "categoryId": "prohibition",
+    "categoryName": "Forbudstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen bruges, hvor lange køretøjer eller vogntog ikke sikkert kan passere.",
+    "shortMeaning": "Køretøjer eller vogntog, der er længere end angivet, må ikke passere.",
+    "detailedMeaning": "Tavlen forbyder kørsel med køretøjer, herunder vogntog, hvis længde inklusive læs er større end den angivne.",
+    "measurementType": "vehicleOrCombinationLengthIncludingLoad",
+    "measurementExplanation": "Den største samlede længde af køretøjet eller hele vogntoget inklusive læs og genstande, der rager ud.",
+    "driverAction": "Passér ikke tavlen, hvis køretøjets eller vogntogets længde inklusive læs overstiger tallet på tavlen.",
+    "duration": "Fra tavlen til næste vejkryds, medmindre forbuddet ophæves tidligere eller andet fremgår af undertavle.",
+    "exceptions": [],
+    "applicableSupplementaryTexts": [
+      {
+        "text": "Gælder kun gennemkørsel",
+        "meaning": "Passage af vejen uden ærinde er ulovlig."
+      },
+      {
+        "text": "Ærindekørsel tilladt",
+        "meaning": "Kørsel i forbindelse med blandt andet aflevering, afhentning, arbejde, indkøb, gæstebud samt kørsel til og fra egen bolig eller egen virksomhed er tilladt."
+      },
+      {
+        "text": "Varekørsel tilladt",
+        "meaning": "Kørsel for at aflevere eller afhente varer eller materialer, som ellers vil være urimeligt besværlige at transportere, er tilladt."
+      },
+      {
+        "text": "Arbejdskørsel tilladt",
+        "meaning": "Ærindekørsel i forbindelse med udførelse af et erhverv er tilladt."
+      },
+      {
+        "text": "Beboerkørsel tilladt",
+        "meaning": "Kørsel er tilladt, når føreren eller en passager har egen bolig eller egen virksomhed på vejstrækningen."
+      }
+    ],
+    "commonMistakes": [
+      "At måle kun trækkøretøjet og glemme påhængskøretøjet.",
+      "At glemme læs, der rager ud foran eller bagpå."
+    ],
+    "relatedElements": [],
+    "imageFile": "assets/images/signs/c43.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 18 og § 19, C 43",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  }
+]

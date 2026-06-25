@@ -1,0 +1,884 @@
+[
+  {
+    "id": "c11_1",
+    "officialCode": "C 11,1",
+    "name": "Højresving forbudt",
+    "elementType": "trafficSign",
+    "categoryId": "prohibition",
+    "categoryName": "Forbudstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen forbyder højresving i det konkrete kryds eller ved den konkrete indkørsel.",
+    "shortMeaning": "Højresving er forbudt.",
+    "detailedMeaning": "Tavlen forbyder højresving i det kryds eller ved den indkørsel, hvor den er opsat, medmindre andet er angivet på en undertavle.",
+    "driverAction": "Fortsæt ligeud eller vælg en anden lovlig retning. Sving ikke til højre ved tavlen.",
+    "duration": "Kun i det kryds eller ved den indkørsel, hvor tavlen er opsat, medmindre en undertavle angiver andet.",
+    "exceptions": [],
+    "applicableSupplementaryTexts": [
+      {
+        "text": "Gælder kun gennemkørsel",
+        "meaning": "Passage af vejen uden ærinde er ulovlig."
+      },
+      {
+        "text": "Ærindekørsel tilladt",
+        "meaning": "Kørsel i forbindelse med blandt andet aflevering, afhentning, arbejde, indkøb, gæstebud samt kørsel til og fra egen bolig eller egen virksomhed er tilladt."
+      },
+      {
+        "text": "Varekørsel tilladt",
+        "meaning": "Kørsel for at aflevere eller afhente varer eller materialer, som ellers vil være urimeligt besværlige at transportere, er tilladt."
+      },
+      {
+        "text": "Arbejdskørsel tilladt",
+        "meaning": "Ærindekørsel i forbindelse med udførelse af et erhverv er tilladt."
+      },
+      {
+        "text": "Beboerkørsel tilladt",
+        "meaning": "Kørsel er tilladt, når føreren eller en passager har egen bolig eller egen virksomhed på vejstrækningen."
+      }
+    ],
+    "commonMistakes": [
+      "At tro, at forbuddet gælder alle senere kryds.",
+      "At overse en undertavle, som indskrænker forbuddet."
+    ],
+    "relatedElements": [
+      {
+        "id": "c11_2",
+        "relationType": "sameCategory",
+        "explanation": "C 11,2 forbyder venstresving og dermed også vending.",
+        "sourceReferences": []
+      }
+    ],
+    "imageFile": "assets/images/signs/c11_1.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 18, stk. 3; § 19, C 11,1",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "c11_2",
+    "officialCode": "C 11,2",
+    "name": "Venstresving forbudt",
+    "elementType": "trafficSign",
+    "categoryId": "prohibition",
+    "categoryName": "Forbudstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen forbyder venstresving og forbyder samtidig vending.",
+    "shortMeaning": "Venstresving og vending er forbudt.",
+    "detailedMeaning": "Tavlen forbyder venstresving. Forbud mod venstresving forbyder også vending. Forbuddet gælder i det kryds eller ved den indkørsel, hvor tavlen står, medmindre andet er angivet på undertavle.",
+    "driverAction": "Sving ikke til venstre og vend ikke ved tavlen.",
+    "duration": "Kun i det kryds eller ved den indkørsel, hvor tavlen er opsat, medmindre en undertavle angiver andet.",
+    "exceptions": [],
+    "applicableSupplementaryTexts": [
+      {
+        "text": "Gælder kun gennemkørsel",
+        "meaning": "Passage af vejen uden ærinde er ulovlig."
+      },
+      {
+        "text": "Ærindekørsel tilladt",
+        "meaning": "Kørsel i forbindelse med blandt andet aflevering, afhentning, arbejde, indkøb, gæstebud samt kørsel til og fra egen bolig eller egen virksomhed er tilladt."
+      },
+      {
+        "text": "Varekørsel tilladt",
+        "meaning": "Kørsel for at aflevere eller afhente varer eller materialer, som ellers vil være urimeligt besværlige at transportere, er tilladt."
+      },
+      {
+        "text": "Arbejdskørsel tilladt",
+        "meaning": "Ærindekørsel i forbindelse med udførelse af et erhverv er tilladt."
+      },
+      {
+        "text": "Beboerkørsel tilladt",
+        "meaning": "Kørsel er tilladt, når føreren eller en passager har egen bolig eller egen virksomhed på vejstrækningen."
+      }
+    ],
+    "commonMistakes": [
+      "At tro, at vending stadig er tilladt.",
+      "At tro, at forbuddet gælder alle senere kryds."
+    ],
+    "relatedElements": [
+      {
+        "id": "c12",
+        "relationType": "educationalRelation",
+        "explanation": "C 12 forbyder kun vending.",
+        "sourceReferences": []
+      }
+    ],
+    "imageFile": "assets/images/signs/c11_2.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 18, stk. 3; § 19, C 11,2",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "c12",
+    "officialCode": "C 12",
+    "name": "Vending forbudt",
+    "elementType": "trafficSign",
+    "categoryId": "prohibition",
+    "categoryName": "Forbudstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen forbyder vending ved det konkrete kryds eller den konkrete indkørsel.",
+    "shortMeaning": "Vending er forbudt.",
+    "detailedMeaning": "Tavlen forbyder vending i det kryds eller ved den indkørsel, hvor den er opsat, medmindre andet er angivet på undertavle.",
+    "driverAction": "Fortsæt uden at vende ved tavlen.",
+    "duration": "Kun i det kryds eller ved den indkørsel, hvor tavlen er opsat, medmindre en undertavle angiver andet.",
+    "exceptions": [],
+    "applicableSupplementaryTexts": [],
+    "commonMistakes": [
+      "At forveksle tavlen med venstresvingsforbud.",
+      "At tro, at tavlen også forbyder et almindeligt venstresving."
+    ],
+    "relatedElements": [
+      {
+        "id": "c11_2",
+        "relationType": "educationalRelation",
+        "explanation": "C 11,2 forbyder både venstresving og vending.",
+        "sourceReferences": []
+      }
+    ],
+    "imageFile": "assets/images/signs/c12.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 19, C 12",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "c19",
+    "officialCode": "C 19",
+    "name": "Indkørsel forbudt",
+    "elementType": "trafficSign",
+    "categoryId": "prohibition",
+    "categoryName": "Forbudstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen forbyder indkørsel med ethvert køretøj fra den side, hvor tavlen er opsat.",
+    "shortMeaning": "Indkørsel med ethvert køretøj er forbudt.",
+    "detailedMeaning": "Tavlen forbyder indkørsel med ethvert køretøj fra den retning, hvor tavlen ses. Den er ikke det samme som C 21, der forbyder kørsel i begge retninger på vejstrækningen.",
+    "driverAction": "Kør ikke ind fra denne side. Find en anden lovlig adgang.",
+    "duration": "Gælder ved den indkørsel, hvor tavlen er opsat.",
+    "exceptions": [
+      "Det kan angives på undertavle, at det også er forbudt at trække cykel og knallert på kørebanen."
+    ],
+    "applicableSupplementaryTexts": [],
+    "commonMistakes": [
+      "At tro, at tavlen kun betyder ensrettet vej.",
+      "At forveksle tavlen med C 21."
+    ],
+    "relatedElements": [
+      {
+        "id": "c21",
+        "relationType": "educationalRelation",
+        "explanation": "C 21 forbyder kørsel i begge retninger på vejstrækningen.",
+        "sourceReferences": []
+      }
+    ],
+    "imageFile": "assets/images/signs/c19.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 19, C 19",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "c21",
+    "officialCode": "C 21",
+    "name": "Kørsel i begge retninger forbudt",
+    "elementType": "trafficSign",
+    "categoryId": "prohibition",
+    "categoryName": "Forbudstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen forbyder kørsel med køretøjer på vejstrækningen fra begge retninger.",
+    "shortMeaning": "Kørsel er forbudt i begge retninger.",
+    "detailedMeaning": "Tavlen forbyder kørsel med køretøjer på vejstrækningen i begge retninger. Den betyder ikke envejskørsel; envejskørsel vises med E 19.",
+    "driverAction": "Kør ikke ind på den afmærkede vejstrækning, medmindre en undertavle tydeligt undtager din kørsel.",
+    "duration": "Fra tavlen til næste vejkryds, medmindre forbuddet ophæves tidligere eller andet fremgår af undertavle.",
+    "exceptions": [
+      "Det kan angives på undertavle, at det også er forbudt at trække cykel og knallert.",
+      "Undertavler kan angive miljøzone og undtagelse for miljøgodkendte køretøjer."
+    ],
+    "applicableSupplementaryTexts": [
+      {
+        "text": "Gælder kun gennemkørsel",
+        "meaning": "Passage af vejen uden ærinde er ulovlig."
+      },
+      {
+        "text": "Ærindekørsel tilladt",
+        "meaning": "Kørsel i forbindelse med blandt andet aflevering, afhentning, arbejde, indkøb, gæstebud samt kørsel til og fra egen bolig eller egen virksomhed er tilladt."
+      },
+      {
+        "text": "Varekørsel tilladt",
+        "meaning": "Kørsel for at aflevere eller afhente varer eller materialer, som ellers vil være urimeligt besværlige at transportere, er tilladt."
+      },
+      {
+        "text": "Arbejdskørsel tilladt",
+        "meaning": "Ærindekørsel i forbindelse med udførelse af et erhverv er tilladt."
+      },
+      {
+        "text": "Beboerkørsel tilladt",
+        "meaning": "Kørsel er tilladt, når føreren eller en passager har egen bolig eller egen virksomhed på vejstrækningen."
+      }
+    ],
+    "commonMistakes": [
+      "At tro, at tavlen betyder envejskørsel.",
+      "At forveksle tavlen med C 19."
+    ],
+    "relatedElements": [
+      {
+        "id": "c19",
+        "relationType": "educationalRelation",
+        "explanation": "C 19 forbyder kun indkørsel fra den side, hvor tavlen står.",
+        "sourceReferences": []
+      }
+    ],
+    "imageFile": "assets/images/signs/c21.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 18, stk. 2-3; § 19, C 21",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "c22_1",
+    "officialCode": "C 22,1",
+    "name": "Motorkøretøj, stor knallert, traktor og motorredskab forbudt",
+    "elementType": "trafficSign",
+    "categoryId": "prohibition",
+    "categoryName": "Forbudstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen forbyder færdsel med de motordrevne køretøjstyper, der er nævnt i tavlens officielle navn.",
+    "shortMeaning": "Motorkøretøj, stor knallert, traktor og motorredskab er forbudt.",
+    "detailedMeaning": "Tavlen forbyder færdsel med motorkøretøj, stor knallert, traktor og motorredskab.",
+    "driverAction": "Kør ikke ind med en af de omfattede køretøjstyper.",
+    "duration": "Fra tavlen til næste vejkryds, medmindre forbuddet ophæves tidligere eller andet fremgår af undertavle.",
+    "exceptions": [
+      "Det kan angives på undertavle, at lille knallert også er omfattet.",
+      "U 3 kan angive en bestemt tidsperiode. Sammen med U 3 må kun U 1 og U 6 anvendes."
+    ],
+    "applicableSupplementaryTexts": [
+      {
+        "text": "Gælder kun gennemkørsel",
+        "meaning": "Passage af vejen uden ærinde er ulovlig."
+      },
+      {
+        "text": "Ærindekørsel tilladt",
+        "meaning": "Kørsel i forbindelse med blandt andet aflevering, afhentning, arbejde, indkøb, gæstebud samt kørsel til og fra egen bolig eller egen virksomhed er tilladt."
+      },
+      {
+        "text": "Varekørsel tilladt",
+        "meaning": "Kørsel for at aflevere eller afhente varer eller materialer, som ellers vil være urimeligt besværlige at transportere, er tilladt."
+      },
+      {
+        "text": "Arbejdskørsel tilladt",
+        "meaning": "Ærindekørsel i forbindelse med udførelse af et erhverv er tilladt."
+      },
+      {
+        "text": "Beboerkørsel tilladt",
+        "meaning": "Kørsel er tilladt, når føreren eller en passager har egen bolig eller egen virksomhed på vejstrækningen."
+      }
+    ],
+    "commonMistakes": [
+      "At tro, at lille knallert automatisk er omfattet.",
+      "At overse tidsrum eller afstand på undertavle."
+    ],
+    "relatedElements": [],
+    "imageFile": "assets/images/signs/c22_1.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 18, stk. 2-3; § 19, C 22,1",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "c22_2",
+    "officialCode": "C 22,2",
+    "name": "Motorcykel og stor knallert forbudt",
+    "elementType": "trafficSign",
+    "categoryId": "prohibition",
+    "categoryName": "Forbudstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen forbyder færdsel med motorcykel og stor knallert.",
+    "shortMeaning": "Motorcykel og stor knallert er forbudt.",
+    "detailedMeaning": "Tavlen forbyder færdsel med motorcykel og stor knallert.",
+    "driverAction": "Kør ikke ind med motorcykel eller stor knallert.",
+    "duration": "Fra tavlen til næste vejkryds, medmindre forbuddet ophæves tidligere eller andet fremgår af undertavle.",
+    "exceptions": [
+      "Det kan angives på undertavle, at lille knallert også er omfattet.",
+      "U 3 kan angive en bestemt tidsperiode. Sammen med U 3 må kun U 1 og U 6 anvendes."
+    ],
+    "applicableSupplementaryTexts": [
+      {
+        "text": "Gælder kun gennemkørsel",
+        "meaning": "Passage af vejen uden ærinde er ulovlig."
+      },
+      {
+        "text": "Ærindekørsel tilladt",
+        "meaning": "Kørsel i forbindelse med blandt andet aflevering, afhentning, arbejde, indkøb, gæstebud samt kørsel til og fra egen bolig eller egen virksomhed er tilladt."
+      },
+      {
+        "text": "Varekørsel tilladt",
+        "meaning": "Kørsel for at aflevere eller afhente varer eller materialer, som ellers vil være urimeligt besværlige at transportere, er tilladt."
+      },
+      {
+        "text": "Arbejdskørsel tilladt",
+        "meaning": "Ærindekørsel i forbindelse med udførelse af et erhverv er tilladt."
+      },
+      {
+        "text": "Beboerkørsel tilladt",
+        "meaning": "Kørsel er tilladt, når føreren eller en passager har egen bolig eller egen virksomhed på vejstrækningen."
+      }
+    ],
+    "commonMistakes": [
+      "At tro, at lille knallert automatisk er omfattet.",
+      "At overse tidsrum på undertavle."
+    ],
+    "relatedElements": [],
+    "imageFile": "assets/images/signs/c22_2.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 18, stk. 2-3; § 19, C 22,2",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "c23_1",
+    "officialCode": "C 23,1",
+    "name": "Lastbil forbudt",
+    "elementType": "trafficSign",
+    "categoryId": "prohibition",
+    "categoryName": "Forbudstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen forbyder færdsel med lastbil, herunder lastbilvogntog.",
+    "shortMeaning": "Lastbil og lastbilvogntog er forbudt.",
+    "detailedMeaning": "Tavlen forbyder færdsel med lastbil, herunder lastbilvogntog. En undertavle med vægt kan begrænse forbuddet til køretøjer med en samlet tilladt totalvægt over den angivne.",
+    "driverAction": "Kør ikke ind med lastbil eller lastbilvogntog, hvis køretøjet er omfattet af tavlen og eventuel vægtangivelse.",
+    "duration": "Fra tavlen til næste vejkryds, medmindre forbuddet ophæves tidligere eller andet fremgår af undertavle.",
+    "exceptions": [
+      "En vægtangivelse kan begrænse forbuddet til lastbiler og lastbilvogntog over den angivne samlede tilladte totalvægt.",
+      "U 3 kan angive en bestemt tidsperiode. Sammen med U 3 må kun U 1 og U 6 anvendes."
+    ],
+    "applicableSupplementaryTexts": [
+      {
+        "text": "Gælder kun gennemkørsel",
+        "meaning": "Passage af vejen uden ærinde er ulovlig."
+      },
+      {
+        "text": "Ærindekørsel tilladt",
+        "meaning": "Kørsel i forbindelse med blandt andet aflevering, afhentning, arbejde, indkøb, gæstebud samt kørsel til og fra egen bolig eller egen virksomhed er tilladt."
+      },
+      {
+        "text": "Varekørsel tilladt",
+        "meaning": "Kørsel for at aflevere eller afhente varer eller materialer, som ellers vil være urimeligt besværlige at transportere, er tilladt."
+      },
+      {
+        "text": "Arbejdskørsel tilladt",
+        "meaning": "Ærindekørsel i forbindelse med udførelse af et erhverv er tilladt."
+      },
+      {
+        "text": "Beboerkørsel tilladt",
+        "meaning": "Kørsel er tilladt, når føreren eller en passager har egen bolig eller egen virksomhed på vejstrækningen."
+      }
+    ],
+    "commonMistakes": [
+      "At sammenligne med faktisk vægt i stedet for den samlede tilladte totalvægt på undertavlen.",
+      "At overse, at lastbilvogntog også er omfattet."
+    ],
+    "relatedElements": [],
+    "imageFile": "assets/images/signs/c23_1.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 18, stk. 2-3; § 19, C 23,1",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "c23_2",
+    "officialCode": "C 23,2",
+    "name": "Bus forbudt",
+    "elementType": "trafficSign",
+    "categoryId": "prohibition",
+    "categoryName": "Forbudstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen forbyder færdsel med bus, herunder busvogntog.",
+    "shortMeaning": "Bus og busvogntog er forbudt.",
+    "detailedMeaning": "Tavlen forbyder færdsel med bus, herunder busvogntog. En undertavle med vægt kan begrænse forbuddet til køretøjer med en samlet tilladt totalvægt over den angivne.",
+    "driverAction": "Kør ikke ind med bus eller busvogntog, hvis køretøjet er omfattet af tavlen og eventuel vægtangivelse.",
+    "duration": "Fra tavlen til næste vejkryds, medmindre forbuddet ophæves tidligere eller andet fremgår af undertavle.",
+    "exceptions": [
+      "En vægtangivelse kan begrænse forbuddet til busser og busvogntog over den angivne samlede tilladte totalvægt.",
+      "U 3 kan angive en bestemt tidsperiode. Sammen med U 3 må kun U 1 og U 6 anvendes."
+    ],
+    "applicableSupplementaryTexts": [
+      {
+        "text": "Gælder kun gennemkørsel",
+        "meaning": "Passage af vejen uden ærinde er ulovlig."
+      },
+      {
+        "text": "Ærindekørsel tilladt",
+        "meaning": "Kørsel i forbindelse med blandt andet aflevering, afhentning, arbejde, indkøb, gæstebud samt kørsel til og fra egen bolig eller egen virksomhed er tilladt."
+      },
+      {
+        "text": "Varekørsel tilladt",
+        "meaning": "Kørsel for at aflevere eller afhente varer eller materialer, som ellers vil være urimeligt besværlige at transportere, er tilladt."
+      },
+      {
+        "text": "Arbejdskørsel tilladt",
+        "meaning": "Ærindekørsel i forbindelse med udførelse af et erhverv er tilladt."
+      },
+      {
+        "text": "Beboerkørsel tilladt",
+        "meaning": "Kørsel er tilladt, når føreren eller en passager har egen bolig eller egen virksomhed på vejstrækningen."
+      }
+    ],
+    "commonMistakes": [
+      "At overse, at busvogntog også er omfattet.",
+      "At overse vægt- eller tidsangivelse på undertavle."
+    ],
+    "relatedElements": [],
+    "imageFile": "assets/images/signs/c23_2.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 18, stk. 2-3; § 19, C 23,2",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "c23_3",
+    "officialCode": "C 23,3",
+    "name": "Kørsel med farligt gods forbudt",
+    "elementType": "trafficSign",
+    "categoryId": "prohibition",
+    "categoryName": "Forbudstavler",
+    "categoryBRelevance": "indirect",
+    "relevanceExplanation": "Tavlen forbyder kørsel med køretøjer, der medbringer farligt gods efter reglerne om vejtransport af farligt gods.",
+    "shortMeaning": "Kørsel med farligt gods er forbudt.",
+    "detailedMeaning": "Tavlen forbyder kørsel med køretøjer, der medbringer farligt gods som defineret i reglerne om vejtransport af farligt gods.",
+    "driverAction": "Kør ikke ind, hvis køretøjet medbringer farligt gods, som er omfattet af tavlen og eventuel undertavle.",
+    "duration": "Fra tavlen til næste vejkryds, medmindre forbuddet ophæves tidligere eller andet fremgår af undertavle.",
+    "exceptions": [
+      "Undertavle kan præcisere tidsperioden og hvilke kategorier af farligt gods, der er omfattet."
+    ],
+    "applicableSupplementaryTexts": [
+      {
+        "text": "Gælder kun gennemkørsel",
+        "meaning": "Passage af vejen uden ærinde er ulovlig."
+      },
+      {
+        "text": "Ærindekørsel tilladt",
+        "meaning": "Kørsel i forbindelse med blandt andet aflevering, afhentning, arbejde, indkøb, gæstebud samt kørsel til og fra egen bolig eller egen virksomhed er tilladt."
+      },
+      {
+        "text": "Varekørsel tilladt",
+        "meaning": "Kørsel for at aflevere eller afhente varer eller materialer, som ellers vil være urimeligt besværlige at transportere, er tilladt."
+      },
+      {
+        "text": "Arbejdskørsel tilladt",
+        "meaning": "Ærindekørsel i forbindelse med udførelse af et erhverv er tilladt."
+      },
+      {
+        "text": "Beboerkørsel tilladt",
+        "meaning": "Kørsel er tilladt, når føreren eller en passager har egen bolig eller egen virksomhed på vejstrækningen."
+      }
+    ],
+    "commonMistakes": [
+      "At overse en undertavle, som begrænser forbuddet til bestemte kategorier.",
+      "At overse et angivet tidsrum."
+    ],
+    "relatedElements": [],
+    "imageFile": "assets/images/signs/c23_3.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 18, stk. 2-3; § 19, C 23,3",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "c24_1",
+    "officialCode": "C 24,1",
+    "name": "Traktor og motorredskab forbudt",
+    "elementType": "trafficSign",
+    "categoryId": "prohibition",
+    "categoryName": "Forbudstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen forbyder færdsel med traktor og motorredskab, herunder vogntog med disse køretøjer.",
+    "shortMeaning": "Traktor og motorredskab er forbudt.",
+    "detailedMeaning": "Tavlen forbyder færdsel med traktor og motorredskab, herunder vogntog med disse køretøjer. En undertavle med vægt kan begrænse forbuddet til køretøjer over den angivne samlede tilladte totalvægt.",
+    "driverAction": "Kør ikke ind med traktor, motorredskab eller et omfattet vogntog.",
+    "duration": "Fra tavlen til næste vejkryds, medmindre forbuddet ophæves tidligere eller andet fremgår af undertavle.",
+    "exceptions": [
+      "En vægtangivelse kan begrænse forbuddet til køretøjer over den angivne samlede tilladte totalvægt.",
+      "U 3 kan angive en bestemt tidsperiode. Sammen med U 3 må kun U 1 og U 6 anvendes."
+    ],
+    "applicableSupplementaryTexts": [
+      {
+        "text": "Gælder kun gennemkørsel",
+        "meaning": "Passage af vejen uden ærinde er ulovlig."
+      },
+      {
+        "text": "Ærindekørsel tilladt",
+        "meaning": "Kørsel i forbindelse med blandt andet aflevering, afhentning, arbejde, indkøb, gæstebud samt kørsel til og fra egen bolig eller egen virksomhed er tilladt."
+      },
+      {
+        "text": "Varekørsel tilladt",
+        "meaning": "Kørsel for at aflevere eller afhente varer eller materialer, som ellers vil være urimeligt besværlige at transportere, er tilladt."
+      },
+      {
+        "text": "Arbejdskørsel tilladt",
+        "meaning": "Ærindekørsel i forbindelse med udførelse af et erhverv er tilladt."
+      },
+      {
+        "text": "Beboerkørsel tilladt",
+        "meaning": "Kørsel er tilladt, når føreren eller en passager har egen bolig eller egen virksomhed på vejstrækningen."
+      }
+    ],
+    "commonMistakes": [
+      "At overse, at vogntog med de nævnte køretøjer også er omfattet.",
+      "At overse vægtangivelsen."
+    ],
+    "relatedElements": [],
+    "imageFile": "assets/images/signs/c24_1.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 18, stk. 2-3; § 19, C 24,1",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "c24_2",
+    "officialCode": "C 24,2",
+    "name": "Hestevogn og lignende forbudt",
+    "elementType": "trafficSign",
+    "categoryId": "prohibition",
+    "categoryName": "Forbudstavler",
+    "categoryBRelevance": "indirect",
+    "relevanceExplanation": "Tavlen forbyder færdsel med hestevogn og lignende.",
+    "shortMeaning": "Hestevogn og lignende er forbudt.",
+    "detailedMeaning": "Tavlen forbyder færdsel med hestevogn og lignende.",
+    "driverAction": "Før ikke hestevogn eller lignende ind på den afmærkede strækning.",
+    "duration": "Fra tavlen til næste vejkryds, medmindre forbuddet ophæves tidligere eller andet fremgår af undertavle.",
+    "exceptions": [
+      "U 3 kan angive en bestemt tidsperiode. Sammen med U 3 må kun U 1 og U 6 anvendes."
+    ],
+    "applicableSupplementaryTexts": [
+      {
+        "text": "Gælder kun gennemkørsel",
+        "meaning": "Passage af vejen uden ærinde er ulovlig."
+      },
+      {
+        "text": "Ærindekørsel tilladt",
+        "meaning": "Kørsel i forbindelse med blandt andet aflevering, afhentning, arbejde, indkøb, gæstebud samt kørsel til og fra egen bolig eller egen virksomhed er tilladt."
+      },
+      {
+        "text": "Varekørsel tilladt",
+        "meaning": "Kørsel for at aflevere eller afhente varer eller materialer, som ellers vil være urimeligt besværlige at transportere, er tilladt."
+      },
+      {
+        "text": "Arbejdskørsel tilladt",
+        "meaning": "Ærindekørsel i forbindelse med udførelse af et erhverv er tilladt."
+      },
+      {
+        "text": "Beboerkørsel tilladt",
+        "meaning": "Kørsel er tilladt, når føreren eller en passager har egen bolig eller egen virksomhed på vejstrækningen."
+      }
+    ],
+    "commonMistakes": [
+      "At overse tidsangivelsen på undertavle.",
+      "At tro, at tavlen kun gælder en bestemt type hestevogn."
+    ],
+    "relatedElements": [],
+    "imageFile": "assets/images/signs/c24_2.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 18, stk. 2-3; § 19, C 24,2",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "c25_1",
+    "officialCode": "C 25,1",
+    "name": "Cykel og lille knallert forbudt",
+    "elementType": "trafficSign",
+    "categoryId": "prohibition",
+    "categoryName": "Forbudstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen forbyder færdsel med cykel og lille knallert.",
+    "shortMeaning": "Cykel og lille knallert er forbudt.",
+    "detailedMeaning": "Tavlen forbyder færdsel med cykel og lille knallert.",
+    "driverAction": "Kør ikke ind med cykel eller lille knallert.",
+    "duration": "Fra tavlen til næste vejkryds, medmindre forbuddet ophæves tidligere eller andet fremgår af undertavle.",
+    "exceptions": [
+      "Det kan angives på undertavle, at det også er forbudt at trække cykel og lille knallert.",
+      "U 3 kan angive en bestemt tidsperiode. Sammen med U 3 må kun U 1 og U 6 anvendes."
+    ],
+    "applicableSupplementaryTexts": [
+      {
+        "text": "Gælder kun gennemkørsel",
+        "meaning": "Passage af vejen uden ærinde er ulovlig."
+      },
+      {
+        "text": "Ærindekørsel tilladt",
+        "meaning": "Kørsel i forbindelse med blandt andet aflevering, afhentning, arbejde, indkøb, gæstebud samt kørsel til og fra egen bolig eller egen virksomhed er tilladt."
+      },
+      {
+        "text": "Varekørsel tilladt",
+        "meaning": "Kørsel for at aflevere eller afhente varer eller materialer, som ellers vil være urimeligt besværlige at transportere, er tilladt."
+      },
+      {
+        "text": "Arbejdskørsel tilladt",
+        "meaning": "Ærindekørsel i forbindelse med udførelse af et erhverv er tilladt."
+      },
+      {
+        "text": "Beboerkørsel tilladt",
+        "meaning": "Kørsel er tilladt, når føreren eller en passager har egen bolig eller egen virksomhed på vejstrækningen."
+      }
+    ],
+    "commonMistakes": [
+      "At tro, at det automatisk er forbudt at trække cyklen.",
+      "At overse tidsrum på undertavle."
+    ],
+    "relatedElements": [],
+    "imageFile": "assets/images/signs/c25_1.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 18, stk. 2-3; § 19, C 25,1",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "c25_2",
+    "officialCode": "C 25,2",
+    "name": "Lille knallert forbudt",
+    "elementType": "trafficSign",
+    "categoryId": "prohibition",
+    "categoryName": "Forbudstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen forbyder færdsel med lille knallert.",
+    "shortMeaning": "Lille knallert er forbudt.",
+    "detailedMeaning": "Tavlen forbyder færdsel med lille knallert.",
+    "driverAction": "Kør ikke ind med lille knallert.",
+    "duration": "Fra tavlen til næste vejkryds, medmindre forbuddet ophæves tidligere eller andet fremgår af undertavle.",
+    "exceptions": [
+      "Det kan angives på undertavle, at det også er forbudt at trække lille knallert.",
+      "U 3 kan angive en bestemt tidsperiode. Sammen med U 3 må kun U 1 og U 6 anvendes."
+    ],
+    "applicableSupplementaryTexts": [
+      {
+        "text": "Gælder kun gennemkørsel",
+        "meaning": "Passage af vejen uden ærinde er ulovlig."
+      },
+      {
+        "text": "Ærindekørsel tilladt",
+        "meaning": "Kørsel i forbindelse med blandt andet aflevering, afhentning, arbejde, indkøb, gæstebud samt kørsel til og fra egen bolig eller egen virksomhed er tilladt."
+      },
+      {
+        "text": "Varekørsel tilladt",
+        "meaning": "Kørsel for at aflevere eller afhente varer eller materialer, som ellers vil være urimeligt besværlige at transportere, er tilladt."
+      },
+      {
+        "text": "Arbejdskørsel tilladt",
+        "meaning": "Ærindekørsel i forbindelse med udførelse af et erhverv er tilladt."
+      },
+      {
+        "text": "Beboerkørsel tilladt",
+        "meaning": "Kørsel er tilladt, når føreren eller en passager har egen bolig eller egen virksomhed på vejstrækningen."
+      }
+    ],
+    "commonMistakes": [
+      "At forveksle tavlen med C 22,2.",
+      "At tro, at det automatisk er forbudt at trække knallerten."
+    ],
+    "relatedElements": [
+      {
+        "id": "c22_2",
+        "relationType": "educationalRelation",
+        "explanation": "C 22,2 gælder motorcykel og stor knallert.",
+        "sourceReferences": []
+      }
+    ],
+    "imageFile": "assets/images/signs/c25_2.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 18, stk. 2-3; § 19, C 25,2",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "c26_1",
+    "officialCode": "C 26,1",
+    "name": "Ridning og føring af hest forbudt",
+    "elementType": "trafficSign",
+    "categoryId": "prohibition",
+    "categoryName": "Forbudstavler",
+    "categoryBRelevance": "indirect",
+    "relevanceExplanation": "Tavlen forbyder både ridning og føring af hest.",
+    "shortMeaning": "Ridning og føring af hest er forbudt.",
+    "detailedMeaning": "Tavlen forbyder ridning og føring af hest på den afmærkede strækning.",
+    "driverAction": "Rid eller før ikke en hest ind på strækningen.",
+    "duration": "Fra tavlen til næste vejkryds, medmindre forbuddet ophæves tidligere eller andet fremgår af undertavle.",
+    "exceptions": [
+      "U 3 kan angive en bestemt tidsperiode. Sammen med U 3 må kun U 1 og U 6 anvendes."
+    ],
+    "applicableSupplementaryTexts": [
+      {
+        "text": "Gælder kun gennemkørsel",
+        "meaning": "Passage af vejen uden ærinde er ulovlig."
+      },
+      {
+        "text": "Ærindekørsel tilladt",
+        "meaning": "Kørsel i forbindelse med blandt andet aflevering, afhentning, arbejde, indkøb, gæstebud samt kørsel til og fra egen bolig eller egen virksomhed er tilladt."
+      },
+      {
+        "text": "Varekørsel tilladt",
+        "meaning": "Kørsel for at aflevere eller afhente varer eller materialer, som ellers vil være urimeligt besværlige at transportere, er tilladt."
+      },
+      {
+        "text": "Arbejdskørsel tilladt",
+        "meaning": "Ærindekørsel i forbindelse med udførelse af et erhverv er tilladt."
+      },
+      {
+        "text": "Beboerkørsel tilladt",
+        "meaning": "Kørsel er tilladt, når føreren eller en passager har egen bolig eller egen virksomhed på vejstrækningen."
+      }
+    ],
+    "commonMistakes": [
+      "At tro, at forbuddet kun gælder ridning.",
+      "At overse tidsrum på undertavle."
+    ],
+    "relatedElements": [],
+    "imageFile": "assets/images/signs/c26_1.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 18, stk. 2-3; § 19, C 26,1",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "c26_2",
+    "officialCode": "C 26,2",
+    "name": "Fodgængere forbudt",
+    "elementType": "trafficSign",
+    "categoryId": "prohibition",
+    "categoryName": "Forbudstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen forbyder fodgængere på den afmærkede strækning.",
+    "shortMeaning": "Fodgængere er forbudt.",
+    "detailedMeaning": "Tavlen forbyder færdsel til fods på den afmærkede strækning.",
+    "driverAction": "Gå ikke ind på strækningen.",
+    "duration": "Fra tavlen til næste vejkryds, medmindre forbuddet ophæves tidligere eller andet fremgår af undertavle.",
+    "exceptions": [
+      "U 3 kan angive en bestemt tidsperiode. Sammen med U 3 må kun U 1 og U 6 anvendes."
+    ],
+    "applicableSupplementaryTexts": [
+      {
+        "text": "Gælder kun gennemkørsel",
+        "meaning": "Passage af vejen uden ærinde er ulovlig."
+      },
+      {
+        "text": "Ærindekørsel tilladt",
+        "meaning": "Kørsel i forbindelse med blandt andet aflevering, afhentning, arbejde, indkøb, gæstebud samt kørsel til og fra egen bolig eller egen virksomhed er tilladt."
+      },
+      {
+        "text": "Varekørsel tilladt",
+        "meaning": "Kørsel for at aflevere eller afhente varer eller materialer, som ellers vil være urimeligt besværlige at transportere, er tilladt."
+      },
+      {
+        "text": "Arbejdskørsel tilladt",
+        "meaning": "Ærindekørsel i forbindelse med udførelse af et erhverv er tilladt."
+      },
+      {
+        "text": "Beboerkørsel tilladt",
+        "meaning": "Kørsel er tilladt, når føreren eller en passager har egen bolig eller egen virksomhed på vejstrækningen."
+      }
+    ],
+    "commonMistakes": [
+      "At overse, at tavlen gælder hele den afmærkede strækning.",
+      "At overse tidsrum på undertavle."
+    ],
+    "relatedElements": [],
+    "imageFile": "assets/images/signs/c26_2.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 18, stk. 2-3; § 19, C 26,2",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  }
+]

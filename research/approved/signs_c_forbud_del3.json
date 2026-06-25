@@ -1,0 +1,406 @@
+[
+  {
+    "id": "c51",
+    "officialCode": "C 51",
+    "name": "Overhaling forbudt",
+    "elementType": "trafficSign",
+    "categoryId": "prohibition",
+    "categoryName": "Forbudstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen angiver et overhalingsforbud for en vejstrækning og er central i kategori B-undervisningen.",
+    "shortMeaning": "Overhaling er forbudt.",
+    "detailedMeaning": "Tavlen fastsætter overhalingsforbud for en strækning på den aktuelle vej. Forbuddet gælder ikke ved overhaling af tohjulet cykel eller tohjulet lille knallert og gælder heller ikke overhaling af et køretøj, der svinger bort fra vejen.",
+    "appliesTo": "Førere af køretøjer, med de udtrykkelige undtagelser i tavlens betydning.",
+    "driverAction": "Undlad at overhale, indtil forbuddet ophører. Overhaling skal fortsat kun ske, når den i øvrigt er lovlig og sikker.",
+    "duration": "Forbuddet gælder over en vejstrækning og ophører ikke automatisk ved næste vejkryds.",
+    "endsBy": [
+      "C 53 Ophør af overhaling forbudt",
+      "C 59 Ophør af forbud",
+      "Afstandsangivelse på undertavle"
+    ],
+    "exceptions": [
+      "Overhaling af tohjulet cykel.",
+      "Overhaling af tohjulet lille knallert.",
+      "Overhaling af et køretøj, der svinger bort fra vejen."
+    ],
+    "supplementaryRules": [
+      "U 3 kan angive, hvilken tidsperiode med klokkeslæt forbuddet gælder.",
+      "Når U 3 bruges, må kun U 1, U 2 og U 4 anvendes sammen med den."
+    ],
+    "commonMistakes": [
+      "At tro, at forbuddet automatisk ophører ved næste kryds.",
+      "At overse en afstands- eller tidsangivelse på undertavlen."
+    ],
+    "relatedElements": [
+      {
+        "id": "c53",
+        "relationType": "endsRestriction",
+        "explanation": "C 53 ophæver et forudgående forbud efter C 51.",
+        "sourceReferences": []
+      },
+      {
+        "id": "c59",
+        "relationType": "endsRestriction",
+        "explanation": "C 59 ophæver alle gældende forbudstavler på den foregående vejstrækning bortset fra standsnings- og parkeringsforbud.",
+        "sourceReferences": []
+      }
+    ],
+    "imageFile": "assets/images/signs/c51.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 19, C 51 og reglerne vedrørende C 51-52",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "c52",
+    "officialCode": "C 52",
+    "name": "Overhaling med lastbil forbudt",
+    "elementType": "trafficSign",
+    "categoryId": "prohibition",
+    "categoryName": "Forbudstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen er relevant for forståelsen af særlige overhalingsregler for lastbil og lastbilvogntog.",
+    "shortMeaning": "Lastbil og lastbilvogntog må ikke overhale.",
+    "detailedMeaning": "Tavlen forbyder overhaling med lastbil og lastbilvogntog. Forbuddet gælder ikke ved overhaling af tohjulet cykel eller tohjulet lille knallert og gælder heller ikke overhaling af et køretøj, der svinger bort fra vejen.",
+    "appliesTo": "Lastbil og lastbilvogntog.",
+    "driverAction": "Undlad at overhale med lastbil eller lastbilvogntog, indtil forbuddet ophører.",
+    "duration": "Forbuddet gælder over en vejstrækning og ophører ikke automatisk ved næste vejkryds.",
+    "endsBy": [
+      "C 54 Ophør af overhaling med lastbil forbudt",
+      "C 59 Ophør af forbud",
+      "Afstandsangivelse på undertavle"
+    ],
+    "exceptions": [
+      "Overhaling af tohjulet cykel.",
+      "Overhaling af tohjulet lille knallert.",
+      "Overhaling af et køretøj, der svinger bort fra vejen."
+    ],
+    "supplementaryRules": [
+      "U 3 kan angive, hvilken tidsperiode med klokkeslæt forbuddet gælder.",
+      "Når U 3 bruges, må kun U 1, U 2 og U 4 anvendes sammen med den."
+    ],
+    "commonMistakes": [
+      "At tro, at forbuddet gælder personbiler.",
+      "At tro, at forbuddet automatisk ophører ved næste kryds."
+    ],
+    "relatedElements": [
+      {
+        "id": "c54",
+        "relationType": "endsRestriction",
+        "explanation": "C 54 ophæver et forudgående forbud efter C 52.",
+        "sourceReferences": []
+      }
+    ],
+    "imageFile": "assets/images/signs/c52.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 19, C 52 og reglerne vedrørende C 51-52",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "c53",
+    "officialCode": "C 53",
+    "name": "Ophør af overhaling forbudt",
+    "elementType": "trafficSign",
+    "categoryId": "prohibition-end",
+    "categoryName": "Ophør af forbud",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen viser, at et tidligere overhalingsforbud efter C 51 ophører.",
+    "shortMeaning": "Overhalingsforbuddet efter C 51 ophører.",
+    "detailedMeaning": "Tavlen ophæver det forudgående overhalingsforbud fastsat med C 51.",
+    "appliesTo": "De trafikanter, som var omfattet af C 51.",
+    "driverAction": "Overhaling er igen tilladt, men kun når den i øvrigt kan gennemføres lovligt og sikkert.",
+    "duration": "Virker ved tavlens placering.",
+    "endsBy": [],
+    "exceptions": [],
+    "supplementaryRules": [],
+    "commonMistakes": [
+      "At opfatte tavlen som en tilladelse til at overhale uden at vurdere sikkerheden.",
+      "At forveksle tavlen med C 54."
+    ],
+    "relatedElements": [
+      {
+        "id": "c51",
+        "relationType": "endsRestriction",
+        "explanation": "C 53 ophæver C 51.",
+        "sourceReferences": []
+      }
+    ],
+    "imageFile": "assets/images/signs/c53.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 19, C 53",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "c54",
+    "officialCode": "C 54",
+    "name": "Ophør af overhaling med lastbil forbudt",
+    "elementType": "trafficSign",
+    "categoryId": "prohibition-end",
+    "categoryName": "Ophør af forbud",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen viser, at et tidligere overhalingsforbud for lastbil og lastbilvogntog efter C 52 ophører.",
+    "shortMeaning": "Overhalingsforbuddet for lastbil og lastbilvogntog ophører.",
+    "detailedMeaning": "Tavlen ophæver det forudgående overhalingsforbud fastsat med C 52.",
+    "appliesTo": "Lastbil og lastbilvogntog, som var omfattet af C 52.",
+    "driverAction": "Overhaling er igen tilladt for de omfattede køretøjer, men kun når den i øvrigt er lovlig og sikker.",
+    "duration": "Virker ved tavlens placering.",
+    "endsBy": [],
+    "exceptions": [],
+    "supplementaryRules": [],
+    "commonMistakes": [
+      "At forveksle tavlen med C 53.",
+      "At opfatte tavlen som en ubetinget tilladelse til at overhale."
+    ],
+    "relatedElements": [
+      {
+        "id": "c52",
+        "relationType": "endsRestriction",
+        "explanation": "C 54 ophæver C 52.",
+        "sourceReferences": []
+      }
+    ],
+    "imageFile": "assets/images/signs/c54.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 19, C 54",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "c55",
+    "officialCode": "C 55",
+    "name": "Lokal hastighedsbegrænsning",
+    "elementType": "trafficSign",
+    "categoryId": "prohibition",
+    "categoryName": "Forbudstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen fastsætter en maksimal hastighed for en konkret vejstrækning.",
+    "shortMeaning": "Tallet angiver den maksimalt tilladte hastighed.",
+    "detailedMeaning": "Tavlen fastsætter en lokal hastighedsbegrænsning for en strækning på den aktuelle vej. Den lokale grænse gælder i stedet for den almindelige generelle hastighedsgrænse på strækningen.",
+    "appliesTo": "Alle kørende, medmindre en undertavle begrænser tavlen til bestemte køretøjer.",
+    "driverAction": "Kør højst med hastigheden på tavlen og tilpas altid hastigheden yderligere efter forholdene.",
+    "duration": "Begrænsningen gælder over en vejstrækning og ophører ikke automatisk ved næste vejkryds.",
+    "endsBy": [
+      "C 56 Ophør af lokal hastighedsbegrænsning",
+      "C 59 Ophør af forbud",
+      "En ny lokal hastighedsbegrænsning",
+      "Afstandsangivelse på undertavle"
+    ],
+    "exceptions": [],
+    "supplementaryRules": [
+      "En vægtangivelse kan begrænse tavlen til køretøjer og vogntog, hvis samlede tilladte totalvægt overstiger den angivne.",
+      "Tavlen kan begrænses til bestemte køretøjer, når de krævede køretøjstyper vises samlet på én undertavle.",
+      "Teksten »Støj« kan bruges, når støj er årsagen til den lokale hastighedsbegrænsning."
+    ],
+    "commonMistakes": [
+      "At tro, at hastighedsgrænsen ophører ved næste kryds.",
+      "At tro, at tallet er en anbefaling i stedet for en maksimal hastighed.",
+      "At overse en undertavle, der begrænser reglen til bestemte køretøjer."
+    ],
+    "relatedElements": [
+      {
+        "id": "c56",
+        "relationType": "endsRestriction",
+        "explanation": "C 56 ophæver den lokale hastighedsbegrænsning.",
+        "sourceReferences": []
+      },
+      {
+        "id": "uc57",
+        "relationType": "educationalRelation",
+        "explanation": "UC 57 kan under særlige betingelser oplyse om den generelle hastighedsgrænse efter C 56.",
+        "sourceReferences": []
+      }
+    ],
+    "imageFile": "assets/images/signs/c55.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 19, C 55",
+        "checkedDate": "2026-06-25"
+      },
+      {
+        "title": "Bekendtgørelse af færdselsloven",
+        "url": "https://www.retsinformation.dk/eli/lta/2026/118/dan/pdf",
+        "section": "§ 42",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "c56",
+    "officialCode": "C 56",
+    "name": "Ophør af lokal hastighedsbegrænsning",
+    "elementType": "trafficSign",
+    "categoryId": "prohibition-end",
+    "categoryName": "Ophør af forbud",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen ophæver en lokal hastighedsbegrænsning efter C 55.",
+    "shortMeaning": "Den lokale hastighedsbegrænsning ophører.",
+    "detailedMeaning": "Tavlen ophæver den lokale hastighedsbegrænsning. Herefter gælder den relevante generelle hastighedsgrænse eller en anden gældende afmærkning.",
+    "appliesTo": "De kørende, som var omfattet af den lokale hastighedsbegrænsning.",
+    "driverAction": "Fortsæt efter den generelle hastighedsgrænse eller anden gældende afmærkning, og tilpas fortsat hastigheden efter forholdene.",
+    "duration": "Virker ved tavlens placering.",
+    "endsBy": [],
+    "exceptions": [],
+    "supplementaryRules": [
+      "Tavlen kan have en undertavle med bysymbolet fra E 55 for at understrege, at den står i tættere bebygget område.",
+      "UC 57 kan bruges under C 56 under de særlige betingelser, der gælder for UC 57."
+    ],
+    "commonMistakes": [
+      "At tro, at C 56 selv fastsætter en ny bestemt hastighed.",
+      "At accelerere uden først at kende den generelle grænse eller se efter anden afmærkning."
+    ],
+    "relatedElements": [
+      {
+        "id": "c55",
+        "relationType": "endsRestriction",
+        "explanation": "C 56 ophæver C 55.",
+        "sourceReferences": []
+      },
+      {
+        "id": "uc57",
+        "relationType": "commonlyCombined",
+        "explanation": "UC 57 kan i særlige tilfælde bruges under C 56.",
+        "sourceReferences": []
+      }
+    ],
+    "imageFile": "assets/images/signs/c56.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 19, C 56",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "uc57",
+    "officialCode": "UC 57",
+    "name": "Oplysning om generel hastighedsgrænse",
+    "elementType": "supplementarySign",
+    "categoryId": "supplementary-prohibition",
+    "categoryName": "Undertavler til forbudstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Undertavlen oplyser om den generelle hastighedsgrænse efter ophør af en højere lokal hastighedsgrænse uden for tættere bebygget område.",
+    "shortMeaning": "Oplyser om den gældende generelle hastighedsgrænse.",
+    "detailedMeaning": "UC 57 er kun en oplysning om den gældende generelle hastighedsgrænse uden for tættere bebygget område. Den fastsætter ikke selv en ny lokal hastighedsgrænse.",
+    "appliesTo": "Kørende, der passerer C 56 med UC 57.",
+    "driverAction": "Brug undertavlen som oplysning om den generelle grænse, men følg også anden gældende afmærkning og tilpas hastigheden efter forholdene.",
+    "duration": "Oplysningen gælder efter C 56 i overensstemmelse med den generelle hastighedsregel.",
+    "endsBy": [],
+    "exceptions": [
+      "Må kun anvendes under C 56, når en højere lokal hastighedsbegrænsning uden for tættere bebygget område ophæves med C 56."
+    ],
+    "supplementaryRules": [],
+    "commonMistakes": [
+      "At tro, at UC 57 selv er en ny hastighedsbegrænsning.",
+      "At tro, at UC 57 kan bruges alene."
+    ],
+    "relatedElements": [
+      {
+        "id": "c56",
+        "relationType": "commonlyCombined",
+        "explanation": "UC 57 må kun bruges under C 56 i den beskrevne situation.",
+        "sourceReferences": []
+      }
+    ],
+    "imageFile": "assets/images/signs/uc57.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 19, C 56 og UC 57",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "c59",
+    "officialCode": "C 59",
+    "name": "Ophør af forbud",
+    "elementType": "trafficSign",
+    "categoryId": "prohibition-end",
+    "categoryName": "Ophør af forbud",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen ophæver flere samtidige forbud på den forudgående vejstrækning.",
+    "shortMeaning": "Alle forbudstavler på den forudgående strækning ophører, bortset fra standsnings- og parkeringsforbud.",
+    "detailedMeaning": "Tavlen ophæver alle forbudstavler på den forudgående vejstrækning bortset fra standsnings- og parkeringsforbud. Den kan derfor blandt andet ophæve overhalingsforbud og lokal hastighedsbegrænsning.",
+    "appliesTo": "De trafikanter og køretøjer, som var omfattet af de tidligere forbud.",
+    "driverAction": "Vurder hvilke almindelige regler og anden afmærkning der nu gælder. Standsnings- og parkeringsforbud fortsætter.",
+    "duration": "Virker ved tavlens placering.",
+    "endsBy": [],
+    "exceptions": [
+      "Standsningsforbud ophæves ikke.",
+      "Parkeringsforbud ophæves ikke."
+    ],
+    "supplementaryRules": [],
+    "commonMistakes": [
+      "At tro, at standsnings- og parkeringsforbud også ophører.",
+      "At tro, at tavlen giver frihed fra almindelige færdselsregler."
+    ],
+    "relatedElements": [
+      {
+        "id": "c53",
+        "relationType": "educationalRelation",
+        "explanation": "C 53 ophæver kun C 51.",
+        "sourceReferences": []
+      },
+      {
+        "id": "c54",
+        "relationType": "educationalRelation",
+        "explanation": "C 54 ophæver kun C 52.",
+        "sourceReferences": []
+      },
+      {
+        "id": "c56",
+        "relationType": "educationalRelation",
+        "explanation": "C 56 ophæver kun den lokale hastighedsbegrænsning.",
+        "sourceReferences": []
+      }
+    ],
+    "imageFile": "assets/images/signs/c59.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 19, C 59",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  }
+]

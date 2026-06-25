@@ -1,0 +1,26 @@
+TEORIFRI – KLAR ELECTRON-PROJEKTMAPPE
+
+1. Pak mappen ud til:
+   C:\Users\jeppe\Desktop\TeoriFri-New
+
+2. Åbn PowerShell i mappen.
+
+3. Installér:
+   npm install
+
+4. Start appen:
+   npm start
+
+5. Når appen virker, luk den og tryk Ctrl+C i PowerShell.
+
+6. Byg Windows-installer og portable EXE:
+   npm run dist
+
+7. De færdige EXE-filer ligger i:
+   C:\Users\jeppe\Desktop\TeoriFri-New\release
+
+Vigtigt:
+- main.js er allerede korrekt.
+- package.json er allerede korrekt.
+- index.html er den komplette WebDev-kilde.
+- Lad ikke agenten omskrive main.js igen.

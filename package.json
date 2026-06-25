@@ -1,0 +1,49 @@
+{
+  "name": "teorifri",
+  "productName": "TeoriFri",
+  "version": "1.0.0",
+  "description": "Gratis offline teoriundervisning til dansk kørekort",
+  "main": "main.js",
+  "author": "Jeppe",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win nsis portable"
+  },
+  "devDependencies": {
+    "electron": "41.9.0",
+    "electron-builder": "26.0.12"
+  },
+  "build": {
+    "appId": "dk.jeppe.teorifri",
+    "productName": "TeoriFri",
+    "asar": true,
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "main.js",
+      "index.html",
+      "package.json"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": ["x64"]
+        },
+        {
+          "target": "portable",
+          "arch": ["x64"]
+        }
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "TeoriFri"
+    }
+  }
+}

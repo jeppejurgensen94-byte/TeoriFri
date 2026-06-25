@@ -1,0 +1,430 @@
+[
+  {
+    "id": "e11",
+    "officialCode": "E 11",
+    "name": "Ophængt pilafmærkning",
+    "elementType": "trafficSign",
+    "categoryId": "information",
+    "categoryName": "Oplysningstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen hjælper føreren med at vælge korrekt vognbane før et kryds.",
+    "shortMeaning": "Viser de retninger, som vognbanen under tavlen er beregnet til.",
+    "detailedMeaning": "Tavlen hænger over en bestemt vognbane og angiver de kørselsretninger i det kommende kryds, som denne vognbane er beregnet til.",
+    "symbolVariants": [
+      "Ligeud",
+      "Venstre",
+      "Højre",
+      "Ligeud eller venstre",
+      "Ligeud eller højre",
+      "Venstre eller højre"
+    ],
+    "variantCodeStatus": "De grafiske pilevarianter er medtaget uden at påstå særskilte officielle underkoder.",
+    "appliesTo": "Kun vognbanen direkte under tavlen.",
+    "driverAction": "Vælg den vognbane, der passer til den retning, du skal fortsætte i, og følg også eventuelle vognbanepile og påbudstavler.",
+    "startsAt": "Ved tavlen før krydset.",
+    "duration": "Indtil det kryds, som pilafmærkningen vedrører, er passeret.",
+    "exceptions": [],
+    "supplementaryRules": [
+      "E 11 er en oplysningstavle. Separat afmærkning, fx D 11 eller pile på kørebanen, kan fastlægge det bindende kørselsforløb."
+    ],
+    "commonMistakes": [
+      "At tro, at tavlen gælder alle vognbaner.",
+      "At skifte vognbane for sent.",
+      "At overse pile eller anden afmærkning på kørebanen."
+    ],
+    "relatedElements": [
+      {
+        "id": "d11",
+        "relationType": "educationalRelation",
+        "explanation": "D 11 er en påbudstavle, mens E 11 oplyser, hvilken retning vognbanen er beregnet til.",
+        "sourceReferences": []
+      }
+    ],
+    "imageFile": "assets/images/signs/e11.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§§ 24-27, E 11",
+        "checkedDate": "2026-06-25"
+      },
+      {
+        "title": "Bekendtgørelse om anvendelse af vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/426/dan/pdf",
+        "section": "Regler om anvendelse og placering af E 11",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "e15",
+    "officialCode": "E 15",
+    "name": "Vognbaner ved kryds",
+    "elementType": "trafficSign",
+    "categoryId": "information",
+    "categoryName": "Oplysningstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen viser den samlede vognbaneopdeling og hjælper føreren med at placere sig korrekt før et kryds.",
+    "shortMeaning": "Viser hvilke retninger de enkelte vognbaner er beregnet til.",
+    "detailedMeaning": "Tavlen viser de enkelte vognbaner og de kørselsretninger i krydset, som hver bane er beregnet til. Afmærkning på kørebanen, rabatter, heller og lignende kan vises på tavlen.",
+    "symbolVariants": [
+      "Tilpasses det konkrete kryds og dets vognbaner"
+    ],
+    "appliesTo": "De vognbaner, som er vist på tavlen.",
+    "driverAction": "Vælg den rigtige vognbane i god tid. En færdselstavle vist ved en bestemt pil gælder den pågældende vognbane.",
+    "startsAt": "Ved tavlen før krydset.",
+    "duration": "Indtil det viste kryds er passeret.",
+    "exceptions": [],
+    "supplementaryRules": [
+      "Hvis en færdselstavle vises ved en pil, gælder den for den pågældende vognbane.",
+      "Ved vejarbejde kan tavlen og eventuelle undertavler have sorte symboler på gul baggrund."
+    ],
+    "commonMistakes": [
+      "At læse en vognbanespecifik tavle som gældende for alle baner.",
+      "At vente for længe med at vælge vognbane."
+    ],
+    "relatedElements": [
+      {
+        "id": "e11",
+        "relationType": "educationalRelation",
+        "explanation": "E 11 hænger over én bestemt vognbane, mens E 15 viser flere vognbaner samlet.",
+        "sourceReferences": []
+      }
+    ],
+    "imageFile": "assets/images/signs/e15.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§§ 24-27, E 15 og fællesreglerne for E 15-16",
+        "checkedDate": "2026-06-25"
+      },
+      {
+        "title": "Bekendtgørelse om anvendelse af vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/426/dan/pdf",
+        "section": "Regler om anvendelse og placering af E 15",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "e16_1",
+    "officialCode": "E 16,1",
+    "groupCode": "E 16",
+    "name": "Vognbaneforløb med sammenfletning",
+    "elementType": "trafficSign",
+    "categoryId": "information",
+    "categoryName": "Oplysningstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen viser en sammenfletning, hvor trafikanterne skal tilpasse sig hinanden under gensidig hensyntagen.",
+    "shortMeaning": "Vognbaner løber sammen efter sammenfletningsreglen.",
+    "detailedMeaning": "Tavlen viser, at vognbaner eller kørebaner løber sammen. Ved reduktion af vognbaneantallet skal de kørende under gensidig hensyntagen tilpasse deres kørsel efter de ændrede forhold.",
+    "symbolVariants": [
+      "Sammenfletning fra venstre",
+      "Sammenfletning fra højre",
+      "Grafiske varianter til det konkrete vognbaneforløb"
+    ],
+    "appliesTo": "De vognbaner eller kørebaner, som tavlen viser løber sammen.",
+    "driverAction": "Tilpas hastighed og afstand, og hjælp trafikken med at flette sammen. Ingen af banerne har automatisk ubetinget forrang.",
+    "startsAt": "Ved det forvarslede sammenfletningsforløb.",
+    "duration": "Indtil sammenfletningen er gennemført.",
+    "exceptions": [],
+    "supplementaryRules": [
+      "Tavlen kan vise rabatter, forhindringer og modkørende vognbaner.",
+      "Hvis en færdselstavle vises ved en pil, gælder den for den pågældende vognbane.",
+      "Ved vejarbejde kan tavlen udføres med sorte symboler på gul baggrund.",
+      "E 16 er blandt de tavletyper, der kan anvendes som variabel færdselstavle."
+    ],
+    "commonMistakes": [
+      "At behandle sammenfletning som et almindeligt vognbaneskift.",
+      "At tro, at den fortsættende bane altid har forrang.",
+      "At flette for tidligt eller nægte andre plads."
+    ],
+    "relatedElements": [
+      {
+        "id": "e16_2",
+        "relationType": "educationalRelation",
+        "explanation": "E 16,2 viser et almindeligt vognbaneskift, hvor den, der skifter bane, har pligt til at sikre, at manøvren kan ske uden fare eller unødig ulempe.",
+        "sourceReferences": []
+      },
+      {
+        "id": "b15",
+        "relationType": "educationalRelation",
+        "explanation": "B 15 angiver også sammenfletning og gensidig hensyntagen.",
+        "sourceReferences": []
+      }
+    ],
+    "imageFile": "assets/images/signs/e16_1.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§§ 24-27, E 16 og E 16,1",
+        "checkedDate": "2026-06-25"
+      },
+      {
+        "title": "Bekendtgørelse af færdselsloven",
+        "url": "https://www.retsinformation.dk/eli/lta/2026/118/dan/pdf",
+        "section": "§ 18, stk. 4",
+        "checkedDate": "2026-06-25"
+      },
+      {
+        "title": "Bekendtgørelse om anvendelse af vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/426/dan/pdf",
+        "section": "Regler om anvendelse og placering af E 16",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "e16_2",
+    "officialCode": "E 16,2",
+    "groupCode": "E 16",
+    "name": "Vognbaneforløb med vognbaneskift",
+    "elementType": "trafficSign",
+    "categoryId": "information",
+    "categoryName": "Oplysningstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen viser, at en vognbane ophører eller forskydes, så en eller flere trafikanter skal skifte vognbane.",
+    "shortMeaning": "En vognbane ændres eller ophører, og der skal foretages vognbaneskift.",
+    "detailedMeaning": "Tavlen viser et vognbaneforløb, hvor den kørende skal foretage et almindeligt vognbaneskift. Den, der skifter vognbane eller ændrer placering til siden, skal sikre sig, at det kan ske uden fare eller unødig ulempe for andre.",
+    "symbolVariants": [
+      "Vognbane ophører i venstre side",
+      "Vognbane ophører i højre side",
+      "Andre grafiske varianter til det konkrete vognbaneforløb"
+    ],
+    "variantCodeStatus": "Kun hovedkoden E 16,2 er fastsat her; eventuelle mere detaljerede katalognumre skal kontrolleres mod den aktuelle officielle tavleoversigt før brug.",
+    "appliesTo": "Den eller de vognbaner, som tavlen viser ændres eller ophører.",
+    "driverAction": "Orientér dig tidligt, giv tegn og skift først vognbane, når det kan ske uden fare eller unødig ulempe.",
+    "startsAt": "Ved det forvarslede vognbaneforløb.",
+    "duration": "Indtil det viste vognbaneskift eller den viste baneændring er gennemført.",
+    "exceptions": [],
+    "supplementaryRules": [
+      "Tavlen kan vise rabatter, forhindringer og modkørende vognbaner.",
+      "Hvis en færdselstavle vises ved en pil, gælder den for den pågældende vognbane.",
+      "Ved vejarbejde kan tavlen udføres med sorte symboler på gul baggrund.",
+      "E 16 er blandt de tavletyper, der kan anvendes som variabel færdselstavle."
+    ],
+    "commonMistakes": [
+      "At bruge sammenfletningsreglen ved et almindeligt vognbaneskift.",
+      "At tro, at andre trafikanter skal give plads.",
+      "At vente til sidste øjeblik med at orientere sig og give tegn."
+    ],
+    "relatedElements": [
+      {
+        "id": "e16_1",
+        "relationType": "educationalRelation",
+        "explanation": "E 16,1 viser sammenfletning med gensidig hensyntagen.",
+        "sourceReferences": []
+      }
+    ],
+    "imageFile": "assets/images/signs/e16_2.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§§ 24-27, E 16 og E 16,2",
+        "checkedDate": "2026-06-25"
+      },
+      {
+        "title": "Bekendtgørelse af færdselsloven",
+        "url": "https://www.retsinformation.dk/eli/lta/2026/118/dan/pdf",
+        "section": "§ 18, stk. 2",
+        "checkedDate": "2026-06-25"
+      },
+      {
+        "title": "Bekendtgørelse om anvendelse af vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/426/dan/pdf",
+        "section": "Regler om anvendelse og placering af E 16",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "e17",
+    "officialCode": "E 17",
+    "name": "Fodgængerfelt",
+    "elementType": "trafficSign",
+    "categoryId": "information",
+    "categoryName": "Oplysningstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen markerer selve placeringen af et fodgængerfelt.",
+    "shortMeaning": "Her er et fodgængerfelt.",
+    "detailedMeaning": "Tavlen angiver placeringen af et fodgængerfelt. Den skal ses sammen med den hvide tværafmærkning S 17 på vejen.",
+    "symbolVariants": [
+      "Gående vendt mod venstre",
+      "Spejlvendt grafisk variant"
+    ],
+    "variantCodeStatus": "Den spejlvendte grafik er ikke behandlet som en særskilt tavlekode i denne fil.",
+    "appliesTo": "Den kørebane eller cykelsti, som fodgængerfeltet krydser.",
+    "driverAction": "Afpasse hastigheden, så der ikke opstår fare eller ulempe for gående i feltet eller på vej ud i det, og stands om nødvendigt.",
+    "startsAt": "Ved selve fodgængerfeltet.",
+    "duration": "Under tilkørsel til og passage af fodgængerfeltet.",
+    "exceptions": [],
+    "supplementaryRules": [
+      "A 17 advarer om et kommende fodgængerfelt; E 17 markerer selve feltets placering.",
+      "Ved et ureguleret fodgængerfelt gælder færdselslovens § 27, stk. 7.",
+      "Ved signalreguleret fodgængerfelt gælder blandt andet § 27, stk. 6."
+    ],
+    "commonMistakes": [
+      "At forveksle E 17 med A 17.",
+      "At køre for hurtigt frem mod et ureguleret fodgængerfelt.",
+      "At standse oven på feltet."
+    ],
+    "relatedElements": [
+      {
+        "id": "a17",
+        "relationType": "educationalRelation",
+        "explanation": "A 17 advarer føreren om et fodgængerfelt længere fremme.",
+        "sourceReferences": []
+      }
+    ],
+    "imageFile": "assets/images/signs/e17.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§§ 24-27, E 17 og § 59, S 17",
+        "checkedDate": "2026-06-25"
+      },
+      {
+        "title": "Bekendtgørelse af færdselsloven",
+        "url": "https://www.retsinformation.dk/eli/lta/2026/118/dan/pdf",
+        "section": "§ 25 og § 27, stk. 6-8",
+        "checkedDate": "2026-06-25"
+      },
+      {
+        "title": "Bekendtgørelse om anvendelse af vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/426/dan/pdf",
+        "section": "Regler om anvendelse og placering af E 17",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "e18",
+    "officialCode": "E 18",
+    "name": "Blind vej",
+    "elementType": "trafficSign",
+    "categoryId": "information",
+    "categoryName": "Oplysningstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen viser, at vejen ikke er gennemgående for kørende trafik.",
+    "shortMeaning": "Vejen ender blindt for kørende trafik.",
+    "detailedMeaning": "Tavlen angiver en blind vej. En tynd hvid streg kan vise, at vejen fortsætter som sti, så gående eller andre tilladte stitrafikanter muligvis kan fortsætte.",
+    "symbolVariants": [
+      "Blind vej uden videre forbindelse",
+      "Blind vej, der fortsætter som sti"
+    ],
+    "appliesTo": "Den vej, som tavlen står ved.",
+    "driverAction": "Forvent, at du som bilist skal vende eller køre tilbage. Se på symbolet, om vejen fortsætter som sti.",
+    "startsAt": "Ved indkørslen til eller begyndelsen af den blinde vej.",
+    "duration": "Gælder den viste vej frem til dens afslutning.",
+    "exceptions": [
+      "En tynd hvid streg kan vise, at vejen fortsætter som sti for de færdselsarter, der lovligt må bruge stien."
+    ],
+    "supplementaryRules": [],
+    "commonMistakes": [
+      "At tro, at ingen færdselsarter kan fortsætte.",
+      "At overse stiforbindelsen i symbolet."
+    ],
+    "relatedElements": [],
+    "imageFile": "assets/images/signs/e18.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§§ 24-27, E 18",
+        "checkedDate": "2026-06-25"
+      },
+      {
+        "title": "Bekendtgørelse om anvendelse af vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/426/dan/pdf",
+        "section": "Regler om anvendelse og placering af E 18",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "e19",
+    "officialCode": "E 19",
+    "name": "Ensrettet færdsel",
+    "elementType": "trafficSign",
+    "categoryId": "information",
+    "categoryName": "Oplysningstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen oplyser, at den pågældende vej eller kørebane har færdsel i én retning.",
+    "shortMeaning": "Vejen er ensrettet i pilens retning.",
+    "detailedMeaning": "Tavlen angiver ensrettet færdsel i den viste retning. Den modsatte indkørsel kan være afmærket med C 19 Indkørsel forbudt. C 21 betyder kørsel i begge retninger forbudt og er derfor ikke det samme som ensrettet færdsel.",
+    "symbolVariants": [
+      "Pil mod højre",
+      "Pil mod venstre"
+    ],
+    "variantCodeStatus": "De spejlvendte pile behandles som grafiske varianter af E 19.",
+    "appliesTo": "Den vej eller kørebane, som tavlen viser ind på.",
+    "driverAction": "Kør kun i den viste retning, og vær opmærksom på eventuelle undtagelser på undertavle, fx cykeltrafik mod ensretningen.",
+    "startsAt": "Ved indkørslen til den ensrettede vej eller ved det sted, hvor ensretningen begynder.",
+    "duration": "Indtil den ensrettede vej eller strækning ophører eller ændres ved ny afmærkning.",
+    "exceptions": [
+      "En undertavle kan undtage en bestemt færdselsart fra hovedtavlens betydning."
+    ],
+    "supplementaryRules": [
+      "U 5 kan angive, at hovedtavlens betydning ikke gælder for den viste færdselsart.",
+      "Modstrøms cykeltrafik skal fremgå af den samlede afmærkning og vejens indretning."
+    ],
+    "commonMistakes": [
+      "At forveksle E 19 med C 19.",
+      "At forveksle E 19 med C 21.",
+      "At overse cyklister, som lovligt kan køre mod ensretningen."
+    ],
+    "relatedElements": [
+      {
+        "id": "c19",
+        "relationType": "commonlyCombined",
+        "explanation": "C 19 bruges ved den ende eller indkørsel, hvor indkørsel med ethvert køretøj er forbudt.",
+        "sourceReferences": []
+      },
+      {
+        "id": "c21",
+        "relationType": "educationalRelation",
+        "explanation": "C 21 forbyder kørsel i begge retninger og er ikke en ensretningstavle.",
+        "sourceReferences": []
+      }
+    ],
+    "imageFile": "assets/images/signs/e19.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§§ 24-27, E 19 samt § 19, C 19 og C 21",
+        "checkedDate": "2026-06-25"
+      },
+      {
+        "title": "Bekendtgørelse af færdselsloven",
+        "url": "https://www.retsinformation.dk/eli/lta/2026/118/dan/pdf",
+        "section": "§ 15",
+        "checkedDate": "2026-06-25"
+      },
+      {
+        "title": "Bekendtgørelse om anvendelse af vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/426/dan/pdf",
+        "section": "Regler om anvendelse og placering af E 19",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  }
+]

@@ -1,0 +1,562 @@
+[
+  {
+    "id": "c61",
+    "officialCode": "C 61",
+    "name": "Standsning forbudt",
+    "elementType": "trafficSign",
+    "categoryId": "prohibition",
+    "categoryName": "Forbudstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen er central for at skelne mellem standsning og parkering.",
+    "shortMeaning": "Frivillig standsning og parkering på kørebanen er forbudt.",
+    "detailedMeaning": "Tavlen forbyder standsning på kørebanen, som ikke sker af hensyn til den øvrige færdsel. Da parkering altid indebærer, at køretøjet er hensat, omfatter standsningsforbuddet også parkering.",
+    "allowed": [
+      "Standsning, som er nødvendig af hensyn til den øvrige færdsel, fx kø, rødt lys eller vigepligt.",
+      "Det, som en undertavle udtrykkeligt tillader."
+    ],
+    "prohibited": [
+      "Kort frivillig standsning.",
+      "Af- og påstigning.",
+      "Af- og pålæsning.",
+      "Parkering."
+    ],
+    "roadSideScope": "Kun i den vejside, hvor tavlen er opsat.",
+    "duration": "I kørselsretningen frem til næste vejkryds, medmindre en anden standsnings- eller parkeringstavle eller en pil på undertavle ændrer dette.",
+    "endsBy": [
+      "Næste vejkryds.",
+      "En ny tavle om standsning eller parkering før krydset.",
+      "UC 60,3 eller anden tydelig pil-/strækningsangivelse.",
+      "Udløb af et angivet tidsrum."
+    ],
+    "exceptions": [
+      "Færdselslovens mere restriktive regler i § 28, stk. 1, og § 29 gælder foran tavlens tilladelser."
+    ],
+    "supplementaryRules": [
+      "Undertavle kan angive bestemte ugedage eller klokkeslæt.",
+      "Uden for et standsningsforbuds tidsrum kan undertavle angive parkeringsforbud eller tidsbegrænset parkering.",
+      "Tilladelse til af- og pålæsning eller ud- og indstigning skal fremgå tydeligt af undertavle."
+    ],
+    "commonMistakes": [
+      "At tro, at af- og påstigning altid er tilladt under C 61.",
+      "At tro, at forbuddet gælder i begge vejsider.",
+      "At overse pil eller tidsangivelse på undertavlen."
+    ],
+    "relatedElements": [
+      {
+        "id": "c62",
+        "relationType": "educationalRelation",
+        "explanation": "C 62 forbyder parkering, men tillader normalt kort standsning, af- og påstigning samt af- og pålæsning.",
+        "sourceReferences": []
+      },
+      {
+        "id": "uc60_3",
+        "relationType": "endsRestriction",
+        "explanation": "UC 60,3 angiver, at restriktionen ophører ved tavlen.",
+        "sourceReferences": []
+      }
+    ],
+    "imageFile": "assets/images/signs/c61.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 19, C 61 og reglerne vedrørende C 61-62",
+        "checkedDate": "2026-06-25"
+      },
+      {
+        "title": "Bekendtgørelse af færdselsloven",
+        "url": "https://www.retsinformation.dk/eli/lta/2026/118/dan/pdf",
+        "section": "§ 28 og § 29",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "c62",
+    "officialCode": "C 62",
+    "name": "Parkering forbudt",
+    "elementType": "trafficSign",
+    "categoryId": "prohibition",
+    "categoryName": "Forbudstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen kræver, at føreren kan skelne mellem parkering og kort standsning.",
+    "shortMeaning": "Parkering på kørebanen er forbudt.",
+    "detailedMeaning": "Tavlen forbyder parkering på kørebanen. Parkering er enhver hensætning af et køretøj med eller uden fører. Standsning under 3 minutter samt standsning for af- eller påstigning og af- eller pålæsning af gods regnes ikke som parkering.",
+    "allowed": [
+      "Standsning kortere end 3 minutter.",
+      "Af- og påstigning.",
+      "Af- og pålæsning af gods.",
+      "Det, som en undertavle udtrykkeligt tillader."
+    ],
+    "prohibited": [
+      "Enhver anden hensætning af køretøjet, også når føreren bliver i bilen."
+    ],
+    "roadSideScope": "Kun i den vejside, hvor tavlen er opsat.",
+    "duration": "I kørselsretningen frem til næste vejkryds, medmindre en anden standsnings- eller parkeringstavle eller en pil på undertavle ændrer dette.",
+    "endsBy": [
+      "Næste vejkryds.",
+      "En ny tavle om standsning eller parkering før krydset.",
+      "UC 60,3 eller anden tydelig pil-/strækningsangivelse.",
+      "Udløb af et angivet tidsrum."
+    ],
+    "exceptions": [
+      "Færdselslovens mere restriktive regler i § 28, stk. 1, og § 29 gælder foran tavlens tilladelser."
+    ],
+    "supplementaryRules": [
+      "Undertavle kan angive bestemte ugedage eller klokkeslæt.",
+      "UC 33 kan angive begrænset parkeringstilladelse.",
+      "Tidsbegrænset parkering og eventuelle krav om parkeringsskive skal fremgå af den samlede afmærkning og gældende parkeringsregler."
+    ],
+    "commonMistakes": [
+      "At tro, at man ikke parkerer, når man bliver siddende i bilen.",
+      "At tro, at al standsning er forbudt.",
+      "At overse tidsrum eller begrænset parkeringstilladelse på undertavlen."
+    ],
+    "relatedElements": [
+      {
+        "id": "c61",
+        "relationType": "educationalRelation",
+        "explanation": "C 61 forbyder både frivillig standsning og parkering.",
+        "sourceReferences": []
+      },
+      {
+        "id": "uc33",
+        "relationType": "commonlyCombined",
+        "explanation": "UC 33 kan angive begrænset parkeringstilladelse.",
+        "sourceReferences": []
+      }
+    ],
+    "imageFile": "assets/images/signs/c62.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 19, C 62 og reglerne vedrørende C 61-62",
+        "checkedDate": "2026-06-25"
+      },
+      {
+        "title": "Bekendtgørelse af færdselsloven",
+        "url": "https://www.retsinformation.dk/eli/lta/2026/118/dan/pdf",
+        "section": "§ 2, nr. 18, § 28 og § 29",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "c63",
+    "officialCode": "C 63",
+    "name": "Parkering forbudt for cykel og lille knallert",
+    "elementType": "trafficSign",
+    "categoryId": "prohibition",
+    "categoryName": "Forbudstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen angiver et særligt parkeringsforbud for cykler og små knallerter.",
+    "shortMeaning": "Parkering af cykel og lille knallert er forbudt.",
+    "detailedMeaning": "Tavlen forbyder parkering af cykel og lille knallert i det afmærkede område.",
+    "allowed": [
+      "Kortvarig standsning, når den ikke bliver til parkering og ikke strider mod andre regler."
+    ],
+    "prohibited": [
+      "Parkering af cykel.",
+      "Parkering af lille knallert."
+    ],
+    "roadSideScope": "Det område eller den vejside, som fremgår af tavlen og eventuelle undertavler.",
+    "duration": "Som angivet af områdets beskrivelse, andre tavler eller til næste vejkryds, når ingen anden afgrænsning er angivet.",
+    "endsBy": [
+      "Slutningen af det beskrevne område.",
+      "Ny afmærkning.",
+      "Næste vejkryds, når ingen anden afgrænsning er angivet."
+    ],
+    "exceptions": [],
+    "supplementaryRules": [
+      "Undertavle kan angive, at ulovligt parkeret cykel og lille knallert fjernes fra området.",
+      "Undertavle kan beskrive det område, som forbuddet omfatter.",
+      "Undertavle kan angive afhentningssted og eventuelt vise en kortskitse."
+    ],
+    "commonMistakes": [
+      "At tro, at tavlen gælder biler.",
+      "At overse områdets afgrænsning eller oplysninger om flytning og afhentning."
+    ],
+    "relatedElements": [],
+    "imageFile": "assets/images/signs/c63.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 19, C 63",
+        "checkedDate": "2026-06-25"
+      },
+      {
+        "title": "Bekendtgørelse af færdselsloven",
+        "url": "https://www.retsinformation.dk/eli/lta/2026/118/dan/pdf",
+        "section": "§ 92 e",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "c92",
+    "officialCode": "C 92",
+    "name": "Passage uden stop forbudt",
+    "elementType": "trafficSign",
+    "categoryId": "prohibition",
+    "categoryName": "Forbudstavler",
+    "categoryBRelevance": "direct",
+    "relevanceExplanation": "Tavlen kræver et fuldstændigt stop før passage.",
+    "shortMeaning": "Du skal standse før passage.",
+    "detailedMeaning": "Tavlen forbyder passage uden stop. Årsagen til stoppet angives under tværstregen med tekst eller symbol. Ved toldsted erstattes ordet »Stop« med »Told«, og ordet »Told« angives også på det tilgrænsende lands sprog.",
+    "allowed": [
+      "Passage efter et fuldstændigt stop og efter eventuel kontrol eller tilladelse."
+    ],
+    "prohibited": [
+      "At passere tavlen uden først at standse helt."
+    ],
+    "roadSideScope": "Den trafikretning eller kørebane, som tavlen er rettet mod.",
+    "duration": "Gælder ved selve kontrol- eller stoppunktet.",
+    "endsBy": [
+      "Efter at føreren har standset og opfyldt den angivne kontrol eller instruktion."
+    ],
+    "exceptions": [],
+    "supplementaryRules": [
+      "Årsagen til stoppet skal vises med tekst eller symbol under tværstregen.",
+      "Ved toldsted anvendes toldvarianten."
+    ],
+    "commonMistakes": [
+      "At nøjes med at sænke farten i stedet for at standse helt.",
+      "At overse teksten eller symbolet, som forklarer årsagen til stoppet."
+    ],
+    "relatedElements": [],
+    "imageFile": "assets/images/signs/c92.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 19, C 92",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "uc33",
+    "officialCode": "UC 33",
+    "name": "Begrænset parkeringstilladelse",
+    "elementType": "supplementarySign",
+    "categoryId": "supplementary-parking",
+    "categoryName": "Undertavler til standsning og parkering",
+    "categoryBRelevance": "direct",
+    "shortMeaning": "Angiver en begrænset parkeringstilladelse.",
+    "detailedMeaning": "Undertavlen angiver, at parkering er tilladt på de vilkår, som fremgår af teksten, symbolerne eller tidsangivelsen.",
+    "canBeStandaloneMainSign": false,
+    "roadSideScope": "Samme område og vejside som hovedtavlen.",
+    "duration": "Som angivet på undertavlen og hovedtavlen.",
+    "commonMistakes": [
+      "At overse hvem tilladelsen gælder for.",
+      "At overse tidsbegrænsning eller andre vilkår."
+    ],
+    "imageFile": "assets/images/signs/uc33.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 19, UC 33",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "uc60_1",
+    "officialCode": "UC 60,1",
+    "name": "Restriktionen gælder både før og efter tavlen",
+    "elementType": "supplementarySign",
+    "categoryId": "supplementary-parking",
+    "categoryName": "Undertavler til standsning og parkering",
+    "categoryBRelevance": "direct",
+    "shortMeaning": "Restriktionen gælder på begge sider af tavlens placering langs den samme vejside.",
+    "detailedMeaning": "Pilen angiver, at standsnings- eller parkeringsrestriktionen gælder både før og efter tavlen. Vandret pil kan angive restriktion på tværs af kørselsretningen, fx på en vendeplads.",
+    "canBeStandaloneMainSign": false,
+    "roadSideScope": "Den vejside eller det område, som pilen viser.",
+    "duration": "Som hovedtavlen og pilens retning angiver.",
+    "supplementaryRules": [
+      "Restriktionsstrækningens længde kan angives ved pilespidserne."
+    ],
+    "commonMistakes": [
+      "At tro, at restriktionen kun begynder ved tavlen.",
+      "At overse en vandret pil."
+    ],
+    "imageFile": "assets/images/signs/uc60_1.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 19, UC 60,1",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "uc60_2",
+    "officialCode": "UC 60,2",
+    "name": "Restriktionen begynder ved tavlen",
+    "elementType": "supplementarySign",
+    "categoryId": "supplementary-parking",
+    "categoryName": "Undertavler til standsning og parkering",
+    "categoryBRelevance": "direct",
+    "shortMeaning": "Restriktionen begynder ved tavlen.",
+    "detailedMeaning": "Pilen angiver, at standsnings- eller parkeringsrestriktionen begynder ved tavlen og gælder videre i den viste retning. Vandret pil kan angive restriktion på tværs af kørselsretningen.",
+    "canBeStandaloneMainSign": false,
+    "roadSideScope": "Fra tavlen i pilens retning.",
+    "duration": "Indtil næste vejkryds, en ny tavle eller UC 60,3, medmindre en længde er angivet.",
+    "supplementaryRules": [
+      "Restriktionsstrækningens længde kan angives ved pilespidsen."
+    ],
+    "commonMistakes": [
+      "At tro, at restriktionen også gælder bagud før tavlen.",
+      "At overse strækningslængden."
+    ],
+    "imageFile": "assets/images/signs/uc60_2.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 19, UC 60,2",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "uc60_3",
+    "officialCode": "UC 60,3",
+    "name": "Restriktionen ophører ved tavlen",
+    "elementType": "supplementarySign",
+    "categoryId": "supplementary-parking",
+    "categoryName": "Undertavler til standsning og parkering",
+    "categoryBRelevance": "direct",
+    "shortMeaning": "Restriktionen ophører ved tavlen.",
+    "detailedMeaning": "Pilen angiver, at den forudgående standsnings- eller parkeringsrestriktion ophører ved tavlen.",
+    "canBeStandaloneMainSign": false,
+    "roadSideScope": "Samme vejside eller område som den forudgående restriktion.",
+    "duration": "Ophører ved tavlen.",
+    "commonMistakes": [
+      "At tro, at en ny restriktion begynder ved tavlen.",
+      "At forveksle pilens retning med UC 60,2."
+    ],
+    "imageFile": "assets/images/signs/uc60_3.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 19, UC 60,3",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "uc60_5",
+    "officialCode": "UC 60,5",
+    "name": "Standsning på rabat forbudt",
+    "elementType": "supplementarySign",
+    "categoryId": "supplementary-parking",
+    "categoryName": "Undertavler til standsning og parkering",
+    "categoryBRelevance": "direct",
+    "shortMeaning": "Standsning og dermed også parkering på rabatten er forbudt.",
+    "detailedMeaning": "Tavlen forbyder standsning på rabatten. Da parkering er en længerevarende hensætning, er parkering også forbudt.",
+    "canBeStandaloneMainSign": true,
+    "roadSideScope": "Kun i den vejside, hvor tavlen er opsat.",
+    "duration": "Frem til næste vejkryds, ny tavle eller pilangivet ophør.",
+    "commonMistakes": [
+      "At tro, at parkering stadig er tilladt.",
+      "At forveksle rabatten med fortovet."
+    ],
+    "imageFile": "assets/images/signs/uc60_5.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 19, UC 60,5",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "uc60_6",
+    "officialCode": "UC 60,6",
+    "name": "Parkering på rabat forbudt",
+    "elementType": "supplementarySign",
+    "categoryId": "supplementary-parking",
+    "categoryName": "Undertavler til standsning og parkering",
+    "categoryBRelevance": "direct",
+    "shortMeaning": "Parkering på rabatten er forbudt.",
+    "detailedMeaning": "Tavlen forbyder parkering på rabatten, men forbyder ikke i sig selv kort standsning.",
+    "canBeStandaloneMainSign": true,
+    "roadSideScope": "Kun i den vejside, hvor tavlen er opsat.",
+    "duration": "Frem til næste vejkryds, ny tavle eller pilangivet ophør.",
+    "commonMistakes": [
+      "At tro, at kort standsning også altid er forbudt.",
+      "At forveksle rabatten med kørebanen eller fortovet."
+    ],
+    "imageFile": "assets/images/signs/uc60_6.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 19, UC 60,6",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "uc60_7",
+    "officialCode": "UC 60,7",
+    "name": "Standsning og parkering på rabat tilladt",
+    "elementType": "supplementarySign",
+    "categoryId": "supplementary-parking",
+    "categoryName": "Undertavler til standsning og parkering",
+    "categoryBRelevance": "direct",
+    "shortMeaning": "Standsning og parkering på rabatten er tilladt.",
+    "detailedMeaning": "Tavlen tillader standsning og parkering på rabatten, hvor dette ellers ikke følger af den almindelige afmærkning.",
+    "canBeStandaloneMainSign": true,
+    "roadSideScope": "Kun i den vejside, hvor tavlen er opsat.",
+    "duration": "Frem til næste vejkryds, ny tavle eller pilangivet ophør.",
+    "exceptions": [
+      "Færdselslovens mere restriktive regler i § 28, stk. 1, og § 29 gælder stadig."
+    ],
+    "commonMistakes": [
+      "At tro, at tilladelsen ophæver alle andre standsnings- og parkeringsregler.",
+      "At parkere sådan, at der opstår fare eller ulempe."
+    ],
+    "imageFile": "assets/images/signs/uc60_7.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 19, UC 60,7",
+        "checkedDate": "2026-06-25"
+      },
+      {
+        "title": "Bekendtgørelse af færdselsloven",
+        "url": "https://www.retsinformation.dk/eli/lta/2026/118/dan/pdf",
+        "section": "§ 28 og § 29",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "uc60_8",
+    "officialCode": "UC 60,8",
+    "name": "Standsning og parkering med en del af køretøj på fortov tilladt",
+    "elementType": "supplementarySign",
+    "categoryId": "supplementary-parking",
+    "categoryName": "Undertavler til standsning og parkering",
+    "categoryBRelevance": "direct",
+    "shortMeaning": "En del af køretøjet må stå på fortovet ved standsning og parkering.",
+    "detailedMeaning": "Tavlen tillader standsning og parkering med en del af køretøjet på fortovet.",
+    "canBeStandaloneMainSign": true,
+    "roadSideScope": "Kun i den vejside, hvor tavlen er opsat.",
+    "duration": "Frem til næste vejkryds, ny tavle eller pilangivet ophør.",
+    "exceptions": [
+      "Færdselslovens mere restriktive regler i § 28, stk. 1, og § 29 gælder stadig.",
+      "Køretøjet må ikke anbringes, så der opstår fare eller unødig ulempe for gående."
+    ],
+    "commonMistakes": [
+      "At køre hele køretøjet op på fortovet.",
+      "At blokere fortovet for fodgængere."
+    ],
+    "imageFile": "assets/images/signs/uc60_8.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 19, UC 60,8",
+        "checkedDate": "2026-06-25"
+      },
+      {
+        "title": "Bekendtgørelse af færdselsloven",
+        "url": "https://www.retsinformation.dk/eli/lta/2026/118/dan/pdf",
+        "section": "§ 28",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "uc61",
+    "officialCode": "UC 61",
+    "name": "Standsningsforbud",
+    "elementType": "supplementarySign",
+    "categoryId": "supplementary-parking",
+    "categoryName": "Undertavler til standsning og parkering",
+    "categoryBRelevance": "direct",
+    "shortMeaning": "Angiver standsningsforbud som del af en kombineret parkeringsregel.",
+    "detailedMeaning": "Undertavlen angiver standsningsforbud, typisk for bestemte tidsrum eller som del af en kombination med andre parkeringsvilkår.",
+    "canBeStandaloneMainSign": false,
+    "roadSideScope": "Samme vejside og område som hovedtavlen.",
+    "duration": "Som angivet på tavlekombinationen.",
+    "commonMistakes": [
+      "At læse den som et almindeligt parkeringsforbud.",
+      "At overse tidsangivelsen."
+    ],
+    "imageFile": "assets/images/signs/uc61.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 19, UC 61",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "uc62",
+    "officialCode": "UC 62",
+    "name": "Parkeringsforbud",
+    "elementType": "supplementarySign",
+    "categoryId": "supplementary-parking",
+    "categoryName": "Undertavler til standsning og parkering",
+    "categoryBRelevance": "direct",
+    "shortMeaning": "Angiver parkeringsforbud som del af en kombineret parkeringsregel.",
+    "detailedMeaning": "Undertavlen angiver parkeringsforbud, typisk for bestemte tidsrum eller som del af en kombination med andre parkeringsvilkår.",
+    "canBeStandaloneMainSign": false,
+    "roadSideScope": "Samme vejside og område som hovedtavlen.",
+    "duration": "Som angivet på tavlekombinationen.",
+    "commonMistakes": [
+      "At tro, at kort standsning også er forbudt.",
+      "At overse tidsangivelsen."
+    ],
+    "imageFile": "assets/images/signs/uc62.svg",
+    "imageStatus": "original_svg_required",
+    "sourceReferences": [
+      {
+        "title": "Bekendtgørelse om vejafmærkning",
+        "url": "https://www.retsinformation.dk/eli/lta/2023/425/dan/pdf",
+        "section": "§ 19, UC 62",
+        "checkedDate": "2026-06-25"
+      }
+    ],
+    "needsReview": false
+  }
+]
